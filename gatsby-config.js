@@ -5,6 +5,7 @@ module.exports = {
     siteUrl: "https://growlab.com",
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -17,6 +18,5 @@ module.exports = {
         path: `${__dirname}/src/data/blog-posts/hello-world.md`,
       },
     },
-    `gatsby-transformer-remark`,
   ],
 };
