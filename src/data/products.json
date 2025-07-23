@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ai-writer",
+    "name": "AI Writer",
+    "price": "$19",
+    "description": "Generate marketing copy in seconds."
+  },
+  {
+    "id": "waas-starter",
+    "name": "WaaS Starter",
+    "price": "$49/mo",
+    "description": "Beautiful 5-page website with hosting included."
+  },
+  {
+    "id": "automation-kit",
+    "name": "Automation Kit",
+    "price": "$29",
+    "description": "Collection of ready-to-use Power Automate flows."
+  }
+]
