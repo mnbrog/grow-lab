@@ -1,1 +1,4 @@
 @import '../components/layout/GlobalStyles.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

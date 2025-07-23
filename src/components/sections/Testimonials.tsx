@@ -10,7 +10,7 @@ const Testimonials = () => (
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {testimonials.map((t) => (
           <Card key={t.author} title={t.author}>
-            <p className="text-gray-400">"{t.quote}"</p>
+            <p className="text-black">"{t.quote}"</p>
           </Card>
         ))}
       </div>

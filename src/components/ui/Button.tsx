@@ -13,7 +13,7 @@ const base =
 
 const variants = {
   primary: 'bg-accent text-primary hover:brightness-110 focus:ring-accent',
-  secondary: 'bg-transparent text-white border border-gray-600 hover:bg-gray-800 focus:ring-gray-500',
+  secondary: 'bg-transparent text-black border border-gray-600 hover:text-white hover:bg-gray-800 focus:ring-gray-500',
 };
 
 const sizes = {

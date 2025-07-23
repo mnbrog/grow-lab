@@ -3585,10 +3585,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
-  className: "bg-gray-50 py-12 text-sm text-gray-500"
+  className: "bg-gray-900 py-8 text-sm text-gray-500 border-t border-gray-800"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  className: "flex flex-col items-center space-y-4"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Logo__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "\xA9 ", new Date().getFullYear(), " GrowLab. All rights reserved.")));
+  className: "text-center"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Logo__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  className: "mt-4"
+}, "\xA9 ", new Date().getFullYear(), " GrowLabs. All rights reserved.")));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
 
 /***/ }),
@@ -3616,13 +3618,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Header = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
-  className: "bg-white/80 backdrop-blur fixed top-0 w-full z-20 shadow-sm"
+  className: "bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  className: "relative flex items-center py-4"
+  className: "flex items-center justify-between py-4"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Logo__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "hidden md:block absolute left-1/2 -translate-x-1/2"
+  className: "hidden md:flex flex-1 justify-center"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "ml-auto hidden md:block"
+  className: "ml-4 hidden md:block"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
   as: "a",
   href: "/contact"
@@ -3648,24 +3650,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const links = [{
-  to: '/services',
-  label: 'Services'
+  to: '/products',
+  label: 'Products'
 }, {
-  to: '/work',
-  label: 'Work'
+  to: '/website-plans',
+  label: 'Website Plans'
 }, {
-  to: '/about',
-  label: 'About'
-}, {
-  to: '/insights',
+  to: '/blog',
   label: 'Insights'
+}, {
+  to: '/contact',
+  label: 'Contact'
 }];
 const Nav = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
-  className: "space-x-8 text-sm font-medium text-gray-600"
+  className: "space-x-10 text-sm font-medium text-gray-400"
 }, links.map(link => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
   key: link.to,
   to: link.to,
-  className: "hover:text-gray-900"
+  className: "transition-colors hover:text-white"
 }, link.label)));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Nav);
 
@@ -3687,6 +3689,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ui_Card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ui/Card */ "./src/components/ui/Card.tsx");
 /* harmony import */ var _ui_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui/Button */ "./src/components/ui/Button.tsx");
 /* harmony import */ var _shared_Container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/Container */ "./src/components/shared/Container.tsx");
+/* harmony import */ var _ui_Icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui/Icon */ "./src/components/ui/Icon.tsx");
+
 
 
 
@@ -3705,22 +3709,27 @@ const plans = [{
   features: ['Unlimited pages', 'Custom integrations', 'Dedicated support']
 }];
 const PricingTable = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-  className: "bg-gray-50 py-16"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "bg-primary/10 py-20"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+  className: "text-3xl text-center mb-12"
+}, "Flexible plans for any project"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
   className: "grid gap-8 md:grid-cols-3"
 }, plans.map(plan => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
   key: plan.name,
   title: plan.name,
   className: "text-center"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-  className: "mt-2 text-3xl font-extrabold text-gray-900"
+  className: "mt-2 text-4xl"
 }, plan.price), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-  className: "mt-6 space-y-2 text-sm text-gray-600"
+  className: "mt-6 space-y-3 text-sm text-gray-300"
 }, plan.features.map(f => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
   key: f,
   className: "flex items-center justify-center space-x-2"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, f)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  className: "mt-6 w-full"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Icon__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  name: "check",
+  className: "text-accent h-4 w-4"
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, f)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  className: "mt-8 w-full"
 }, "Choose Plan"))))));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PricingTable);
 
@@ -3768,8 +3777,8 @@ __webpack_require__.r(__webpack_exports__);
 
 const Logo = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
   to: "/",
-  className: "text-xl font-bold tracking-tight text-blue-600"
-}, "GrowLab");
+  className: "text-xl font-bold tracking-tight text-white"
+}, "GrowLabs");
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Logo);
 
 /***/ }),
@@ -3788,17 +3797,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
-const base = 'inline-flex items-center justify-center px-6 py-3 border text-sm font-medium rounded-md transition focus:outline-none focus:ring-2 focus:ring-offset-2';
+const base = 'inline-flex items-center justify-center font-semibold rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 transition-transform duration-200 ease-in-out transform hover:scale-105';
 const variants = {
-  primary: `${base} bg-[#1a1a1a] text-white border-transparent hover:bg-[#333] focus:ring-gray-900`,
-  secondary: `${base} bg-transparent text-gray-900 border-gray-900 hover:bg-[#1a1a1a] hover:text-white`
+  primary: 'bg-accent text-primary hover:brightness-110 focus:ring-accent',
+  secondary: 'bg-transparent text-white border border-gray-600 hover:bg-gray-800 focus:ring-gray-500'
+};
+const sizes = {
+  normal: 'px-6 py-3 text-sm',
+  large: 'px-8 py-4 text-base'
 };
 const Button = ({
   variant = 'primary',
+  size = 'normal',
+  as: Component = 'button',
   children,
   ...props
-}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", Object.assign({
-  className: variants[variant]
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Component, Object.assign({
+  className: `${base} ${variants[variant]} ${sizes[size]}`
 }, props), children);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Button);
 
@@ -3823,11 +3838,48 @@ const Card = ({
   children,
   className = ''
 }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: `rounded-lg bg-white shadow-md p-6 ${className}`
+  className: `rounded-lg bg-gray-800/50 border border-gray-700 p-6 flex flex-col ${className}`
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
-  className: "mb-4 text-lg font-semibold text-gray-900"
-}, title), children);
+  className: "mb-4 text-lg font-semibold text-white"
+}, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "flex-grow"
+}, children));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Card);
+
+/***/ }),
+
+/***/ "./src/components/ui/Icon.tsx":
+/*!************************************!*\
+  !*** ./src/components/ui/Icon.tsx ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const icons = {
+  check: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
+    viewBox: "0 0 20 20",
+    fill: "currentColor",
+    className: "h-5 w-5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+    fillRule: "evenodd",
+    d: "M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z",
+    clipRule: "evenodd"
+  }))
+};
+const Icon = ({
+  name,
+  className = ''
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+  className: className
+}, icons[name] || null);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Icon);
 
 /***/ }),
 
