@@ -17,6 +17,5 @@ module.exports = {
         path: `${__dirname}/src/data/blog-posts/hello-world.md`,
       },
     },
-    `gatsby-transformer-remark`,
   ],
 };
