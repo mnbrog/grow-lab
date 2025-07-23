@@ -5,14 +5,16 @@ import Button from '../ui/Button';
 import Container from '../shared/Container';
 
 const Header = () => (
-  <header className="bg-white/80 backdrop-blur fixed top-0 w-full z-20 shadow-sm">
-    <Container className="relative flex items-center py-4">
+  <header className="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
+    <Container className="flex items-center justify-between py-4">
       <Logo />
-      <div className="hidden md:block absolute left-1/2 -translate-x-1/2">
+      <div className="hidden md:flex flex-1 justify-center">
         <Nav />
       </div>
-      <div className="ml-auto hidden md:block">
-        <Button as="a" href="/contact">Start a Project</Button>
+      <div className="ml-4 hidden md:block">
+        <Button as="a" href="/contact">
+          Start a Project
+        </Button>
       </div>
     </Container>
   </header>

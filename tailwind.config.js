@@ -9,7 +9,7 @@ module.exports = {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       colors: {
-        primary: "#0A2640", // Dark blue (trust)
+        primary: "#0A2640", // Dark blue 
         accent: "#3FD0C9",  // Teal
       },
     },

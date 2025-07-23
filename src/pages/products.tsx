@@ -9,15 +9,15 @@ import products from '../data/products.json';
 const ProductsPage = () => (
   <>
     <Header />
-    <main className="py-16 bg-gray-50">
+    <main className="py-16">
       <Container>
-        <h1 className="text-3xl font-extrabold text-gray-900 mb-8">Products</h1>
+        <h1 className="text-4xl mb-12 text-center">Our Solutions</h1>
         <div className="grid gap-8 md:grid-cols-3">
           {products.map((p) => (
             <Card key={p.id} title={p.name}>
-              <p className="mt-2 text-gray-600">{p.description}</p>
-              <p className="mt-4 text-lg font-semibold">{p.price}</p>
-              <Button className="mt-4 w-full">Buy Now</Button>
+              <p className="mt-2 text-gray-400">{p.description}</p>
+              <p className="mt-4 text-2xl font-semibold text-white">{p.price}</p>
+              <Button className="mt-6 w-full">Buy Now</Button>
             </Card>
           ))}
         </div>

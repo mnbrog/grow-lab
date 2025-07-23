@@ -3,12 +3,14 @@ import Button from '../ui/Button';
 import Container from '../shared/Container';
 
 const CallToAction = () => (
-  <section className="py-20 bg-blue-600 text-center text-white">
+  <section className="py-24 text-center">
     <Container>
-      <h2 className="text-3xl font-bold">Ready to level up your digital presence?</h2>
-      <p className="mt-4 text-blue-100">Contact our team to get started today.</p>
-      <Button as="a" href="/contact" className="mt-8 bg-white text-blue-600 hover:bg-blue-50">
-        Get in Touch
+      <h2 className="text-4xl">Ready to grow your business?</h2>
+      <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
+        Let's build something great together. Get in touch to discuss your project.
+      </p>
+      <Button size="large" as="a" href="/contact" className="mt-10">
+        Get a Free Consultation
       </Button>
     </Container>
   </section>

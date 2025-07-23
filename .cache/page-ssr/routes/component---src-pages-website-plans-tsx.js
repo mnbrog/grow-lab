@@ -3616,17 +3616,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Header = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
-  className: "bg-white shadow-sm"
+  className: "bg-white/80 backdrop-blur fixed top-0 w-full z-20 shadow-sm"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  className: "flex items-center justify-between py-6"
+  className: "relative flex items-center py-4"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Logo__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "hidden md:block"
+  className: "hidden md:block absolute left-1/2 -translate-x-1/2"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "ml-4 hidden md:block"
+  className: "ml-auto hidden md:block"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
   as: "a",
   href: "/contact"
-}, "Get Started"))));
+}, "Start a Project"))));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
 
 /***/ }),
@@ -3648,17 +3648,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const links = [{
-  to: '/products',
-  label: 'Products'
+  to: '/services',
+  label: 'Services'
 }, {
-  to: '/website-plans',
-  label: 'Website Plans'
+  to: '/work',
+  label: 'Work'
 }, {
-  to: '/blog',
-  label: 'Blog'
+  to: '/about',
+  label: 'About'
 }, {
-  to: '/contact',
-  label: 'Contact'
+  to: '/insights',
+  label: 'Insights'
 }];
 const Nav = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
   className: "space-x-8 text-sm font-medium text-gray-600"
@@ -3788,10 +3788,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
-const base = 'inline-flex items-center justify-center px-6 py-3 border border-transparent text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2';
+const base = 'inline-flex items-center justify-center px-6 py-3 border text-sm font-medium rounded-md transition focus:outline-none focus:ring-2 focus:ring-offset-2';
 const variants = {
-  primary: `${base} bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500`,
-  secondary: `${base} bg-white text-blue-600 hover:bg-blue-50 border-blue-600 focus:ring-blue-500`
+  primary: `${base} bg-[#1a1a1a] text-white border-transparent hover:bg-[#333] focus:ring-gray-900`,
+  secondary: `${base} bg-transparent text-gray-900 border-gray-900 hover:bg-[#1a1a1a] hover:text-white`
 };
 const Button = ({
   variant = 'primary',

@@ -1,26 +1,37 @@
+/* Import Google Fonts first */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+
+/* Then, include Tailwind's base, component, and utility styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
-
+/* Now, apply your custom base styles for the dark theme */
 html {
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-white text-gray-900 antialiased;
-}
-
-a {
-  @apply text-primary transition-colors;
-}
-
-a:hover {
-  @apply text-gray-900;
+  /* This applies the dark background and light text to the whole site */
+  @apply bg-gray-900 text-gray-300 antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply font-extrabold;
+  /* Make all headings bold and white for contrast */
+  @apply font-extrabold text-white;
+}
+
+/* Add styles for blog post content on a dark background */
+.prose {
+    @apply text-gray-300;
+}
+.prose h1, .prose h2, .prose h3 {
+    @apply text-white;
+}
+.prose a {
+    @apply text-accent hover:text-white;
+}
+.prose strong {
+    @apply text-white;
 }
