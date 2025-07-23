@@ -3590,7 +3590,7 @@ const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().c
   className: "text-center"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Logo__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
   className: "mt-4"
-}, "\xA9 ", new Date().getFullYear(), " GrowLabs. All rights reserved.")));
+}, "\xA9 ", new Date().getFullYear(), " GrowLab. All rights reserved.")));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
 
 /***/ }),
@@ -3612,23 +3612,51 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Nav */ "./src/components/layout/Nav.tsx");
 /* harmony import */ var _ui_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui/Button */ "./src/components/ui/Button.tsx");
 /* harmony import */ var _shared_Container__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../shared/Container */ "./src/components/shared/Container.tsx");
+/* harmony import */ var _ui_Icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui/Icon */ "./src/components/ui/Icon.tsx");
 
 
 
 
 
-const Header = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
-  className: "bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  className: "flex items-center justify-between py-4"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Logo__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "hidden md:flex flex-1 justify-center"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "ml-4 hidden md:block"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  as: "a",
-  href: "/contact"
-}, "Start a Project"))));
+
+const Header = () => {
+  const {
+    0: open,
+    1: setOpen
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
+    className: "bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "flex items-center justify-between py-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Logo__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "hidden md:flex flex-1 justify-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "ml-4 hidden md:block"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    as: "a",
+    href: "/contact"
+  }, "Start a Project")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "md:hidden text-gray-400 hover:text-white focus:outline-none",
+    onClick: () => setOpen(!open),
+    "aria-label": "Toggle menu"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Icon__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    name: open ? 'close' : 'menu'
+  }))), open && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "md:hidden border-t border-gray-800"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "py-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    vertical: true,
+    onNavigate: () => setOpen(false)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "mt-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    as: "a",
+    href: "/contact",
+    className: "w-full",
+    onClick: () => setOpen(false)
+  }, "Start a Project")))));
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
 
 /***/ }),
@@ -3662,12 +3690,16 @@ const links = [{
   to: '/contact',
   label: 'Contact'
 }];
-const Nav = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
-  className: "space-x-10 text-sm font-medium text-gray-400"
+const Nav = ({
+  vertical = false,
+  onNavigate
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+  className: `${vertical ? 'flex flex-col space-y-4 text-center' : 'space-x-10'} text-sm font-medium text-gray-400`
 }, links.map(link => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
   key: link.to,
   to: link.to,
-  className: "transition-colors hover:text-white"
+  className: "transition-colors hover:text-white",
+  onClick: onNavigate
 }, link.label)));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Nav);
 
@@ -3711,13 +3743,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _images_growlabLogoTrans_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/growlabLogoTrans.png */ "./src/components/shared/images/growlabLogoTrans.png");
+
 
 
 const Logo = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
   to: "/",
-  className: "text-xl font-bold tracking-tight text-white"
-}, "GrowLabs");
+  className: "inline-block"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  src: _images_growlabLogoTrans_png__WEBPACK_IMPORTED_MODULE_2__["default"],
+  alt: "GrowLabs Logo",
+  className: "h-32 w-auto"
+}));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Logo);
+
+/***/ }),
+
+/***/ "./src/components/shared/images/growlabLogoTrans.png":
+/*!***********************************************************!*\
+  !*** ./src/components/shared/images/growlabLogoTrans.png ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/static/growlabLogoTrans-ba852c05aba24131cd05717314e30817.png");
 
 /***/ }),
 
@@ -3738,7 +3791,7 @@ __webpack_require__.r(__webpack_exports__);
 const base = 'inline-flex items-center justify-center font-semibold rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 transition-transform duration-200 ease-in-out transform hover:scale-105';
 const variants = {
   primary: 'bg-accent text-primary hover:brightness-110 focus:ring-accent',
-  secondary: 'bg-transparent text-white border border-gray-600 hover:bg-gray-800 focus:ring-gray-500'
+  secondary: 'bg-transparent text-black border border-gray-600 hover:text-white hover:bg-gray-800 focus:ring-gray-500'
 };
 const sizes = {
   normal: 'px-6 py-3 text-sm',
@@ -3783,6 +3836,59 @@ const Card = ({
   className: "flex-grow"
 }, children));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Card);
+
+/***/ }),
+
+/***/ "./src/components/ui/Icon.tsx":
+/*!************************************!*\
+  !*** ./src/components/ui/Icon.tsx ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const icons = {
+  check: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
+    viewBox: "0 0 20 20",
+    fill: "currentColor",
+    className: "h-5 w-5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+    fillRule: "evenodd",
+    d: "M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z",
+    clipRule: "evenodd"
+  })),
+  menu: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
+    viewBox: "0 0 24 24",
+    fill: "currentColor",
+    className: "h-6 w-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+    fillRule: "evenodd",
+    d: "M3 6a1 1 0 011-1h16a1 1 0 110 2H4a1 1 0 01-1-1zm0 6a1 1 0 011-1h16a1 1 0 110 2H4a1 1 0 01-1-1zm1 5a1 1 0 000 2h16a1 1 0 100-2H4z",
+    clipRule: "evenodd"
+  })),
+  close: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
+    viewBox: "0 0 24 24",
+    fill: "currentColor",
+    className: "h-6 w-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+    fillRule: "evenodd",
+    d: "M6.225 4.811a1 1 0 011.414 0L12 9.172l4.361-4.361a1 1 0 111.414 1.414L13.414 10.586l4.361 4.361a1 1 0 01-1.414 1.414L12 12l-4.361 4.361a1 1 0 01-1.414-1.414l4.361-4.361-4.361-4.361a1 1 0 010-1.414z",
+    clipRule: "evenodd"
+  }))
+};
+const Icon = ({
+  name,
+  className = ''
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+  className: className
+}, icons[name] || null);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Icon);
 
 /***/ }),
 

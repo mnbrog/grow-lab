@@ -4,6 +4,7 @@ import Nav from './Nav';
 import Button from '../ui/Button';
 import Container from '../shared/Container';
 import Icon from '../ui/Icon';
+
 const Header = () => {
   const [open, setOpen] = useState(false);
 
@@ -15,7 +16,7 @@ const Header = () => {
           <Nav />
         </div>
         <div className="ml-4 hidden md:block">
-          <Button as="a" href="/contact">
+          <Button variant="primary" size="large" as="a" href="/contact">
             Start a Project
           </Button>
         </div>
@@ -27,12 +28,19 @@ const Header = () => {
           <Icon name={open ? 'close' : 'menu'} />
         </button>
       </Container>
+
       {open && (
         <div className="md:hidden border-t border-gray-800">
           <Container className="py-4">
             <Nav vertical onNavigate={() => setOpen(false)} />
-            <div className="mt-4">
-              <Button as="a" href="/contact" className="w-full" onClick={() => setOpen(false)}>
+            <div className="mt-4 flex justify-center">
+              <Button
+                variant="primary"
+                size="normal"
+                as="a"
+                href="/contact"
+                onClick={() => setOpen(false)}
+              >
                 Start a Project
               </Button>
             </div>
