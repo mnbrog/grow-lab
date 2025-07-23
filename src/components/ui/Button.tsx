@@ -5,11 +5,11 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const base =
-  'inline-flex items-center justify-center px-6 py-3 border border-transparent text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2';
+  'inline-flex items-center justify-center px-6 py-3 border text-sm font-medium rounded-md transition focus:outline-none focus:ring-2 focus:ring-offset-2';
 
 const variants = {
-  primary: `${base} bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500`,
-  secondary: `${base} bg-white text-blue-600 hover:bg-blue-50 border-blue-600 focus:ring-blue-500`,
+  primary: `${base} bg-[#1a1a1a] text-white border-transparent hover:bg-[#333] focus:ring-gray-900`,
+  secondary: `${base} bg-transparent text-gray-900 border-gray-900 hover:bg-[#1a1a1a] hover:text-white`,
 };
 
 const Button: React.FC<ButtonProps> = ({ variant = 'primary', children, ...props }) => (
