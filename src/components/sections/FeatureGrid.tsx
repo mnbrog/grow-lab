@@ -15,7 +15,28 @@ const features = [
     title: 'Automation',
     description: 'Speed up workflows using ready-made Power Automate templates.',
   },
+  {
+    title: 'SEO & Monetization',
+    description: 'Grow traffic and generate passive income with optimized content and affiliate tools.',
+  },
+  {
+    title: 'Graphic Design',
+    description: 'Get custom logos, marketing assets, and cohesive branding designed for your business.',
+  },
+  {
+    title: 'Social Media Management',
+    description: 'Boost engagement and grow your presence with scheduled content and analytics.',
+  },
+  {
+    title: 'Custom Integrations',
+    description: 'Connect tools like CRMs, email marketing, and databases with tailored solutions.',
+  },
+  {
+    title: 'Maintenance & Support',
+    description: 'Keep everything running smoothly with proactive updates and technical support.',
+  },
 ];
+
 
 const FeatureGrid = () => (
   <section id="features" className="py-20 bg-primary/10">
