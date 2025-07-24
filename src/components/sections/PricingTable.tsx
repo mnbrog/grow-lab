@@ -4,6 +4,7 @@ import Button from '../ui/Button';
 import Container from '../shared/Container';
 import Icon from '../ui/Icon';
 import Reveal from '../ui/Reveal';
+import StyledSection from './StyledSection';
 
 const plans = [
   {
@@ -60,7 +61,7 @@ const plans = [
 ];
 
 const PricingTable = () => (
-  <Reveal as="section" className="bg-primary/10 py-20">
+  <StyledSection className="py-20">
     <Container>
       <h2 className="text-3xl text-center mb-4">GrowLab Business Launch Plans</h2>
       <p className="mx-auto mb-12 max-w-2xl text-center text-gray-300">
@@ -117,7 +118,7 @@ const PricingTable = () => (
         </ul>
       </div>
     </Container>
-  </Reveal>
+  </StyledSection>
 );
 
 export default PricingTable;
