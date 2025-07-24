@@ -3,7 +3,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 
 import Container from '../shared/Container';
-import Reveal from '../ui/Reveal';
+import StyledSection from './StyledSection';
 import projectsData from '../shared/portfolio.json';
 
 // Project type remains the same
@@ -17,7 +17,13 @@ interface Project {
 const projects: Project[] = projectsData;
 
 // Reusable Arrow Button Component
-const ArrowButton = ({ enabled, onClick, children }) => (
+interface ArrowButtonProps {
+  enabled: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+}
+
+const ArrowButton: React.FC<ArrowButtonProps> = ({ enabled, onClick, children }) => (
   <button
     className="h-12 w-12 rounded-full bg-gray-800/60 p-2 text-white transition hover:bg-accent disabled:opacity-30 disabled:cursor-not-allowed"
     onClick={onClick}
@@ -53,7 +59,7 @@ const Portfolio: React.FC = () => {
   }, [emblaApi, onSelect]);
 
   return (
-    <Reveal as="section" className="py-20 bg-primary/10">
+    <StyledSection className="py-20">
       <Container>
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row md:gap-16">
           <div className="text-center">
@@ -102,7 +108,7 @@ const Portfolio: React.FC = () => {
           </div>
         </div>
       </Container>
-    </Reveal>
+    </StyledSection>
   );
 };
 

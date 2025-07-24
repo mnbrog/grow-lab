@@ -2,9 +2,10 @@ import React from 'react';
 import Button from '../ui/Button';
 import Container from '../shared/Container';
 import Reveal from '../ui/Reveal';
+import StyledSection from './StyledSection';
 
 const CallToAction = () => (
-  <Reveal as="section" className="py-24 text-center bg-primary">
+  <StyledSection className="py-24 text-center">
     <Container className="text-white">
       <Reveal>
         <h2 className="text-4xl">Ready to grow your business?</h2>
@@ -20,7 +21,7 @@ const CallToAction = () => (
         </Button>
       </Reveal>
     </Container>
-  </Reveal>
+  </StyledSection>
 );
 
 export default CallToAction;
