@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        sans: ['Satoshi', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       colors: {
         primary: "#0A2640", // Dark blue 
