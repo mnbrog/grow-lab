@@ -5,7 +5,7 @@ interface IconProps {
   className?: string;
 }
 
-const icons: Record<string, JSX.Element> = {
+const icons: Record<string, React.ReactElement> = {
   check: (
     <svg viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5">
       <path

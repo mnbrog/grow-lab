@@ -17,6 +17,7 @@ import {
 import Card from '../ui/Card'; // Assuming Card component exists
 import Container from '../shared/Container';
 import Reveal from '../ui/Reveal';
+import StyledSection from './StyledSection';
 
 // No changes needed to the features array
 const features = [
@@ -95,7 +96,7 @@ const features = [
 ];
 
 const FeatureGrid = () => (
-  <Reveal as="section" id="features" className="py-32 bg-primary/10">
+  <StyledSection id="features" className="py-32">
     <Container>
       <h2 className="text-4xl font-bold text-center mb-4">What We Offer</h2>
       <p className="text-lg text-gray-400 text-center mb-16 max-w-2xl mx-auto">
@@ -130,7 +131,7 @@ const FeatureGrid = () => (
         ))}
       </div>
     </Container>
-  </Reveal>
+  </StyledSection>
 );
 
 export default FeatureGrid;
