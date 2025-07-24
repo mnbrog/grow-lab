@@ -1,5 +1,5 @@
-/* Import Google Fonts first */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+/* Import Satoshi font from Fontshare */
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,800&display=swap');
 
 /* Then, include Tailwind's base, component, and utility styles */
 @tailwind base;
@@ -8,7 +8,7 @@
 
 /* Now, apply your custom base styles for the dark theme */
 html {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Satoshi', sans-serif;
   scroll-behavior: smooth;
 }
 
