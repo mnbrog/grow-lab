@@ -8,6 +8,7 @@ import PricingTable from '../components/sections/PricingTable';
 import Testimonials from '../components/sections/Testimonials';
 import CallToAction from '../components/sections/CallToAction';
 import Portfolio from '../components/sections/Portfolio';
+import HeroSection from '../components/sections/HeroSection';
 
 const IndexPage = () => (
   <>

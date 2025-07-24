@@ -86,7 +86,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ variant = 'painAgitation' }) 
   const copy = copyVariants[variant];
 
   return (
-    <section className="bg-gray-900 text-white py-20" aria-labelledby="hero-heading">
+<section className="bg-transparent text-white py-20" aria-labelledby="hero-heading">
       <Container>
         <div className="text-center max-w-3xl mx-auto">
           <h1 id="hero-heading" className="text-4xl sm:text-5xl font-heading font-bold mb-4">

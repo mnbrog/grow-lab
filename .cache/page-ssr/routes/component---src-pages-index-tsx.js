@@ -6503,7 +6503,7 @@ const Hero = () => {
     className: "h-7 w-7 text-blue-400"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "text-gray-300"
-  }, "Bespoke Web Development")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "Web Development")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex items-center justify-center space-x-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: "h-7 w-7 text-blue-400"
@@ -6573,14 +6573,10 @@ const ArrowButton = ({
   disabled: !enabled
 }, children);
 const Portfolio = () => {
-  // 1. Set up the Embla Carousel hook
   const [emblaRef, emblaApi] = (0,embla_carousel_react__WEBPACK_IMPORTED_MODULE_4__["default"])({
     loop: true,
-    // Set to true to allow infinite scrolling
     align: 'start'
   });
-
-  // 2. State for the navigation buttons
   const {
     0: prevBtnDisabled,
     1: setPrevBtnDisabled
@@ -6589,8 +6585,6 @@ const Portfolio = () => {
     0: nextBtnDisabled,
     1: setNextBtnDisabled
   } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
-
-  // 3. Functions to scroll and update button states
   const scrollPrev = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
   const scrollNext = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
   const onSelect = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(() => {
@@ -6598,8 +6592,6 @@ const Portfolio = () => {
     setPrevBtnDisabled(!emblaApi.canScrollPrev());
     setNextBtnDisabled(!emblaApi.canScrollNext());
   }, [emblaApi]);
-
-  // 4. Effect to update button states on select and init
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     if (!emblaApi) return;
     onSelect();
@@ -6643,7 +6635,7 @@ const Portfolio = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     src: project.logo,
     alt: `${project.name} logo`,
-    className: "mb-6 h-48 w-full rounded-md object-contain p-4"
+    className: "mb-6 h-48 w-full rounded-md object-contain bg-white p-4"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     className: "text-xl font-semibold text-white"
   }, project.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
