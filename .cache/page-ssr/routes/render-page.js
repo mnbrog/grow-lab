@@ -45,6 +45,12 @@ var plugins = [{
     "plugins": []
   }
 }, {
+  name: 'default-site-plugin',
+  plugin: __webpack_require__(/*! ./gatsby-ssr.js */ "./gatsby-ssr.js"),
+  options: {
+    "plugins": []
+  }
+}, {
   name: 'partytown',
   plugin: __webpack_require__(/*! ./node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js */ "./node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js"),
   options: {
@@ -394,6 +400,31 @@ HTML.propTypes = {
   body: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string),
   postBodyComponents: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().array)
 };
+
+/***/ }),
+
+/***/ "./gatsby-ssr.js":
+/*!***********************!*\
+  !*** ./gatsby-ssr.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   wrapPageElement: () => (/* binding */ wrapPageElement)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _src_components_layout_BackgroundGlow__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/components/layout/BackgroundGlow */ "./src/components/layout/BackgroundGlow.tsx");
+/* harmony import */ var _src_styles_global_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/styles/global.css */ "./src/styles/global.css");
+/* harmony import */ var _src_styles_global_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_src_styles_global_css__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+const wrapPageElement = ({
+  element
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_src_components_layout_BackgroundGlow__WEBPACK_IMPORTED_MODULE_1__["default"], null), element);
 
 /***/ }),
 
@@ -7812,6 +7843,74 @@ function withSideEffect(reducePropsToState, handleStateChangeOnClient, mapStateO
 }
 
 module.exports = withSideEffect;
+
+
+/***/ }),
+
+/***/ "./src/components/layout/BackgroundGlow.tsx":
+/*!**************************************************!*\
+  !*** ./src/components/layout/BackgroundGlow.tsx ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+/**
+ * BackgroundGlow renders the radial mouse-following glow that
+ * was originally used in the Hero section. It is positioned
+ * fixed and stretched across the viewport so it can act as a
+ * site-wide background effect.
+ */
+const BackgroundGlow = () => {
+  const {
+    0: mousePosition,
+    1: setMousePosition
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    x: 0,
+    y: 0
+  });
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    const handleMouseMove = event => {
+      setMousePosition({
+        x: event.clientX,
+        y: event.clientY
+      });
+    };
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "pointer-events-none fixed inset-0 -z-10"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "absolute inset-0 transition duration-300",
+    style: {
+      background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "absolute inset-0 z-0 opacity-40"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "absolute inset-x-0 h-[600px] bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e70,transparent)]"
+  })));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BackgroundGlow);
+
+/***/ }),
+
+/***/ "./src/styles/global.css":
+/*!*******************************!*\
+  !*** ./src/styles/global.css ***!
+  \*******************************/
+/***/ (() => {
+
 
 
 /***/ }),

@@ -8,7 +8,8 @@ import PricingTable from '../components/sections/PricingTable';
 import Testimonials from '../components/sections/Testimonials';
 import CallToAction from '../components/sections/CallToAction';
 import Portfolio from '../components/sections/Portfolio';
-import HeroSection from '../components/sections/HeroSection';
+import StyledSection from '../components/sections/StyledSection';
+import BackgroundGlow from '../components/layout/BackgroundGlow'; // ✅ Updated name
 
 const IndexPage = () => (
   <>
@@ -25,13 +26,24 @@ const IndexPage = () => (
       />
     </Helmet>
     <Header />
-    <main>
+    <main className="relative bg-gray-900 text-white">
+      <BackgroundGlow /> {/* ✅ This is your global glow background */}
       <Hero />
-      <FeatureGrid />
-      <Portfolio />
-      <PricingTable />
-      <Testimonials />
-      <CallToAction />
+      <StyledSection id="features">
+        <FeatureGrid />
+      </StyledSection>
+      <StyledSection id="portfolio">
+        <Portfolio />
+      </StyledSection>
+      <StyledSection id="pricing">
+        <PricingTable />
+      </StyledSection>
+      <StyledSection id="testimonials">
+        <Testimonials />
+      </StyledSection>
+      <StyledSection id="cta">
+        <CallToAction />
+      </StyledSection>
     </main>
     <Footer />
   </>

@@ -7,6 +7,10 @@ var plugins = [{
       plugin: require('C:/Users/Michael Brogan/grow-lab/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
+      name: 'default-site-plugin',
+      plugin: require('C:/Users/Michael Brogan/grow-lab/gatsby-ssr.js'),
+      options: {"plugins":[]},
+    },{
       name: 'partytown',
       plugin: require('C:/Users/Michael Brogan/grow-lab/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
       options: {"plugins":[]},

@@ -3841,6 +3841,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_Container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/Container */ "./src/components/shared/Container.tsx");
 /* harmony import */ var _ui_Icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui/Icon */ "./src/components/ui/Icon.tsx");
 /* harmony import */ var _ui_Reveal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui/Reveal */ "./src/components/ui/Reveal.tsx");
+/* harmony import */ var _StyledSection__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./StyledSection */ "./src/components/sections/StyledSection.tsx");
+
 
 
 
@@ -3863,9 +3865,8 @@ const plans = [{
   tagline: 'The all-in-one system to scale your digital presence, content, and client funnels.',
   features: ['Unlimited pages + multi-location ready', 'Dynamic content system on Netlify', 'AI-powered content calendar', '4 reels/month', '2 SEO blog posts/month', 'Lead magnet funnel + email automation', 'Email marketing flows', 'Full Maps listing management', 'Monthly 30-minute strategy call', 'Slack or direct message support']
 }];
-const PricingTable = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_5__["default"], {
-  as: "section",
-  className: "bg-primary/10 py-20"
+const PricingTable = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_StyledSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  className: "py-20"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
   className: "text-3xl text-center mb-4"
 }, "GrowLab Business Launch Plans"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
@@ -3921,6 +3922,32 @@ const PricingTable = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___defau
   className: "text-accent h-4 w-4"
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Whether basic or full of automation, your site just works \u2014 we handle it all"))))));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PricingTable);
+
+/***/ }),
+
+/***/ "./src/components/sections/StyledSection.tsx":
+/*!***************************************************!*\
+  !*** ./src/components/sections/StyledSection.tsx ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const StyledSection = ({
+  children,
+  className = '',
+  id
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  id: id,
+  className: `relative w-full overflow-hidden bg-gray-900 text-white ${className}`
+}, children);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (StyledSection);
 
 /***/ }),
 

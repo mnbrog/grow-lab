@@ -1893,6 +1893,47 @@ const ForwardRef = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(B
 
 /***/ }),
 
+/***/ "./node_modules/@heroicons/react/24/outline/esm/BoltIcon.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@heroicons/react/24/outline/esm/BoltIcon.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+
+function BoltIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    fill: "none",
+    viewBox: "0 0 24 24",
+    strokeWidth: 1.5,
+    stroke: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    d: "m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(BoltIcon);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ForwardRef);
+
+/***/ }),
+
 /***/ "./node_modules/@heroicons/react/24/outline/esm/ChartBarIcon.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/@heroicons/react/24/outline/esm/ChartBarIcon.js ***!
@@ -2348,10 +2389,10 @@ const ForwardRef = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(P
 
 /***/ }),
 
-/***/ "./node_modules/@heroicons/react/24/outline/esm/ShieldCheckIcon.js":
-/*!*************************************************************************!*\
-  !*** ./node_modules/@heroicons/react/24/outline/esm/ShieldCheckIcon.js ***!
-  \*************************************************************************/
+/***/ "./node_modules/@heroicons/react/24/outline/esm/SparklesIcon.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@heroicons/react/24/outline/esm/SparklesIcon.js ***!
+  \**********************************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2361,7 +2402,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 
-function ShieldCheckIcon({
+function SparklesIcon({
   title,
   titleId,
   ...props
@@ -2381,10 +2422,10 @@ function ShieldCheckIcon({
   }, title) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
     strokeLinecap: "round",
     strokeLinejoin: "round",
-    d: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"
+    d: "M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
   }));
 }
-const ForwardRef = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(ShieldCheckIcon);
+const ForwardRef = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(SparklesIcon);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ForwardRef);
 
 /***/ }),
@@ -6256,13 +6297,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ui_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ui/Button */ "./src/components/ui/Button.tsx");
 /* harmony import */ var _shared_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shared/Container */ "./src/components/shared/Container.tsx");
 /* harmony import */ var _ui_Reveal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui/Reveal */ "./src/components/ui/Reveal.tsx");
+/* harmony import */ var _StyledSection__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./StyledSection */ "./src/components/sections/StyledSection.tsx");
 
 
 
 
-const CallToAction = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  as: "section",
-  className: "py-24 text-center bg-primary"
+
+const CallToAction = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_StyledSection__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  className: "py-24 text-center"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_2__["default"], {
   className: "text-white"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
@@ -6292,25 +6334,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/CpuChipIcon.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/GlobeAltIcon.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/ArrowPathIcon.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/ChartBarIcon.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/PaintBrushIcon.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/AtSymbolIcon.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/PuzzlePieceIcon.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/LifebuoyIcon.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/DocumentTextIcon.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/EnvelopeOpenIcon.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/ChartPieIcon.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/ArrowDownTrayIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/CpuChipIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/GlobeAltIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/ArrowPathIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/ChartBarIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/PaintBrushIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/AtSymbolIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/PuzzlePieceIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/LifebuoyIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/DocumentTextIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/EnvelopeOpenIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/ChartPieIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/ArrowDownTrayIcon.js");
 /* harmony import */ var _ui_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui/Card */ "./src/components/ui/Card.tsx");
 /* harmony import */ var _shared_Container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/Container */ "./src/components/shared/Container.tsx");
 /* harmony import */ var _ui_Reveal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui/Reveal */ "./src/components/ui/Reveal.tsx");
+/* harmony import */ var _StyledSection__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./StyledSection */ "./src/components/sections/StyledSection.tsx");
 
 
 
  // Assuming Card component exists
+
 
 
 
@@ -6319,67 +6363,66 @@ const features = [{
   title: 'AI Tools',
   description: 'Streamline everyday tasks with simple AI-powered helpers.',
   href: '/products/ai-tools',
-  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_5__["default"]
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_6__["default"]
 }, {
   title: 'WaaS Plans',
   description: 'Launch a stunning, high-performance website without lifting a finger.',
   href: '/products/waas',
-  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_6__["default"]
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_7__["default"]
 }, {
   title: 'Automation',
   description: 'Speed up workflows using ready-made Power Automate templates.',
   href: '/products/automation',
-  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_7__["default"]
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_8__["default"]
 }, {
   title: 'SEO & Monetization',
   description: 'Grow traffic and generate passive income with optimized content.',
   href: '/products/seo-monetization',
-  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_8__["default"]
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_9__["default"]
 }, {
   title: 'Graphic Design',
   description: 'Get custom logos and cohesive branding designed for your business.',
   href: '/products/graphic-design',
-  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_9__["default"]
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_10__["default"]
 }, {
   title: 'Social Media Management',
   description: 'Boost engagement and grow your presence with scheduled content.',
   href: '/products/social-media',
-  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_10__["default"]
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_11__["default"]
 }, {
   title: 'Custom Integrations',
   description: 'Connect tools like CRMs, email, and databases with tailored solutions.',
   href: '/products/integrations',
-  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_11__["default"]
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_12__["default"]
 }, {
   title: 'Maintenance & Support',
   description: 'Keep your digital assets running smoothly with proactive updates.',
   href: '/products/support',
-  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_12__["default"]
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_13__["default"]
 }, {
   title: 'Content Packages',
   description: 'Fill your site with blog posts, lead magnets, and visuals—all done for you.',
   href: '/products/content',
-  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_13__["default"]
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_14__["default"]
 }, {
   title: 'Email Marketing',
   description: 'Build your list and send newsletters or drip campaigns automatically.',
   href: '/products/email-marketing',
-  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_14__["default"]
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_15__["default"]
 }, {
   title: 'Analytics & Reporting',
   description: 'Track what’s working with simple dashboards and weekly insights.',
   href: '/products/analytics',
-  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_15__["default"]
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_16__["default"]
 }, {
   title: 'Templates & Downloads',
   description: 'Access plug-and-play assets like checklists, flows, and branded docs.',
   href: '/products/templates',
-  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_16__["default"]
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_17__["default"]
 }];
-const FeatureGrid = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  as: "section",
+const FeatureGrid = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_StyledSection__WEBPACK_IMPORTED_MODULE_5__["default"], {
   id: "features",
-  className: "py-32 bg-primary/10"
+  className: "py-32"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
   className: "text-4xl font-bold text-center mb-4"
 }, "What We Offer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
@@ -6425,110 +6468,173 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/CpuChipIcon.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/GlobeAltIcon.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/ShieldCheckIcon.js");
+/* harmony import */ var _HeroSection__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HeroSection */ "./src/components/sections/HeroSection.tsx");
+/* harmony import */ var _StyledSection__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./StyledSection */ "./src/components/sections/StyledSection.tsx");
+
+
+
+const Hero = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_StyledSection__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  className: "pb-32"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HeroSection__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  variant: "uvpLed"
+}));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Hero);
+
+/***/ }),
+
+/***/ "./src/components/sections/HeroSection.tsx":
+/*!*************************************************!*\
+  !*** ./src/components/sections/HeroSection.tsx ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _ui_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ui/Button */ "./src/components/ui/Button.tsx");
 /* harmony import */ var _shared_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shared/Container */ "./src/components/shared/Container.tsx");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/ArrowPathIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/GlobeAltIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/SparklesIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/BoltIcon.js");
 
 
 
 
-const Hero = () => {
-  const {
-    0: mousePosition,
-    1: setMousePosition
-  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
-    x: 0,
-    y: 0
-  });
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    const handleMouseMove = event => {
-      setMousePosition({
-        x: event.clientX,
-        y: event.clientY
-      });
-    };
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "relative w-full overflow-hidden bg-gray-900 text-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "pointer-events-none absolute inset-0 z-10 transition duration-300",
-    style: {
-      background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "absolute inset-0 z-0 opacity-40"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "absolute inset-x-0 h-[400px] bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e70,transparent)]"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "relative z-20"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    className: "py-16 sm:py-32"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "mx-auto max-w-4xl animate-fade-in-up bg-gradient-to-br from-white to-gray-400 bg-clip-text text-4xl font-bold tracking-tighter text-transparent sm:text-6xl",
-    style: {
-      animationDelay: '0.2s',
-      animationFillMode: 'forwards'
-    }
-  }, "Transforming Digital Ambition into Reality."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mx-auto mt-6 max-w-2xl animate-fade-in-up text-base text-gray-300 sm:text-lg",
-    style: {
-      animationDelay: '0.4s',
-      animationFillMode: 'forwards',
-      opacity: 0
-    }
-  }, "We partner with you to build, automate, and grow your business with cutting-edge AI tools, bespoke websites, and powerful automation solutions."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mx-auto mt-16 grid max-w-5xl animate-fade-in-up grid-cols-1 gap-8 text-white sm:grid-cols-3",
-    style: {
-      animationDelay: '0.6s',
-      animationFillMode: 'forwards',
-      opacity: 0
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex items-center justify-center space-x-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: "h-7 w-7 text-blue-400"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "text-gray-300"
-  }, "AI-Powered Solutions")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex items-center justify-center space-x-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "h-7 w-7 text-blue-400"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "text-gray-300"
-  }, "Web Development")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex items-center justify-center space-x-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    className: "h-7 w-7 text-blue-400"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "text-gray-300"
-  }, "Process Automation"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mt-12 flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 animate-fade-in-up",
-    style: {
-      animationDelay: '0.8s',
-      animationFillMode: 'forwards',
-      opacity: 0
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    variant: "primary",
-    size: "xl",
-    as: "a",
-    href: "/contact"
-  }, "Book Your Free Strategy Session"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    variant: "primary",
-    size: "xl",
-    as: "a",
-    href: "/#features"
-  }, "Explore Services")))));
+
+// A/B Testing Copy Options
+// PAIN AGITATION
+// headline: "Stop Fighting With Technology. Start Growing Your Business."
+// subheadline: "You’re an ambitious builder, not a web developer. We handle the clunky website, tedious tasks, and online marketing so you can focus on what you do best."
+// cta: "Reclaim Your Focus"
+
+// ASPIRATIONAL
+// headline: "Your Business is Professional. Your Website Should Be Too."
+// subheadline: "Go from feeling stuck and unprofessional to confident and in control. We handle the tech. You grow your business."
+// cta: "See Your 'Day After'"
+
+// UVP-LED
+// headline: "The All-in-One System to Build, Host & Grow Online."
+// subheadline: "Finally, a single solution for your website, content, and automation. One expert team. No tech skills needed."
+// cta: "Simplify Your Growth"
+
+// FEAR REDUCTION
+// headline: "A Professional Website Without the Headache."
+// subheadline: "Get a world-class online presence with a simple monthly plan. No huge upfront cost, no jargon. Just results."
+// cta: "Explore a Simpler Way"
+
+const copyVariants = {
+  painAgitation: {
+    headline: 'Stop Fighting With Technology. Start Growing Your Business.',
+    subheadline: 'You’re an ambitious builder, not a web developer. We handle the clunky website, tedious tasks, and online marketing so you can focus on what you do best.',
+    cta: 'Reclaim Your Focus'
+  },
+  aspirational: {
+    headline: 'Your Business is Professional. Your Website Should Be Too.',
+    subheadline: 'Go from feeling stuck and unprofessional to confident and in control. We handle the tech. You grow your business.',
+    cta: "See Your 'Day After'"
+  },
+  uvpLed: {
+    headline: 'The All-in-One System to Build, Host & Grow Online.',
+    subheadline: 'Finally, a single solution for your website, content, and automation. One expert team. No tech skills needed.',
+    cta: 'Simplify Your Growth'
+  },
+  fearReduction: {
+    headline: 'A Professional Website Without the Headache.',
+    subheadline: 'Get a world-class online presence with a simple monthly plan. No huge upfront cost, no jargon. Just results.',
+    cta: 'Explore a Simpler Way'
+  }
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Hero);
+const features = [{
+  title: 'Automated Workflows',
+  description: 'Let repetitive tasks run themselves.',
+  payoff: 'More time for high-value work.',
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_3__["default"]
+}, {
+  title: 'All-in-One Platform',
+  description: 'Website, content and automation in one place.',
+  payoff: 'Clarity and control.',
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_4__["default"]
+}, {
+  title: 'Professional Design',
+  description: 'Look polished with custom design and branding.',
+  payoff: 'Feel proud of your online presence.',
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_5__["default"]
+}, {
+  title: 'Growth Insights',
+  description: 'Data-driven guidance to reach the next level.',
+  payoff: 'Confidence in every decision.',
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_6__["default"]
+}];
+const HeroSection = ({
+  variant = 'painAgitation'
+}) => {
+  const copy = copyVariants[variant];
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    className: "bg-transparent text-white py-20",
+    "aria-labelledby": "hero-heading"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "text-center max-w-3xl mx-auto"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    id: "hero-heading",
+    className: "text-4xl sm:text-5xl font-heading font-bold mb-4"
+  }, copy.headline), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "text-lg text-gray-300 mb-8"
+  }, copy.subheadline), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex flex-col items-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    as: "a",
+    href: "/contact",
+    variant: "primary",
+    size: "xl",
+    "aria-label": copy.cta
+  }, copy.cta), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "text-sm text-gray-500 mt-2"
+  }, "100% free. No pressure. Just a clear plan for your growth."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4"
+  }, features.map(({
+    title,
+    description,
+    payoff,
+    icon: Icon
+  }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    key: title,
+    className: "bg-gray-800/50 rounded-lg p-6 flex flex-col"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Icon, {
+    className: "h-8 w-8 text-accent mb-4"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    className: "text-xl font-semibold mb-2"
+  }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "text-gray-300 flex-grow"
+  }, description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "mt-2 italic text-accent text-sm"
+  }, payoff)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "mt-12 flex flex-col items-center space-y-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex items-center justify-center space-x-8 opacity-80"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: "/creator-map-logo.svg",
+    alt: "Creator Map",
+    className: "h-8"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: "/kerr-chief-logo.svg",
+    alt: "Kerr Chief",
+    className: "h-8"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: "/upright-medical-logo.svg",
+    alt: "Upright Medical",
+    className: "h-8"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("blockquote", {
+    className: "text-gray-300 italic text-center max-w-xl"
+  }, "\u201CGrowLab helped us automate tedious tasks and focus on real growth.\u201D \u2014 Jane Doe, Upright Medical Solutions")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "mt-16"
+  })));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HeroSection);
 
 /***/ }),
 
@@ -6549,7 +6655,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/ChevronLeftIcon.js");
 /* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/ChevronRightIcon.js");
 /* harmony import */ var _shared_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../shared/Container */ "./src/components/shared/Container.tsx");
-/* harmony import */ var _ui_Reveal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui/Reveal */ "./src/components/ui/Reveal.tsx");
+/* harmony import */ var _StyledSection__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./StyledSection */ "./src/components/sections/StyledSection.tsx");
 /* harmony import */ var _shared_portfolio_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/portfolio.json */ "./src/components/shared/portfolio.json");
 
 
@@ -6563,6 +6669,7 @@ __webpack_require__.r(__webpack_exports__);
 const projects = _shared_portfolio_json__WEBPACK_IMPORTED_MODULE_3__;
 
 // Reusable Arrow Button Component
+
 const ArrowButton = ({
   enabled,
   onClick,
@@ -6598,9 +6705,8 @@ const Portfolio = () => {
     emblaApi.on('select', onSelect);
     emblaApi.on('reInit', onSelect);
   }, [emblaApi, onSelect]);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    as: "section",
-    className: "py-20 bg-primary/10"
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_StyledSection__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    className: "py-20"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col items-center justify-between gap-8 md:flex-row md:gap-16"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -6664,6 +6770,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_Container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/Container */ "./src/components/shared/Container.tsx");
 /* harmony import */ var _ui_Icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui/Icon */ "./src/components/ui/Icon.tsx");
 /* harmony import */ var _ui_Reveal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui/Reveal */ "./src/components/ui/Reveal.tsx");
+/* harmony import */ var _StyledSection__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./StyledSection */ "./src/components/sections/StyledSection.tsx");
+
 
 
 
@@ -6686,9 +6794,8 @@ const plans = [{
   tagline: 'The all-in-one system to scale your digital presence, content, and client funnels.',
   features: ['Unlimited pages + multi-location ready', 'Dynamic content system on Netlify', 'AI-powered content calendar', '4 reels/month', '2 SEO blog posts/month', 'Lead magnet funnel + email automation', 'Email marketing flows', 'Full Maps listing management', 'Monthly 30-minute strategy call', 'Slack or direct message support']
 }];
-const PricingTable = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_5__["default"], {
-  as: "section",
-  className: "bg-primary/10 py-20"
+const PricingTable = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_StyledSection__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  className: "py-20"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
   className: "text-3xl text-center mb-4"
 }, "GrowLab Business Launch Plans"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
@@ -6747,6 +6854,32 @@ const PricingTable = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___defau
 
 /***/ }),
 
+/***/ "./src/components/sections/StyledSection.tsx":
+/*!***************************************************!*\
+  !*** ./src/components/sections/StyledSection.tsx ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const StyledSection = ({
+  children,
+  className = '',
+  id
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  id: id,
+  className: `relative w-full overflow-hidden bg-gray-900 text-white ${className}`
+}, children);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (StyledSection);
+
+/***/ }),
+
 /***/ "./src/components/sections/Testimonials.tsx":
 /*!**************************************************!*\
   !*** ./src/components/sections/Testimonials.tsx ***!
@@ -6764,13 +6897,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ui_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui/Card */ "./src/components/ui/Card.tsx");
 /* harmony import */ var _ui_Reveal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui/Reveal */ "./src/components/ui/Reveal.tsx");
 /* harmony import */ var _data_testimonials_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../data/testimonials.json */ "./src/data/testimonials.json");
+/* harmony import */ var _StyledSection__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./StyledSection */ "./src/components/sections/StyledSection.tsx");
 
 
 
 
 
-const Testimonials = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  as: "section",
+
+const Testimonials = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_StyledSection__WEBPACK_IMPORTED_MODULE_5__["default"], {
   id: "testimonials",
   className: "py-20"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
