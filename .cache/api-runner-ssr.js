@@ -3,6 +3,10 @@ var plugins = [{
       plugin: require('C:/Users/Michael Brogan/grow-lab/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
+      name: 'gatsby-plugin-react-helmet',
+      plugin: require('C:/Users/Michael Brogan/grow-lab/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
+      options: {"plugins":[]},
+    },{
       name: 'partytown',
       plugin: require('C:/Users/Michael Brogan/grow-lab/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
       options: {"plugins":[]},

@@ -3633,9 +3633,11 @@ const Header = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "ml-4 hidden md:block"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    variant: "primary",
+    size: "large",
     as: "a",
     href: "/contact"
-  }, "Start a Project")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+  }, "Get Quote")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     className: "md:hidden text-gray-400 hover:text-white focus:outline-none",
     onClick: () => setOpen(!open),
     "aria-label": "Toggle menu"
@@ -3649,13 +3651,14 @@ const Header = () => {
     vertical: true,
     onNavigate: () => setOpen(false)
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mt-4"
+    className: "mt-4 flex justify-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    variant: "primary",
+    size: "normal",
     as: "a",
     href: "/contact",
-    className: "w-full",
     onClick: () => setOpen(false)
-  }, "Start a Project")))));
+  }, "Get Quote")))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
 
@@ -3753,7 +3756,7 @@ const Logo = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().cre
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
   src: _images_growlabLogoTrans_png__WEBPACK_IMPORTED_MODULE_2__["default"],
   alt: "GrowLabs Logo",
-  className: "h-32 w-auto"
+  className: "h-20 w-auto sm:h-28 lg:h-32"
 }));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Logo);
 
@@ -3795,7 +3798,8 @@ const variants = {
 };
 const sizes = {
   normal: 'px-6 py-3 text-sm',
-  large: 'px-8 py-4 text-base'
+  large: 'px-8 py-4 text-base',
+  xl: 'px-10 py-5 text-lg sm:text-xl'
 };
 const Button = ({
   variant = 'primary',

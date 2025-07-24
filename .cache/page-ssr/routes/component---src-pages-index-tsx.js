@@ -3633,9 +3633,11 @@ const Header = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "ml-4 hidden md:block"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    variant: "primary",
+    size: "large",
     as: "a",
     href: "/contact"
-  }, "Start a Project")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+  }, "Get Quote")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     className: "md:hidden text-gray-400 hover:text-white focus:outline-none",
     onClick: () => setOpen(!open),
     "aria-label": "Toggle menu"
@@ -3649,13 +3651,14 @@ const Header = () => {
     vertical: true,
     onNavigate: () => setOpen(false)
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mt-4"
+    className: "mt-4 flex justify-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    variant: "primary",
+    size: "normal",
     as: "a",
     href: "/contact",
-    className: "w-full",
     onClick: () => setOpen(false)
-  }, "Start a Project")))));
+  }, "Get Quote")))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
 
@@ -3762,11 +3765,28 @@ const features = [{
 }, {
   title: 'Automation',
   description: 'Speed up workflows using ready-made Power Automate templates.'
+}, {
+  title: 'SEO & Monetization',
+  description: 'Grow traffic and generate passive income with optimized content and affiliate tools.'
+}, {
+  title: 'Graphic Design',
+  description: 'Get custom logos, marketing assets, and cohesive branding designed for your business.'
+}, {
+  title: 'Social Media Management',
+  description: 'Boost engagement and grow your presence with scheduled content and analytics.'
+}, {
+  title: 'Custom Integrations',
+  description: 'Connect tools like CRMs, email marketing, and databases with tailored solutions.'
+}, {
+  title: 'Maintenance & Support',
+  description: 'Keep everything running smoothly with proactive updates and technical support.'
 }];
 const FeatureGrid = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
   id: "features",
   className: "py-20 bg-primary/10"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+  className: "text-3xl text-center mb-12"
+}, "What We Offer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
   className: "grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
 }, features.map(feature => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
   key: feature.title,
@@ -3804,7 +3824,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Hero = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-  className: "py-32 text-center"
+  className: "py-32 text-center bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
   className: "mx-auto max-w-4xl text-5xl tracking-tighter sm:text-7xl"
 }, "Transforming Digital Ambition into Reality."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
@@ -3812,16 +3832,61 @@ const Hero = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().cre
 }, "We partner with you to build, automate, and grow your business with cutting-edge AI tools, bespoke websites, and powerful automation solutions."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
   className: "mt-10 flex justify-center space-x-4"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  size: "large",
-  as: "a",
-  href: "/products"
-}, "Discover Solutions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  size: "large",
-  variant: "secondary",
+  size: "xl",
   as: "a",
   href: "/contact"
-}, "Start a Project"))));
+}, "Get a Free Consultation"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  size: "xl",
+  variant: "secondary",
+  as: "a",
+  href: "/products"
+}, "Explore Services"))));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Hero);
+
+/***/ }),
+
+/***/ "./src/components/sections/Portfolio.tsx":
+/*!***********************************************!*\
+  !*** ./src/components/sections/Portfolio.tsx ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _shared_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../shared/Container */ "./src/components/shared/Container.tsx");
+
+
+const projects = [{
+  title: 'Sheffield Collision',
+  img: 'https://via.placeholder.com/300x200?text=Sheffield+Collision'
+}, {
+  title: 'Upright Medical',
+  img: 'https://via.placeholder.com/300x200?text=Upright+Medical'
+}, {
+  title: 'Example Startup',
+  img: 'https://via.placeholder.com/300x200?text=Startup+Site'
+}];
+const Portfolio = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  className: "py-20"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+  className: "text-3xl text-center mb-12"
+}, "See Our Work"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "grid gap-8 md:grid-cols-3"
+}, projects.map(p => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  key: p.title
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  src: p.img,
+  alt: p.title,
+  className: "rounded-lg shadow-lg"
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  className: "mt-2 text-center text-sm text-gray-400"
+}, p.title))))));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Portfolio);
 
 /***/ }),
 
@@ -3972,7 +4037,7 @@ const Logo = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().cre
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
   src: _images_growlabLogoTrans_png__WEBPACK_IMPORTED_MODULE_2__["default"],
   alt: "GrowLabs Logo",
-  className: "h-32 w-auto"
+  className: "h-20 w-auto sm:h-28 lg:h-32"
 }));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Logo);
 
@@ -4014,7 +4079,8 @@ const variants = {
 };
 const sizes = {
   normal: 'px-6 py-3 text-sm',
-  large: 'px-8 py-4 text-base'
+  large: 'px-8 py-4 text-base',
+  xl: 'px-10 py-5 text-lg sm:text-xl'
 };
 const Button = ({
   variant = 'primary',
@@ -4135,13 +4201,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_layout_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout/Header */ "./src/components/layout/Header.tsx");
-/* harmony import */ var _components_layout_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layout/Footer */ "./src/components/layout/Footer.tsx");
-/* harmony import */ var _components_sections_Hero__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/sections/Hero */ "./src/components/sections/Hero.tsx");
-/* harmony import */ var _components_sections_FeatureGrid__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/sections/FeatureGrid */ "./src/components/sections/FeatureGrid.tsx");
-/* harmony import */ var _components_sections_PricingTable__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/sections/PricingTable */ "./src/components/sections/PricingTable.tsx");
-/* harmony import */ var _components_sections_Testimonials__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/sections/Testimonials */ "./src/components/sections/Testimonials.tsx");
-/* harmony import */ var _components_sections_CallToAction__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/sections/CallToAction */ "./src/components/sections/CallToAction.tsx");
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-helmet */ "./node_modules/react-helmet/es/Helmet.js");
+/* harmony import */ var _components_layout_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layout/Header */ "./src/components/layout/Header.tsx");
+/* harmony import */ var _components_layout_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layout/Footer */ "./src/components/layout/Footer.tsx");
+/* harmony import */ var _components_sections_Hero__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/sections/Hero */ "./src/components/sections/Hero.tsx");
+/* harmony import */ var _components_sections_FeatureGrid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/sections/FeatureGrid */ "./src/components/sections/FeatureGrid.tsx");
+/* harmony import */ var _components_sections_PricingTable__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/sections/PricingTable */ "./src/components/sections/PricingTable.tsx");
+/* harmony import */ var _components_sections_Testimonials__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/sections/Testimonials */ "./src/components/sections/Testimonials.tsx");
+/* harmony import */ var _components_sections_CallToAction__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/sections/CallToAction */ "./src/components/sections/CallToAction.tsx");
+/* harmony import */ var _components_sections_Portfolio__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/sections/Portfolio */ "./src/components/sections/Portfolio.tsx");
 
 
 
@@ -4150,7 +4218,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const IndexPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_Hero__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_FeatureGrid__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_PricingTable__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_Testimonials__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_CallToAction__WEBPACK_IMPORTED_MODULE_7__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+
+
+const IndexPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_helmet__WEBPACK_IMPORTED_MODULE_1__.Helmet, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("title", null, "GrowLab - Build, Automate, Grow"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
+  name: "description",
+  content: "GrowLab helps you build websites, automate workflows and leverage AI tools to grow your business."
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
+  property: "og:title",
+  content: "GrowLab"
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
+  property: "og:description",
+  content: "Digital products and automation templates for scaling modern businesses."
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_Hero__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_FeatureGrid__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_Portfolio__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_PricingTable__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_Testimonials__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_CallToAction__WEBPACK_IMPORTED_MODULE_8__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexPage);
 
 /***/ })
