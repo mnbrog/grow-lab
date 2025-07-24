@@ -7,7 +7,7 @@ const Logo = () => (
     <img
       src={logo}
       alt="GrowLabs Logo"
-      className="h-32 w-auto"
+      className="h-20 w-auto sm:h-28 lg:h-32"
     />
   </Link>
 );

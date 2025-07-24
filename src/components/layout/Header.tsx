@@ -17,7 +17,7 @@ const Header = () => {
         </div>
         <div className="ml-4 hidden md:block">
           <Button variant="primary" size="large" as="a" href="/contact">
-            Start a Project
+            Get Quote
           </Button>
         </div>
         <button
@@ -41,7 +41,7 @@ const Header = () => {
                 href="/contact"
                 onClick={() => setOpen(false)}
               >
-                Start a Project
+                Get Quote
               </Button>
             </div>
           </Container>

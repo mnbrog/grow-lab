@@ -41,6 +41,7 @@ const features = [
 const FeatureGrid = () => (
   <section id="features" className="py-20 bg-primary/10">
     <Container>
+      <h2 className="text-3xl text-center mb-12">What We Offer</h2>
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {features.map((feature) => (
           <div key={feature.title} className="flex items-start space-x-4">
