@@ -9,6 +9,10 @@ import {
   AtSymbolIcon,
   PuzzlePieceIcon,
   LifebuoyIcon,
+  DocumentTextIcon,
+  EnvelopeOpenIcon,
+  ChartPieIcon,
+  ArrowDownTrayIcon
 } from '@heroicons/react/24/outline';
 import Card from '../ui/Card';
 import Container from '../shared/Container';
@@ -62,6 +66,30 @@ const features = [
     href: '/products/support',
     icon: LifebuoyIcon,
   },
+  {
+    title: 'Content Packages',
+    description: 'Fill your site and socials with blog posts, lead magnets, and visuals—all done for you.',
+    href: '/products/content',
+    icon: DocumentTextIcon,
+  },
+  {
+    title: 'Email Marketing',
+    description: 'Build your list and send newsletters or drip campaigns without lifting a finger.',
+    href: '/products/email-marketing',
+    icon: EnvelopeOpenIcon,
+  },
+  {
+    title: 'Analytics & Reporting',
+    description: 'Track what’s working with simple dashboards and weekly insights.',
+    href: '/products/analytics',
+    icon: ChartPieIcon,
+  },
+  {
+    title: 'Templates & Downloads',
+    description: 'Access plug-and-play assets like business checklists, flows, and branded docs.',
+    href: '/products/templates',
+    icon: ArrowDownTrayIcon,
+  }
 ];
 
 

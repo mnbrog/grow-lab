@@ -4027,9 +4027,9 @@ const Header = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Icon__WEBPACK_IMPORTED_MODULE_5__["default"], {
     name: open ? 'close' : 'menu'
   }))), open && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "md:hidden fixed inset-0 z-40 bg-gray-900/90 backdrop-blur-sm"
+    className: "md:hidden fixed inset-0 z-40 bg-gray-900/90 backdrop-blur-sm animate-fade-in"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "py-8"
+    className: "py-8 animate-slide-down"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], {
     vertical: true,
     onNavigate: () => setOpen(false)
@@ -4201,7 +4201,7 @@ const FeatureGrid = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___defaul
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
   className: "text-3xl text-center mb-12"
 }, "What We Offer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
+  className: "grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4"
 }, features.map(({
   title,
   description,
@@ -4281,15 +4281,15 @@ const Hero = () => {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "relative z-20"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    className: "py-24 sm:py-32"
+    className: "py-16 sm:py-32"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "mx-auto max-w-4xl animate-fade-in-up bg-gradient-to-br from-white to-gray-400 bg-clip-text text-5xl font-bold tracking-tighter text-transparent sm:text-7xl",
+    className: "mx-auto max-w-4xl animate-fade-in-up bg-gradient-to-br from-white to-gray-400 bg-clip-text text-4xl font-bold tracking-tighter text-transparent sm:text-6xl",
     style: {
       animationDelay: '0.2s',
       animationFillMode: 'forwards'
     }
   }, "Transforming Digital Ambition into Reality."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mx-auto mt-6 max-w-2xl animate-fade-in-up text-lg text-gray-300",
+    className: "mx-auto mt-6 max-w-2xl animate-fade-in-up text-base text-gray-300 sm:text-lg",
     style: {
       animationDelay: '0.4s',
       animationFillMode: 'forwards',
