@@ -65,7 +65,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center justify-center space-x-3">
               <GlobeAltIcon className="h-7 w-7 text-blue-400" />
-              <span className="text-gray-300">Bespoke Web Development</span>
+              <span className="text-gray-300">Web Development</span>
             </div>
             <div className="flex items-center justify-center space-x-3">
               <ShieldCheckIcon className="h-7 w-7 text-blue-400" />

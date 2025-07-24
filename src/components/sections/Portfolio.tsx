@@ -28,17 +28,14 @@ const ArrowButton = ({ enabled, onClick, children }) => (
 );
 
 const Portfolio: React.FC = () => {
-  // 1. Set up the Embla Carousel hook
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: true, // Set to true to allow infinite scrolling
+    loop: true,
     align: 'start',
   });
 
-  // 2. State for the navigation buttons
   const [prevBtnDisabled, setPrevBtnDisabled] = useState(true);
   const [nextBtnDisabled, setNextBtnDisabled] = useState(true);
 
-  // 3. Functions to scroll and update button states
   const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
 
@@ -48,7 +45,6 @@ const Portfolio: React.FC = () => {
     setNextBtnDisabled(!emblaApi.canScrollNext());
   }, [emblaApi]);
 
-  // 4. Effect to update button states on select and init
   useEffect(() => {
     if (!emblaApi) return;
     onSelect();
@@ -60,10 +56,6 @@ const Portfolio: React.FC = () => {
     <Reveal as="section" className="py-20 bg-primary/10">
       <Container>
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row md:gap-16">
-          {/*
-            CHANGE 1:
-            Removed 'md:text-left' to make the header text centered on all screen sizes.
-          */}
           <div className="text-center">
             <h2 className="text-4xl font-bold mb-4">See Our Work</h2>
             <p className="text-lg text-gray-400 max-w-lg">
@@ -81,7 +73,7 @@ const Portfolio: React.FC = () => {
           </div>
         </div>
 
-        {/* 5. The Embla Carousel viewport */}
+        {/* The Embla Carousel viewport */}
         <div className="mt-16 overflow-hidden" ref={emblaRef}>
           {/* The container for the slides */}
           <div className="flex">
@@ -91,10 +83,6 @@ const Portfolio: React.FC = () => {
                 key={project.name}
                 className="relative min-w-0 flex-shrink-0 flex-grow-0 basis-full p-4 md:basis-1/2 lg:basis-1/3"
               >
-                {/*
-                  CHANGE 2:
-                  Added 'text-center' to this container to center the text below.
-                */}
                 <a
                   href={project.url}
                   target="_blank"
@@ -104,7 +92,7 @@ const Portfolio: React.FC = () => {
                   <img
                     src={project.logo}
                     alt={`${project.name} logo`}
-                    className="mb-6 h-48 w-full rounded-md object-contain p-4"
+                    className="mb-6 h-48 w-full rounded-md object-contain bg-white p-4"
                   />
                   <h3 className="text-xl font-semibold text-white">{project.name}</h3>
                   <p className="mt-2 text-sm text-gray-300">{project.description}</p>

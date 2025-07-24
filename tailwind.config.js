@@ -12,7 +12,7 @@ module.exports = {
       },
       colors: {
         primary: "#0A2640", // Dark blue 
-        accent: "#3FD0C9",  // Teal
+        accent: "#74b3bf",  // Grow Labs Teal
       },
       // New animation and keyframes added below
       animation: {

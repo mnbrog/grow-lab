@@ -6612,7 +6612,7 @@ const Portfolio = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col items-center justify-between gap-8 md:flex-row md:gap-16"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "text-center md:text-left"
+    className: "text-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-4xl font-bold mb-4"
   }, "See Our Work"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
@@ -6633,21 +6633,17 @@ const Portfolio = () => {
   }, projects.map(project => /*#__PURE__*/
   // Each slide
   react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    key: project.name
-    // Sets the width of each slide. Adjust as needed.
-    // Full width on mobile, half on medium, third on large screens.
-    ,
-
+    key: project.name,
     className: "relative min-w-0 flex-shrink-0 flex-grow-0 basis-full p-4 md:basis-1/2 lg:basis-1/3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: project.url,
     target: "_blank",
     rel: "noopener noreferrer",
-    className: "group block h-full rounded-xl bg-gray-800/50 p-6 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/10 border border-gray-700 hover:border-accent"
+    className: "text-center group block h-full rounded-xl bg-gray-800/50 p-6 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/10 border border-gray-700 hover:border-accent"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     src: project.logo,
     alt: `${project.name} logo`,
-    className: "mb-6 h-48 w-full rounded-md object-contain p-4" // Added padding
+    className: "mb-6 h-48 w-full rounded-md object-contain p-4"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     className: "text-xl font-semibold text-white"
   }, project.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
@@ -6882,7 +6878,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((module) => {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('[{"name":"Creator Map","description":"Creator Platform · United States","logo":"/logos/creator-map.png","url":"#"},{"name":"Kerr Chief","description":"Outdoor Apparel Brand","logo":"/logos/kerr-chief.png","url":"https://www.kerr-chief.com/"},{"name":"Upright Medical Solutions","description":"Medical Software · Birmingham, AL","logo":"/logos/upright-medical.png","url":"#"}]');
+module.exports = /*#__PURE__*/JSON.parse('[{"name":"Creator Map","description":"Creator Platform · United States","logo":"https://assets.softr-files.com/applications/f337a486-9cbb-468b-b871-1a84332cea99/assets/d2cced6b-29b1-4201-9977-9173e7cc3790.png","url":"https://www.thecreatormap.com/"},{"name":"Kerr Chief","description":"Outdoor Apparel Brand","logo":"https://michaelnbrogan.com/Arrowhead_LGO.png","url":"https://www.kerr-chief.com/"},{"name":"Upright Medical Solutions","description":"Medical Software · Birmingham, AL","logo":"https://michaelnbrogan.com/Upright%20Medical%20Solutions%20Logo.png","url":"https://uprightmedicalsolutions.com/"}]');
 
 /***/ }),
 
@@ -6900,7 +6896,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
-const base = 'inline-flex items-center justify-center font-semibold rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 transition-transform duration-200 ease-in-out transform hover:scale-105';
+const base = 'inline-flex items-center justify-center font-semibold font-accent rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 transition-transform duration-200 ease-in-out transform hover:scale-105';
 const variants = {
   primary: 'bg-accent text-primary hover:brightness-110 focus:ring-accent',
   secondary: 'bg-transparent text-black border border-gray-600 hover:text-white hover:bg-gray-800 focus:ring-gray-500'
@@ -6944,7 +6940,7 @@ const Card = ({
 }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
   className: `rounded-lg bg-gray-800/50 border border-gray-700 p-6 flex flex-col ${className}`
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
-  className: "mb-4 text-lg font-semibold text-white"
+  className: "mb-4 text-lg font-semibold font-accent text-white"
 }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
   className: "flex-grow"
 }, children));
