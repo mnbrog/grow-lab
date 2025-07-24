@@ -44,8 +44,8 @@ const Header = () => {
       </Container>
 
       {open && (
-        <div className="md:hidden fixed inset-0 z-40 bg-gray-900/90 backdrop-blur-sm">
-          <Container className="py-8">
+        <div className="md:hidden fixed inset-0 z-40 bg-gray-900/90 backdrop-blur-sm animate-fade-in">
+          <Container className="py-8 animate-slide-down">
             <Nav vertical onNavigate={() => setOpen(false)} />
             <div className="mt-8 flex justify-center">
               <Button

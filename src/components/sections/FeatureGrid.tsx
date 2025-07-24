@@ -69,7 +69,7 @@ const FeatureGrid = () => (
   <section id="features" className="py-32 bg-primary/10">
     <Container>
       <h2 className="text-3xl text-center mb-12">What We Offer</h2>
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
         {features.map(({ title, description, href, icon: IconComponent }) => (
           <Link key={title} to={href} className="group block transform transition-transform hover:-translate-y-1">
             <Card title={title} className="h-full text-center">
