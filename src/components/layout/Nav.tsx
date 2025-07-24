@@ -24,6 +24,7 @@ const Nav = ({ vertical = false, onNavigate }: NavProps) => (
         key={link.to}
         to={link.to}
         className="transition-colors hover:text-white"
+        activeClassName="text-white"
         onClick={onNavigate}
       >
         {link.label}
