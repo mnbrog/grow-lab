@@ -1,6 +1,6 @@
 import React from 'react';
-import './src/styles/global.css';
 import BackgroundGlow from './src/components/layout/BackgroundGlow';
+import './src/styles/global.css';
 
 export const wrapPageElement = ({ element }) => (
   <>
