@@ -1,39 +1,38 @@
-/* Import Satoshi font from Fontshare */
-@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,800&display=swap');
-/* Import Playfair Display for headings */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+/* Import fonts */
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,700,800&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=DM+Sans:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap');
 
-/* Then, include Tailwind's base, component, and utility styles */
+/* Include Tailwind styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Now, apply your custom base styles for the dark theme */
+/* Dark theme base styles */
 html {
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Inter', 'DM Sans', sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  /* This applies the dark background and light text to the whole site */
   @apply bg-gray-900 text-gray-300 antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  /* Use serif font for headings and keep them bold */
-  @apply font-serif font-extrabold text-white;
+  font-family: 'Satoshi', 'General Sans', sans-serif;
+  @apply font-bold text-white;
 }
 
-/* Add styles for blog post content on a dark background */
+/* Prose styles on dark background */
 .prose {
-    @apply text-gray-300;
+  @apply text-gray-300;
 }
 .prose h1, .prose h2, .prose h3 {
-    @apply text-white;
+  @apply text-white;
 }
 .prose a {
-    @apply text-accent hover:text-white;
+  @apply text-accent hover:text-white;
 }
 .prose strong {
-    @apply text-white;
+  @apply text-white;
 }
