@@ -16,6 +16,7 @@ import {
 } from '@heroicons/react/24/outline';
 import Card from '../ui/Card';
 import Container from '../shared/Container';
+import Reveal from '../ui/Reveal';
 
 const features = [
   {
@@ -94,21 +95,23 @@ const features = [
 
 
 const FeatureGrid = () => (
-  <section id="features" className="py-32 bg-primary/10">
+  <Reveal as="section" id="features" className="py-32 bg-primary/10">
     <Container>
       <h2 className="text-3xl text-center mb-12">What We Offer</h2>
       <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
         {features.map(({ title, description, href, icon: IconComponent }) => (
-          <Link key={title} to={href} className="group block transform transition-transform hover:-translate-y-1">
-            <Card title={title} className="h-full text-center">
-              <IconComponent className="mx-auto mb-4 h-8 w-8 text-accent" />
-              <p className="text-gray-300">{description}</p>
-            </Card>
-          </Link>
+          <Reveal key={title} className="group block">
+            <Link to={href} className="transform transition-transform hover:-translate-y-1 block">
+              <Card title={title} className="h-full text-center">
+                <IconComponent className="mx-auto mb-4 h-8 w-8 text-accent" />
+                <p className="text-gray-300">{description}</p>
+              </Card>
+            </Link>
+          </Reveal>
         ))}
       </div>
     </Container>
-  </section>
+  </Reveal>
 );
 
 export default FeatureGrid;
