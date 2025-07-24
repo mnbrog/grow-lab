@@ -38,16 +38,16 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-20">
-        <Container className="py-24 sm:py-32">
+        <Container className="py-16 sm:py-32">
           {/* ... (no changes to h1 and p tags) ... */}
           <h1
-            className="mx-auto max-w-4xl animate-fade-in-up bg-gradient-to-br from-white to-gray-400 bg-clip-text text-5xl font-bold tracking-tighter text-transparent sm:text-7xl"
+            className="mx-auto max-w-4xl animate-fade-in-up bg-gradient-to-br from-white to-gray-400 bg-clip-text text-4xl font-bold tracking-tighter text-transparent sm:text-6xl"
             style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}
           >
             Transforming Digital Ambition into Reality.
           </h1>
           <p
-            className="mx-auto mt-6 max-w-2xl animate-fade-in-up text-lg text-gray-300"
+            className="mx-auto mt-6 max-w-2xl animate-fade-in-up text-base text-gray-300 sm:text-lg"
             style={{ animationDelay: '0.4s', animationFillMode: 'forwards', opacity: 0 }}
           >
             We partner with you to build, automate, and grow your business with
