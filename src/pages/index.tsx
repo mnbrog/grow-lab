@@ -26,7 +26,7 @@ const IndexPage = () => (
       />
     </Helmet>
     <Header />
-    <main className="relative bg-gray-900 text-white">
+    <main className="relative text-white">
       <BackgroundGlow /> {/* ✅ This is your global glow background */}
       <Hero />
       <StyledSection id="features">
