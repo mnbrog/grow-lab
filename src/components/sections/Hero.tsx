@@ -84,13 +84,13 @@ const Hero = () => {
               as="a"
               href="/contact"
             >
-              Get a Free Consultation
+              Book Your Free Strategy Session
             </Button>
             <Button
               variant="primary"
               size="xl"
               as="a"
-              href="/products"
+              href="/#features"
             >
               Explore Services
             </Button>

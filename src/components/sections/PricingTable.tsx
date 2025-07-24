@@ -82,7 +82,13 @@ const PricingTable = () => (
                 ))}
               </ul>
               <p className="mt-4 text-sm italic text-gray-400">{plan.tagline}</p>
-              <Button className="mt-8 w-full">Choose Plan</Button>
+              <Button
+                className="mt-8 w-full"
+                as="a"
+                href={`/contact?plan=${plan.name}`}
+              >
+                Choose Plan
+              </Button>
             </Card>
           </Reveal>
         ))}

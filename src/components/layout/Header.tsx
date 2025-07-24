@@ -31,7 +31,7 @@ const Header = () => {
         </div>
         <div className="ml-4 hidden md:block">
           <Button variant="primary" size="large" as="a" href="/contact">
-            Get a Free Consultation
+            Book Your Free Strategy Session
           </Button>
         </div>
         <button
@@ -55,7 +55,7 @@ const Header = () => {
                 href="/contact"
                 onClick={() => setOpen(false)}
               >
-                Get a Free Consultation
+                Book Your Free Strategy Session
               </Button>
             </div>
           </Container>
