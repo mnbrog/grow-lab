@@ -2,7 +2,7 @@ import React, { ElementType } from 'react';
 
 interface ButtonProps {
   variant?: 'primary' | 'secondary';
-  size?: 'normal' | 'large';
+  size?: 'normal' | 'large' | 'xl';
   as?: ElementType;
   children: React.ReactNode;
   [x: string]: any;
@@ -19,6 +19,7 @@ const variants = {
 const sizes = {
   normal: 'px-6 py-3 text-sm',
   large: 'px-8 py-4 text-base',
+  xl: 'px-10 py-5 text-lg sm:text-xl',
 };
 
 const Button: React.FC<ButtonProps> = ({
