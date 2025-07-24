@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Satoshi', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        serif: ['"Playfair Display"', 'serif'],
       },
       colors: {
         primary: "#0A2640", // Dark blue 

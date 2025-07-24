@@ -79,22 +79,19 @@ const Hero = () => {
             style={{ animationDelay: '0.8s', animationFillMode: 'forwards', opacity: 0 }}
           >
             <Button
+              variant="primary"
               size="xl"
               as="a"
               href="/contact"
-              className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg border border-white/20 bg-white/10 px-8 py-3 font-medium text-white backdrop-blur-md transition-all duration-300 hover:scale-105 hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/50"
             >
-                <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_500px_at_50%_200px,#1e40af,transparent)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                Get a Free Consultation
+              Get a Free Consultation
             </Button>
-            {/* This button now has the same style as the one above */}
             <Button
+              variant="primary"
               size="xl"
               as="a"
               href="/products"
-              className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg border border-white/20 bg-white/10 px-8 py-3 font-medium text-white backdrop-blur-md transition-all duration-300 hover:scale-105 hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/50"
             >
-              <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_500px_at_50%_200px,#1e40af,transparent)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
               Explore Services
             </Button>
           </div>

@@ -1,5 +1,7 @@
 /* Import Satoshi font from Fontshare */
 @import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,800&display=swap');
+/* Import Playfair Display for headings */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
 /* Then, include Tailwind's base, component, and utility styles */
 @tailwind base;
@@ -18,8 +20,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  /* Make all headings bold and white for contrast */
-  @apply font-extrabold text-white;
+  /* Use serif font for headings and keep them bold */
+  @apply font-serif font-extrabold text-white;
 }
 
 /* Add styles for blog post content on a dark background */
