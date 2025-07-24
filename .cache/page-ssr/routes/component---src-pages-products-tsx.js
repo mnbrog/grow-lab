@@ -3651,7 +3651,7 @@ const Header = () => {
     size: "large",
     as: "a",
     href: "/contact"
-  }, "Get a Free Consultation")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+  }, "Book Your Free Strategy Session")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     className: "md:hidden text-gray-400 hover:text-white focus:outline-none",
     onClick: () => setOpen(!open),
     "aria-label": "Toggle menu"
@@ -3672,7 +3672,7 @@ const Header = () => {
     as: "a",
     href: "/contact",
     onClick: () => setOpen(false)
-  }, "Get a Free Consultation")))));
+  }, "Book Your Free Strategy Session")))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
 

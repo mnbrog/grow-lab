@@ -1729,6 +1729,47 @@ module.exports = _setPrototypeOf, module.exports.__esModule = true, module.expor
 
 /***/ }),
 
+/***/ "./node_modules/@heroicons/react/24/outline/esm/ArrowDownTrayIcon.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@heroicons/react/24/outline/esm/ArrowDownTrayIcon.js ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+
+function ArrowDownTrayIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    fill: "none",
+    viewBox: "0 0 24 24",
+    strokeWidth: 1.5,
+    stroke: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    d: "M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(ArrowDownTrayIcon);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ForwardRef);
+
+/***/ }),
+
 /***/ "./node_modules/@heroicons/react/24/outline/esm/ArrowPathIcon.js":
 /*!***********************************************************************!*\
   !*** ./node_modules/@heroicons/react/24/outline/esm/ArrowPathIcon.js ***!
@@ -1852,6 +1893,51 @@ const ForwardRef = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(C
 
 /***/ }),
 
+/***/ "./node_modules/@heroicons/react/24/outline/esm/ChartPieIcon.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@heroicons/react/24/outline/esm/ChartPieIcon.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+
+function ChartPieIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    fill: "none",
+    viewBox: "0 0 24 24",
+    strokeWidth: 1.5,
+    stroke: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    d: "M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    d: "M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(ChartPieIcon);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ForwardRef);
+
+/***/ }),
+
 /***/ "./node_modules/@heroicons/react/24/outline/esm/CpuChipIcon.js":
 /*!*********************************************************************!*\
   !*** ./node_modules/@heroicons/react/24/outline/esm/CpuChipIcon.js ***!
@@ -1889,6 +1975,88 @@ function CpuChipIcon({
   }));
 }
 const ForwardRef = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(CpuChipIcon);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ForwardRef);
+
+/***/ }),
+
+/***/ "./node_modules/@heroicons/react/24/outline/esm/DocumentTextIcon.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@heroicons/react/24/outline/esm/DocumentTextIcon.js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+
+function DocumentTextIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    fill: "none",
+    viewBox: "0 0 24 24",
+    strokeWidth: 1.5,
+    stroke: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    d: "M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(DocumentTextIcon);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ForwardRef);
+
+/***/ }),
+
+/***/ "./node_modules/@heroicons/react/24/outline/esm/EnvelopeOpenIcon.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@heroicons/react/24/outline/esm/EnvelopeOpenIcon.js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+
+function EnvelopeOpenIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    fill: "none",
+    viewBox: "0 0 24 24",
+    strokeWidth: 1.5,
+    stroke: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    d: "M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(EnvelopeOpenIcon);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ForwardRef);
 
 /***/ }),
@@ -4020,7 +4188,7 @@ const Header = () => {
     size: "large",
     as: "a",
     href: "/contact"
-  }, "Get a Free Consultation")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+  }, "Book Your Free Strategy Session")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     className: "md:hidden text-gray-400 hover:text-white focus:outline-none",
     onClick: () => setOpen(!open),
     "aria-label": "Toggle menu"
@@ -4041,7 +4209,7 @@ const Header = () => {
     as: "a",
     href: "/contact",
     onClick: () => setOpen(false)
-  }, "Get a Free Consultation")))));
+  }, "Book Your Free Strategy Session")))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
 
@@ -4107,20 +4275,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _ui_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ui/Button */ "./src/components/ui/Button.tsx");
 /* harmony import */ var _shared_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shared/Container */ "./src/components/shared/Container.tsx");
+/* harmony import */ var _ui_Reveal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui/Reveal */ "./src/components/ui/Reveal.tsx");
 
 
 
-const CallToAction = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-  className: "py-24 text-center"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+
+const CallToAction = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  as: "section",
+  className: "py-24 text-center bg-primary"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  className: "text-white"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
   className: "text-4xl"
-}, "Ready to grow your business?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+}, "Ready to grow your business?")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
   className: "mt-4 mb-6 text-gray-300 max-w-2xl mx-auto"
-}, "Let's build something great together. Get in touch to discuss your project."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+}, "Let's build something great together. Get in touch to discuss your project.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
   as: "a",
   href: "/contact",
   size: "large"
-}, "Get a Free Consultation")));
+}, "Get a Free Consultation"))));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CallToAction);
 
 /***/ }),
@@ -4139,16 +4312,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/CpuChipIcon.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/GlobeAltIcon.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/ArrowPathIcon.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/ChartBarIcon.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/PaintBrushIcon.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/AtSymbolIcon.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/PuzzlePieceIcon.js");
-/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/LifebuoyIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/CpuChipIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/GlobeAltIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/ArrowPathIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/ChartBarIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/PaintBrushIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/AtSymbolIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/PuzzlePieceIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/LifebuoyIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/DocumentTextIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/EnvelopeOpenIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/ChartPieIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/ArrowDownTrayIcon.js");
 /* harmony import */ var _ui_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui/Card */ "./src/components/ui/Card.tsx");
 /* harmony import */ var _shared_Container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/Container */ "./src/components/shared/Container.tsx");
+/* harmony import */ var _ui_Reveal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui/Reveal */ "./src/components/ui/Reveal.tsx");
+
 
 
 
@@ -4158,44 +4337,65 @@ const features = [{
   title: 'AI Tools',
   description: 'Streamline everyday tasks with simple AI-powered helpers.',
   href: '/products/ai-tools',
-  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_4__["default"]
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_5__["default"]
 }, {
   title: 'WaaS Plans',
   description: 'Launch a stunning website without lifting a finger.',
   href: '/products/waas',
-  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_5__["default"]
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_6__["default"]
 }, {
   title: 'Automation',
   description: 'Speed up workflows using ready-made Power Automate templates.',
   href: '/products/automation',
-  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_6__["default"]
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_7__["default"]
 }, {
   title: 'SEO & Monetization',
   description: 'Grow traffic and generate passive income with optimized content and affiliate tools.',
   href: '/products/seo-monetization',
-  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_7__["default"]
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_8__["default"]
 }, {
   title: 'Graphic Design',
   description: 'Get custom logos, marketing assets, and cohesive branding designed for your business.',
   href: '/products/graphic-design',
-  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_8__["default"]
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_9__["default"]
 }, {
   title: 'Social Media Management',
   description: 'Boost engagement and grow your presence with scheduled content and analytics.',
   href: '/products/social-media',
-  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_9__["default"]
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_10__["default"]
 }, {
   title: 'Custom Integrations',
   description: 'Connect tools like CRMs, email marketing, and databases with tailored solutions.',
   href: '/products/integrations',
-  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_10__["default"]
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_11__["default"]
 }, {
   title: 'Maintenance & Support',
   description: 'Keep everything running smoothly with proactive updates and technical support.',
   href: '/products/support',
-  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_11__["default"]
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_12__["default"]
+}, {
+  title: 'Content Packages',
+  description: 'Fill your site and socials with blog posts, lead magnets, and visuals—all done for you.',
+  href: '/products/content',
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_13__["default"]
+}, {
+  title: 'Email Marketing',
+  description: 'Build your list and send newsletters or drip campaigns without lifting a finger.',
+  href: '/products/email-marketing',
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_14__["default"]
+}, {
+  title: 'Analytics & Reporting',
+  description: 'Track what’s working with simple dashboards and weekly insights.',
+  href: '/products/analytics',
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_15__["default"]
+}, {
+  title: 'Templates & Downloads',
+  description: 'Access plug-and-play assets like business checklists, flows, and branded docs.',
+  href: '/products/templates',
+  icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_16__["default"]
 }];
-const FeatureGrid = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+const FeatureGrid = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  as: "section",
   id: "features",
   className: "py-32 bg-primary/10"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
@@ -4207,10 +4407,12 @@ const FeatureGrid = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___defaul
   description,
   href,
   icon: IconComponent
-}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_4__["default"], {
   key: title,
+  className: "group block"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
   to: href,
-  className: "group block transform transition-transform hover:-translate-y-1"
+  className: "transform transition-transform hover:-translate-y-1 block"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
   title: title,
   className: "h-full text-center"
@@ -4218,7 +4420,7 @@ const FeatureGrid = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___defaul
   className: "mx-auto mb-4 h-8 w-8 text-accent"
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
   className: "text-gray-300"
-}, description)))))));
+}, description))))))));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FeatureGrid);
 
 /***/ }),
@@ -4328,20 +4530,16 @@ const Hero = () => {
       opacity: 0
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    variant: "primary",
     size: "xl",
     as: "a",
-    href: "/contact",
-    className: "group relative inline-flex items-center justify-center overflow-hidden rounded-lg border border-white/20 bg-white/10 px-8 py-3 font-medium text-white backdrop-blur-md transition-all duration-300 hover:scale-105 hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/50"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "absolute inset-0 -z-10 bg-[radial-gradient(circle_500px_at_50%_200px,#1e40af,transparent)] opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-  }), "Get a Free Consultation"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    href: "/contact"
+  }, "Book Your Free Strategy Session"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    variant: "primary",
     size: "xl",
     as: "a",
-    href: "/products",
-    className: "group relative inline-flex items-center justify-center overflow-hidden rounded-lg border border-white/20 bg-white/10 px-8 py-3 font-medium text-white backdrop-blur-md transition-all duration-300 hover:scale-105 hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/50"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "absolute inset-0 -z-10 bg-[radial-gradient(circle_500px_at_50%_200px,#1e40af,transparent)] opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-  }), "Explore Services")))));
+    href: "/#features"
+  }, "Explore Services")))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Hero);
 
@@ -4361,7 +4559,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _shared_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../shared/Container */ "./src/components/shared/Container.tsx");
-/* harmony import */ var _shared_portfolio_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shared/portfolio.json */ "./src/components/shared/portfolio.json");
+/* harmony import */ var _ui_Reveal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui/Reveal */ "./src/components/ui/Reveal.tsx");
+/* harmony import */ var _shared_portfolio_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/portfolio.json */ "./src/components/shared/portfolio.json");
+
 
 
 // 👇 Import the JSON file directly
@@ -4369,19 +4569,22 @@ __webpack_require__.r(__webpack_exports__);
 // Define a type for a single project object for type safety
 
 // Assign the imported data to a typed variable
-const projects = _shared_portfolio_json__WEBPACK_IMPORTED_MODULE_2__;
-const Portfolio = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+const projects = _shared_portfolio_json__WEBPACK_IMPORTED_MODULE_3__;
+const Portfolio = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  as: "section",
   className: "py-20 bg-primary/10"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
   className: "text-4xl font-bold text-center mb-16"
 }, "See Our Work"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
   className: "grid gap-10 md:grid-cols-2 lg:grid-cols-3"
-}, projects.map(project => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+}, projects.map(project => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_2__["default"], {
   key: project.name,
+  className: "block"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
   href: project.url,
   target: "_blank",
   rel: "noopener noreferrer",
-  className: "block group rounded-lg bg-gray-800/50 border border-gray-700 p-6 transform hover:-translate-y-2 transition-transform duration-300"
+  className: "group rounded-lg bg-gray-800/50 border border-gray-700 p-6 transform hover:-translate-y-2 transition-transform duration-300 block"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
   src: project.logo,
   alt: `${project.name} logo`,
@@ -4390,7 +4593,7 @@ const Portfolio = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default(
   className: "text-xl font-semibold mb-2 text-white"
 }, project.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
   className: "text-sm text-gray-300"
-}, project.description))))));
+}, project.description)))))));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Portfolio);
 
 /***/ }),
@@ -4412,6 +4615,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ui_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui/Button */ "./src/components/ui/Button.tsx");
 /* harmony import */ var _shared_Container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/Container */ "./src/components/shared/Container.tsx");
 /* harmony import */ var _ui_Icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui/Icon */ "./src/components/ui/Icon.tsx");
+/* harmony import */ var _ui_Reveal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui/Reveal */ "./src/components/ui/Reveal.tsx");
+
 
 
 
@@ -4433,7 +4638,8 @@ const plans = [{
   tagline: 'The all-in-one system to scale your digital presence, content, and client funnels.',
   features: ['Unlimited pages + multi-location ready', 'Dynamic content system on Netlify', 'AI-powered content calendar', '4 reels/month', '2 SEO blog posts/month', 'Lead magnet funnel + email automation', 'Email marketing flows', 'Full Maps listing management', 'Monthly 30-minute strategy call', 'Slack or direct message support']
 }];
-const PricingTable = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+const PricingTable = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  as: "section",
   className: "bg-primary/10 py-20"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
   className: "text-3xl text-center mb-4"
@@ -4441,8 +4647,9 @@ const PricingTable = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___defau
   className: "mx-auto mb-12 max-w-2xl text-center text-gray-300"
 }, "We build, host, and grow your business online \u2014 no tech skills needed. All websites are hosted on ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Netlify"), ", a fast, secure, always-on platform used by companies like Nike and Peloton."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
   className: "grid gap-8 md:grid-cols-3"
-}, plans.map(plan => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  key: plan.name,
+}, plans.map(plan => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  key: plan.name
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
   title: plan.name,
   className: "text-center"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
@@ -4458,8 +4665,10 @@ const PricingTable = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___defau
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, f)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
   className: "mt-4 text-sm italic text-gray-400"
 }, plan.tagline), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  className: "mt-8 w-full"
-}, "Choose Plan")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "mt-8 w-full",
+  as: "a",
+  href: `/contact?plan=${plan.name}`
+}, "Choose Plan"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
   className: "mx-auto mt-16 max-w-2xl text-sm text-gray-300"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
   className: "mb-2 text-center text-base font-semibold"
@@ -4505,24 +4714,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _shared_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../shared/Container */ "./src/components/shared/Container.tsx");
 /* harmony import */ var _ui_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui/Card */ "./src/components/ui/Card.tsx");
-/* harmony import */ var _data_testimonials_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../data/testimonials.json */ "./src/data/testimonials.json");
+/* harmony import */ var _ui_Reveal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui/Reveal */ "./src/components/ui/Reveal.tsx");
+/* harmony import */ var _data_testimonials_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../data/testimonials.json */ "./src/data/testimonials.json");
 
 
 
 
-const Testimonials = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+
+const Testimonials = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  as: "section",
   id: "testimonials",
   className: "py-20"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
   className: "text-3xl text-center mb-12"
 }, "Trusted by builders at companies everywhere"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
   className: "grid gap-8 md:grid-cols-2 lg:grid-cols-3"
-}, _data_testimonials_json__WEBPACK_IMPORTED_MODULE_3__.map(t => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  key: t.author,
+}, _data_testimonials_json__WEBPACK_IMPORTED_MODULE_4__.map(t => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  key: t.author
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
   title: t.author
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
   className: "text-gray-300"
-}, "\"", t.quote, "\""))))));
+}, "\"", t.quote, "\"")))))));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Testimonials);
 
 /***/ }),
@@ -4728,6 +4941,37 @@ const Icon = ({
 
 /***/ }),
 
+/***/ "./src/components/ui/Reveal.tsx":
+/*!**************************************!*\
+  !*** ./src/components/ui/Reveal.tsx ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _hooks_useScrollReveal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../hooks/useScrollReveal */ "./src/hooks/useScrollReveal.ts");
+
+
+const Reveal = ({
+  as: Component = 'div',
+  children,
+  className = ''
+}) => {
+  const ref = (0,_hooks_useScrollReveal__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Component, {
+    ref: ref,
+    className: `opacity-0 translate-y-6 ${className}`
+  }, children);
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Reveal);
+
+/***/ }),
+
 /***/ "./src/data/testimonials.json":
 /*!************************************!*\
   !*** ./src/data/testimonials.json ***!
@@ -4736,6 +4980,46 @@ const Icon = ({
 
 "use strict";
 module.exports = /*#__PURE__*/JSON.parse('[{"author":"Jane Doe","quote":"GrowLab helped us automate tedious tasks and focus on real growth."},{"author":"John Smith","quote":"Our website looks amazing and converts visitors like crazy."},{"author":"Lisa Wong","quote":"The Power Automate templates saved us countless hours."}]');
+
+/***/ }),
+
+/***/ "./src/hooks/useScrollReveal.ts":
+/*!**************************************!*\
+  !*** ./src/hooks/useScrollReveal.ts ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ useScrollReveal)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function useScrollReveal(threshold = 0.1) {
+  const ref = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    const el = ref.current;
+    if (!el) return;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduceMotion) {
+      el.classList.remove('opacity-0', 'translate-y-6');
+      return;
+    }
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        el.classList.add('animate-fade-in-up');
+        observer.unobserve(entry.target);
+      }
+    }, {
+      threshold
+    });
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [threshold]);
+  return ref;
+}
 
 /***/ }),
 

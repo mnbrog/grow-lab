@@ -12,12 +12,13 @@ import {
   DocumentTextIcon,
   EnvelopeOpenIcon,
   ChartPieIcon,
-  ArrowDownTrayIcon
+  ArrowDownTrayIcon,
 } from '@heroicons/react/24/outline';
-import Card from '../ui/Card';
+import Card from '../ui/Card'; // Assuming Card component exists
 import Container from '../shared/Container';
 import Reveal from '../ui/Reveal';
 
+// No changes needed to the features array
 const features = [
   {
     title: 'AI Tools',
@@ -27,7 +28,7 @@ const features = [
   },
   {
     title: 'WaaS Plans',
-    description: 'Launch a stunning website without lifting a finger.',
+    description: 'Launch a stunning, high-performance website without lifting a finger.',
     href: '/products/waas',
     icon: GlobeAltIcon,
   },
@@ -39,43 +40,43 @@ const features = [
   },
   {
     title: 'SEO & Monetization',
-    description: 'Grow traffic and generate passive income with optimized content and affiliate tools.',
+    description: 'Grow traffic and generate passive income with optimized content.',
     href: '/products/seo-monetization',
     icon: ChartBarIcon,
   },
   {
     title: 'Graphic Design',
-    description: 'Get custom logos, marketing assets, and cohesive branding designed for your business.',
+    description: 'Get custom logos and cohesive branding designed for your business.',
     href: '/products/graphic-design',
     icon: PaintBrushIcon,
   },
   {
     title: 'Social Media Management',
-    description: 'Boost engagement and grow your presence with scheduled content and analytics.',
+    description: 'Boost engagement and grow your presence with scheduled content.',
     href: '/products/social-media',
     icon: AtSymbolIcon,
   },
   {
     title: 'Custom Integrations',
-    description: 'Connect tools like CRMs, email marketing, and databases with tailored solutions.',
+    description: 'Connect tools like CRMs, email, and databases with tailored solutions.',
     href: '/products/integrations',
     icon: PuzzlePieceIcon,
   },
   {
     title: 'Maintenance & Support',
-    description: 'Keep everything running smoothly with proactive updates and technical support.',
+    description: 'Keep your digital assets running smoothly with proactive updates.',
     href: '/products/support',
     icon: LifebuoyIcon,
   },
   {
     title: 'Content Packages',
-    description: 'Fill your site and socials with blog posts, lead magnets, and visuals—all done for you.',
+    description: 'Fill your site with blog posts, lead magnets, and visuals—all done for you.',
     href: '/products/content',
     icon: DocumentTextIcon,
   },
   {
     title: 'Email Marketing',
-    description: 'Build your list and send newsletters or drip campaigns without lifting a finger.',
+    description: 'Build your list and send newsletters or drip campaigns automatically.',
     href: '/products/email-marketing',
     icon: EnvelopeOpenIcon,
   },
@@ -87,24 +88,42 @@ const features = [
   },
   {
     title: 'Templates & Downloads',
-    description: 'Access plug-and-play assets like business checklists, flows, and branded docs.',
+    description: 'Access plug-and-play assets like checklists, flows, and branded docs.',
     href: '/products/templates',
     icon: ArrowDownTrayIcon,
-  }
+  },
 ];
-
 
 const FeatureGrid = () => (
   <Reveal as="section" id="features" className="py-32 bg-primary/10">
     <Container>
-      <h2 className="text-3xl text-center mb-12">What We Offer</h2>
-      <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
+      <h2 className="text-4xl font-bold text-center mb-4">What We Offer</h2>
+      <p className="text-lg text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+        From initial idea to full-scale deployment, we provide the tools and expertise to build and grow your digital presence.
+      </p>
+      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {features.map(({ title, description, href, icon: IconComponent }) => (
-          <Reveal key={title} className="group block">
-            <Link to={href} className="transform transition-transform hover:-translate-y-1 block">
-              <Card title={title} className="h-full text-center">
-                <IconComponent className="mx-auto mb-4 h-8 w-8 text-accent" />
-                <p className="text-gray-300">{description}</p>
+          <Reveal key={title}>
+            {/*
+              Key Changes for Visual Appeal:
+              1. Link (<a> tag): Added h-full to make the entire card clickable. Enhanced hover effect with shadow.
+              2. Card Component: Added flex, flex-col to enable uniform height. Adjusted padding and background.
+              3. Description (<p> tag): Added flex-grow to ensure it fills available space, making all cards equal height.
+            */}
+            <Link to={href} className="group block h-full rounded-xl transition-all duration-300 hover:!opacity-100 hover:shadow-2xl hover:shadow-accent/20">
+              <Card
+                title={title}
+                className="h-full flex flex-col text-center bg-gray-900/50 backdrop-blur-sm border border-white/10 p-8 rounded-xl transition-all duration-300 group-hover:border-accent group-hover:-translate-y-2"
+              >
+                {/* Icon */}
+                <div className="flex-shrink-0">
+                  <IconComponent className="mx-auto mb-6 h-10 w-10 text-accent" />
+                </div>
+                {/* Text Content */}
+                <div className="flex flex-col flex-grow">
+                  {/* The title is part of the Card component, this makes the description grow */}
+                  <p className="flex-grow text-gray-400 text-sm leading-relaxed">{description}</p>
+                </div>
               </Card>
             </Link>
           </Reveal>

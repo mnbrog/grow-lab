@@ -3651,7 +3651,7 @@ const Header = () => {
     size: "large",
     as: "a",
     href: "/contact"
-  }, "Get a Free Consultation")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+  }, "Book Your Free Strategy Session")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     className: "md:hidden text-gray-400 hover:text-white focus:outline-none",
     onClick: () => setOpen(!open),
     "aria-label": "Toggle menu"
@@ -3672,7 +3672,7 @@ const Header = () => {
     as: "a",
     href: "/contact",
     onClick: () => setOpen(false)
-  }, "Get a Free Consultation")))));
+  }, "Book Your Free Strategy Session")))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
 
@@ -3740,6 +3740,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ui_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui/Button */ "./src/components/ui/Button.tsx");
 /* harmony import */ var _shared_Container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/Container */ "./src/components/shared/Container.tsx");
 /* harmony import */ var _ui_Icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui/Icon */ "./src/components/ui/Icon.tsx");
+/* harmony import */ var _ui_Reveal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui/Reveal */ "./src/components/ui/Reveal.tsx");
+
 
 
 
@@ -3761,7 +3763,8 @@ const plans = [{
   tagline: 'The all-in-one system to scale your digital presence, content, and client funnels.',
   features: ['Unlimited pages + multi-location ready', 'Dynamic content system on Netlify', 'AI-powered content calendar', '4 reels/month', '2 SEO blog posts/month', 'Lead magnet funnel + email automation', 'Email marketing flows', 'Full Maps listing management', 'Monthly 30-minute strategy call', 'Slack or direct message support']
 }];
-const PricingTable = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+const PricingTable = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  as: "section",
   className: "bg-primary/10 py-20"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
   className: "text-3xl text-center mb-4"
@@ -3769,8 +3772,9 @@ const PricingTable = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___defau
   className: "mx-auto mb-12 max-w-2xl text-center text-gray-300"
 }, "We build, host, and grow your business online \u2014 no tech skills needed. All websites are hosted on ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Netlify"), ", a fast, secure, always-on platform used by companies like Nike and Peloton."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
   className: "grid gap-8 md:grid-cols-3"
-}, plans.map(plan => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  key: plan.name,
+}, plans.map(plan => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Reveal__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  key: plan.name
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
   title: plan.name,
   className: "text-center"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
@@ -3786,8 +3790,10 @@ const PricingTable = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___defau
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, f)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
   className: "mt-4 text-sm italic text-gray-400"
 }, plan.tagline), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  className: "mt-8 w-full"
-}, "Choose Plan")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "mt-8 w-full",
+  as: "a",
+  href: `/contact?plan=${plan.name}`
+}, "Choose Plan"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
   className: "mx-auto mt-16 max-w-2xl text-sm text-gray-300"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
   className: "mb-2 text-center text-base font-semibold"
@@ -4005,6 +4011,77 @@ const Icon = ({
   className: className
 }, icons[name] || null);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Icon);
+
+/***/ }),
+
+/***/ "./src/components/ui/Reveal.tsx":
+/*!**************************************!*\
+  !*** ./src/components/ui/Reveal.tsx ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _hooks_useScrollReveal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../hooks/useScrollReveal */ "./src/hooks/useScrollReveal.ts");
+
+
+const Reveal = ({
+  as: Component = 'div',
+  children,
+  className = ''
+}) => {
+  const ref = (0,_hooks_useScrollReveal__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Component, {
+    ref: ref,
+    className: `opacity-0 translate-y-6 ${className}`
+  }, children);
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Reveal);
+
+/***/ }),
+
+/***/ "./src/hooks/useScrollReveal.ts":
+/*!**************************************!*\
+  !*** ./src/hooks/useScrollReveal.ts ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ useScrollReveal)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function useScrollReveal(threshold = 0.1) {
+  const ref = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    const el = ref.current;
+    if (!el) return;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduceMotion) {
+      el.classList.remove('opacity-0', 'translate-y-6');
+      return;
+    }
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        el.classList.add('animate-fade-in-up');
+        observer.unobserve(entry.target);
+      }
+    }, {
+      threshold
+    });
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [threshold]);
+  return ref;
+}
 
 /***/ }),
 

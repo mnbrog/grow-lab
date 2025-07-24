@@ -3,64 +3,105 @@ import Logo from '../shared/Logo';
 import Nav from './Nav';
 import Button from '../ui/Button';
 import Container from '../shared/Container';
-import Icon from '../ui/Icon';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  // The 'scrolled' state is no longer needed for styling but can be kept for other logic if necessary.
+  // For this component, we can simplify by removing it if it's not used elsewhere.
+  // For now, it's left in, but the styles that use it are removed.
 
+  // Effect to prevent scrolling when mobile menu is open
   useEffect(() => {
-    const onScroll = () => {
-      setScrolled(window.scrollY > 50);
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto'; // Cleanup on unmount
     };
-    onScroll();
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  }, [open]);
+
 
   return (
-    <header className="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
-      <Container
-        className={`flex items-center justify-between transition-all ${scrolled ? 'py-2' : 'py-4'}`}
-      >
-        <Logo
-          className={`transition-all ${scrolled ? 'h-12 sm:h-16 lg:h-20' : 'h-20 sm:h-28 lg:h-32'}`}
-        />
-        <div className="hidden md:flex flex-1 justify-center">
-          <Nav />
+    <header className="sticky top-0 z-50 bg-gray-900/80 backdrop-blur-sm">
+      {/*
+        CHANGE 1:
+        The vertical padding is now fixed to 'py-4' to prevent the header
+        from changing height on scroll.
+      */}
+      <Container className="flex items-center justify-between transition-all duration-300 py-4">
+        {/* --- Desktop Header --- */}
+        <div className="hidden flex-1 items-center justify-between md:flex">
+          <div className="flex-shrink-0">
+            {/*
+              CHANGE 2:
+              Logo size is now constant. The ternary operator based on 'scrolled' state is removed.
+            */}
+            <Logo className="h-32" />
+          </div>
+          <div className="flex-1 flex justify-center">
+            <Nav />
+          </div>
+          <div className="flex-shrink-0">
+            <Button variant="primary" size="large" as="a" href="/contact">
+              Book Now
+            </Button>
+          </div>
         </div>
-        <div className="ml-4 hidden md:block">
-          <Button variant="primary" size="large" as="a" href="/contact">
-            Book Your Free Strategy Session
-          </Button>
+
+        {/* --- Mobile Header --- */}
+        {/*
+          CHANGE 3:
+          The hamburger menu is now on the right. The spacer div is on the left.
+        */}
+        <div className="flex w-full items-center justify-between md:hidden">
+          {/* Left: Spacer to balance the layout */}
+          <div className="flex-1" />
+
+          {/* Center: Logo */}
+          <div className="flex-1 flex justify-center">
+            {/* Logo size is now constant for mobile as well. */}
+            <Logo className="h-32" />
+          </div>
+
+          {/* Right: Hamburger Menu Button */}
+          <div className="flex-1 flex justify-end">
+            <button
+              onClick={() => setOpen(!open)}
+              className="rounded-md p-2 text-gray-400 transition hover:bg-white/10 hover:text-white"
+              aria-label="Toggle menu"
+            >
+              {open ? (
+                <XMarkIcon className="h-7 w-7" />
+              ) : (
+                <Bars3Icon className="h-7 w-7" />
+              )}
+            </button>
+          </div>
         </div>
-        <button
-          className="md:hidden text-gray-400 hover:text-white focus:outline-none"
-          onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
-        >
-          <Icon name={open ? 'close' : 'menu'} />
-        </button>
       </Container>
 
-      {open && (
-        <div className="md:hidden fixed inset-0 z-40 bg-gray-900/90 backdrop-blur-sm animate-fade-in">
-          <Container className="py-8 animate-slide-down">
-            <Nav vertical onNavigate={() => setOpen(false)} />
-            <div className="mt-8 flex justify-center">
-              <Button
-                variant="primary"
-                size="normal"
-                as="a"
-                href="/contact"
-                onClick={() => setOpen(false)}
-              >
-                Book Your Free Strategy Session
-              </Button>
-            </div>
-          </Container>
-        </div>
-      )}
+      {/* --- Mobile Dropdown Menu --- */}
+      <div
+        className={`absolute left-0 w-full origin-top transform bg-gray-800 shadow-xl transition-transform duration-300 ease-in-out md:hidden ${
+          open ? 'scale-y-100' : 'scale-y-0'
+        }`}
+      >
+        <Container className="flex flex-col items-center gap-y-8 py-10">
+          <Nav vertical onNavigate={() => setOpen(false)} />
+          <Button
+            variant="primary"
+            size="large"
+            as="a"
+            href="/contact"
+            onClick={() => setOpen(false)}
+          >
+            Book Now
+          </Button>
+        </Container>
+      </div>
     </header>
   );
 };

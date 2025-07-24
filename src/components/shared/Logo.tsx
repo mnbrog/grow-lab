@@ -6,8 +6,11 @@ interface LogoProps {
   className?: string;
 }
 
-const Logo = ({ className = 'h-20 sm:h-28 lg:h-32' }: LogoProps) => (
-  <Link to="/" className="inline-block">
+// Default logo sizes have been increased.
+// Mobile: h-28 (112px)
+// Large screens (lg): h-36 (144px)
+const Logo = ({ className = 'h-28 lg:h-36' }: LogoProps) => (
+  <Link to="/" className="inline-block" aria-label="Go to homepage">
     <img
       src={logo}
       alt="GrowLabs Logo"
