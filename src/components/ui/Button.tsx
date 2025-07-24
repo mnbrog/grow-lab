@@ -9,7 +9,7 @@ interface ButtonProps {
 }
 
 const base =
-  'inline-flex items-center justify-center font-semibold rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 transition-transform duration-200 ease-in-out transform hover:scale-105';
+  'inline-flex items-center justify-center font-semibold font-accent rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 transition-transform duration-200 ease-in-out transform hover:scale-105';
 
 const variants = {
   primary: 'bg-accent text-primary hover:brightness-110 focus:ring-accent',
