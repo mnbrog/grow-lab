@@ -3624,11 +3624,25 @@ const Header = () => {
     0: open,
     1: setOpen
   } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const {
+    0: scrolled,
+    1: setScrolled
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
     className: "bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "flex items-center justify-between py-4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Logo__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: `flex items-center justify-between transition-all ${scrolled ? 'py-2' : 'py-4'}`
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Logo__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: `transition-all ${scrolled ? 'h-12 sm:h-16 lg:h-20' : 'h-20 sm:h-28 lg:h-32'}`
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "hidden md:flex flex-1 justify-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "ml-4 hidden md:block"
@@ -3637,28 +3651,28 @@ const Header = () => {
     size: "large",
     as: "a",
     href: "/contact"
-  }, "Get Quote")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+  }, "Get a Free Consultation")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     className: "md:hidden text-gray-400 hover:text-white focus:outline-none",
     onClick: () => setOpen(!open),
     "aria-label": "Toggle menu"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Icon__WEBPACK_IMPORTED_MODULE_5__["default"], {
     name: open ? 'close' : 'menu'
   }))), open && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "md:hidden border-t border-gray-800"
+    className: "md:hidden fixed inset-0 z-40 bg-gray-900/90 backdrop-blur-sm"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "py-4"
+    className: "py-8"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], {
     vertical: true,
     onNavigate: () => setOpen(false)
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mt-4 flex justify-center"
+    className: "mt-8 flex justify-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
     variant: "primary",
     size: "normal",
     as: "a",
     href: "/contact",
     onClick: () => setOpen(false)
-  }, "Get Quote")))));
+  }, "Get a Free Consultation")))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
 
@@ -3702,6 +3716,7 @@ const Nav = ({
   key: link.to,
   to: link.to,
   className: "transition-colors hover:text-white",
+  activeClassName: "text-white",
   onClick: onNavigate
 }, link.label)));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Nav);
@@ -3750,13 +3765,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const Logo = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+const Logo = ({
+  className = 'h-20 sm:h-28 lg:h-32'
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
   to: "/",
   className: "inline-block"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
   src: _images_growlabLogoTrans_png__WEBPACK_IMPORTED_MODULE_2__["default"],
   alt: "GrowLabs Logo",
-  className: "h-20 w-auto sm:h-28 lg:h-32"
+  className: `w-auto ${className}`
 }));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Logo);
 
@@ -3903,7 +3920,7 @@ const Icon = ({
 /***/ ((module) => {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('[{"id":"ai-writer","name":"AI Writer","price":"$19","description":"Generate marketing copy in seconds."},{"id":"waas-starter","name":"WaaS Starter","price":"$49/mo","description":"Beautiful 5-page website with hosting included."},{"id":"automation-kit","name":"Automation Kit","price":"$29","description":"Collection of ready-to-use Power Automate flows."}]');
+module.exports = /*#__PURE__*/JSON.parse('{"aiTools":[{"id":"ai-writer","name":"AI Writer","price":"$19","description":"Write blog posts, ads, or emails in seconds—just tell it what you want."},{"id":"ai-chatbot-builder","name":"AI Chatbot Builder","price":"$79","description":"Create a custom website chatbot that can answer your customers\' questions 24/7."},{"id":"lead-magnet-maker","name":"Lead Magnet Maker","price":"$35","description":"Quickly create professional ebooks, checklists, or downloads to get more email signups."},{"id":"seo-content-pack","name":"SEO Content Pack","price":"$59","description":"Get 5 ready-to-post blog articles designed to bring traffic from Google."},{"id":"affiliate-blog-starter","name":"Affiliate Blog Starter","price":"$39","description":"Start a blog that earns income by recommending tools you already use."}],"waasPlans":[{"id":"waas-starter","name":"WaaS Starter","price":"$49/mo","description":"We build you a 5-page website—no coding, no stress. Hosting included."},{"id":"waas-growth","name":"WaaS Growth","price":"$149/mo","description":"Bigger site (10+ pages) with blog, forms, SEO, and automation built in."},{"id":"waas-premium","name":"WaaS Premium","price":"$249/mo","description":"Everything done for you: strategy, site, updates, integrations, and analytics."},{"id":"business-launch-kit","name":"Business Launch Kit","price":"$199","description":"Perfect for beginners: Includes a full site, AI tools, and automation templates."}],"automations":[{"id":"automation-kit","name":"Automation Kit","price":"$29","description":"Stop doing repetitive tasks—get ready-to-use automation flows that save hours every week."},{"id":"email-workflow-pack","name":"Email Workflow Pack","price":"$35","description":"Automate your client follow-ups, reminders, or document sharing."},{"id":"client-intake-flow","name":"Client Intake Flow","price":"$25","description":"Collect client info automatically when someone books or fills out your form."},{"id":"calendar-sync-tool","name":"Calendar Sync Tool","price":"$19","description":"Keep your meetings and tasks synced across Outlook, Teams, and Google Calendar."},{"id":"template-market-access","name":"Template Vault Access","price":"$12/mo","description":"Unlock new AI tools and automation templates added every month."}],"designKits":[{"id":"graphic-design-bundle","name":"Graphic Design Bundle","price":"$89","description":"Get a custom logo, social media templates, and a simple brand style guide."},{"id":"social-launch-pack","name":"Social Launch Pack","price":"$25","description":"Post-ready graphics and caption ideas for your first 30 days online."},{"id":"brand-refresh-pack","name":"Brand Refresh Pack","price":"$75","description":"Already have a brand? Let’s modernize your fonts, colors, and social visuals."}],"bundles":[{"id":"founder-bundle","name":"Founder Bundle","price":"$299","description":"Includes everything a solo founder needs: AI tools, a custom site, automations, and branding."},{"id":"content-growth-bundle","name":"Content Growth Bundle","price":"$99","description":"Monthly blog posts + social content to grow traffic and trust."},{"id":"ai-upgrade-addon","name":"AI Upgrade Add-on","price":"$15/mo","description":"Supercharge any plan with AI-generated emails, summaries, and smart suggestions."}]}');
 
 /***/ }),
 
@@ -3937,18 +3954,23 @@ const ProductsPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___defau
   className: "py-16"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_shared_Container__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
   className: "text-4xl mb-12 text-center"
-}, "Our Solutions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+}, "Our Solutions"), Object.entries(_data_products_json__WEBPACK_IMPORTED_MODULE_6__).map(([category, items]) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  key: category,
+  className: "mb-16"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+  className: "text-2xl font-semibold mb-6 capitalize"
+}, category.replace(/([A-Z])/g, ' $1')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
   className: "grid gap-8 md:grid-cols-3"
-}, _data_products_json__WEBPACK_IMPORTED_MODULE_6__.map(p => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ui_Card__WEBPACK_IMPORTED_MODULE_4__["default"], {
+}, items.map(p => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ui_Card__WEBPACK_IMPORTED_MODULE_4__["default"], {
   key: p.id,
   title: p.name
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-  className: "mt-2 text-gray-400"
+  className: "mt-2 text-white-400"
 }, p.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
   className: "mt-4 text-2xl font-semibold text-white"
 }, p.price), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ui_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
   className: "mt-6 w-full"
-}, "Buy Now")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+}, "Buy Now")))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProductsPage);
 
 /***/ })

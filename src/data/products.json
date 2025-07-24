@@ -1,20 +1,132 @@
-[
-  {
-    "id": "ai-writer",
-    "name": "AI Writer",
-    "price": "$19",
-    "description": "Generate marketing copy in seconds."
-  },
-  {
-    "id": "waas-starter",
-    "name": "WaaS Starter",
-    "price": "$49/mo",
-    "description": "Beautiful 5-page website with hosting included."
-  },
-  {
-    "id": "automation-kit",
-    "name": "Automation Kit",
-    "price": "$29",
-    "description": "Collection of ready-to-use Power Automate flows."
-  }
-]
+{
+  "aiTools": [
+    {
+      "id": "ai-writer",
+      "name": "AI Writer",
+      "price": "$19",
+      "description": "Write blog posts, ads, or emails in seconds—just tell it what you want."
+    },
+    {
+      "id": "ai-chatbot-builder",
+      "name": "AI Chatbot Builder",
+      "price": "$79",
+      "description": "Create a custom website chatbot that can answer your customers' questions 24/7."
+    },
+    {
+      "id": "lead-magnet-maker",
+      "name": "Lead Magnet Maker",
+      "price": "$35",
+      "description": "Quickly create professional ebooks, checklists, or downloads to get more email signups."
+    },
+    {
+      "id": "seo-content-pack",
+      "name": "SEO Content Pack",
+      "price": "$59",
+      "description": "Get 5 ready-to-post blog articles designed to bring traffic from Google."
+    },
+    {
+      "id": "affiliate-blog-starter",
+      "name": "Affiliate Blog Starter",
+      "price": "$39",
+      "description": "Start a blog that earns income by recommending tools you already use."
+    }
+  ],
+  "waasPlans": [
+    {
+      "id": "waas-starter",
+      "name": "WaaS Starter",
+      "price": "$49/mo",
+      "description": "We build you a 5-page website—no coding, no stress. Hosting included."
+    },
+    {
+      "id": "waas-growth",
+      "name": "WaaS Growth",
+      "price": "$149/mo",
+      "description": "Bigger site (10+ pages) with blog, forms, SEO, and automation built in."
+    },
+    {
+      "id": "waas-premium",
+      "name": "WaaS Premium",
+      "price": "$249/mo",
+      "description": "Everything done for you: strategy, site, updates, integrations, and analytics."
+    },
+    {
+      "id": "business-launch-kit",
+      "name": "Business Launch Kit",
+      "price": "$199",
+      "description": "Perfect for beginners: Includes a full site, AI tools, and automation templates."
+    }
+  ],
+  "automations": [
+    {
+      "id": "automation-kit",
+      "name": "Automation Kit",
+      "price": "$29",
+      "description": "Stop doing repetitive tasks—get ready-to-use automation flows that save hours every week."
+    },
+    {
+      "id": "email-workflow-pack",
+      "name": "Email Workflow Pack",
+      "price": "$35",
+      "description": "Automate your client follow-ups, reminders, or document sharing."
+    },
+    {
+      "id": "client-intake-flow",
+      "name": "Client Intake Flow",
+      "price": "$25",
+      "description": "Collect client info automatically when someone books or fills out your form."
+    },
+    {
+      "id": "calendar-sync-tool",
+      "name": "Calendar Sync Tool",
+      "price": "$19",
+      "description": "Keep your meetings and tasks synced across Outlook, Teams, and Google Calendar."
+    },
+    {
+      "id": "template-market-access",
+      "name": "Template Vault Access",
+      "price": "$12/mo",
+      "description": "Unlock new AI tools and automation templates added every month."
+    }
+  ],
+  "designKits": [
+    {
+      "id": "graphic-design-bundle",
+      "name": "Graphic Design Bundle",
+      "price": "$89",
+      "description": "Get a custom logo, social media templates, and a simple brand style guide."
+    },
+    {
+      "id": "social-launch-pack",
+      "name": "Social Launch Pack",
+      "price": "$25",
+      "description": "Post-ready graphics and caption ideas for your first 30 days online."
+    },
+    {
+      "id": "brand-refresh-pack",
+      "name": "Brand Refresh Pack",
+      "price": "$75",
+      "description": "Already have a brand? Let’s modernize your fonts, colors, and social visuals."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "founder-bundle",
+      "name": "Founder Bundle",
+      "price": "$299",
+      "description": "Includes everything a solo founder needs: AI tools, a custom site, automations, and branding."
+    },
+    {
+      "id": "content-growth-bundle",
+      "name": "Content Growth Bundle",
+      "price": "$99",
+      "description": "Monthly blog posts + social content to grow traffic and trust."
+    },
+    {
+      "id": "ai-upgrade-addon",
+      "name": "AI Upgrade Add-on",
+      "price": "$15/mo",
+      "description": "Supercharge any plan with AI-generated emails, summaries, and smart suggestions."
+    }
+  ]
+}

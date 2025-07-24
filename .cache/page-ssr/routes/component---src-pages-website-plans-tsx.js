@@ -3624,11 +3624,25 @@ const Header = () => {
     0: open,
     1: setOpen
   } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const {
+    0: scrolled,
+    1: setScrolled
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
     className: "bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "flex items-center justify-between py-4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Logo__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: `flex items-center justify-between transition-all ${scrolled ? 'py-2' : 'py-4'}`
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Logo__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: `transition-all ${scrolled ? 'h-12 sm:h-16 lg:h-20' : 'h-20 sm:h-28 lg:h-32'}`
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "hidden md:flex flex-1 justify-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "ml-4 hidden md:block"
@@ -3637,28 +3651,28 @@ const Header = () => {
     size: "large",
     as: "a",
     href: "/contact"
-  }, "Get Quote")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+  }, "Get a Free Consultation")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     className: "md:hidden text-gray-400 hover:text-white focus:outline-none",
     onClick: () => setOpen(!open),
     "aria-label": "Toggle menu"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Icon__WEBPACK_IMPORTED_MODULE_5__["default"], {
     name: open ? 'close' : 'menu'
   }))), open && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "md:hidden border-t border-gray-800"
+    className: "md:hidden fixed inset-0 z-40 bg-gray-900/90 backdrop-blur-sm"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "py-4"
+    className: "py-8"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], {
     vertical: true,
     onNavigate: () => setOpen(false)
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mt-4 flex justify-center"
+    className: "mt-8 flex justify-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
     variant: "primary",
     size: "normal",
     as: "a",
     href: "/contact",
     onClick: () => setOpen(false)
-  }, "Get Quote")))));
+  }, "Get a Free Consultation")))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
 
@@ -3702,6 +3716,7 @@ const Nav = ({
   key: link.to,
   to: link.to,
   className: "transition-colors hover:text-white",
+  activeClassName: "text-white",
   onClick: onNavigate
 }, link.label)));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Nav);
@@ -3732,22 +3747,27 @@ __webpack_require__.r(__webpack_exports__);
 
 const plans = [{
   name: 'Starter',
-  price: '$49/mo',
-  features: ['Up to 5 pages', 'Basic SEO', 'Email support']
+  price: '$149/mo',
+  tagline: 'Your online presence — built, hosted, and launched for you.',
+  features: ['1–3 page branded website (mobile ready)', 'Hosted on Netlify — fast, secure, always live', 'Google Business Profile setup', 'AI logo + color palette', '3 Canva post templates', '1 automation per quarter', 'Monthly website & Google snapshot', 'Email support']
 }, {
   name: 'Growth',
-  price: '$99/mo',
-  features: ['Up to 15 pages', 'SEO optimization', 'Priority support']
+  price: '$299/mo',
+  tagline: 'Everything your brand needs to look professional, stay active, and bring in leads.',
+  features: ['Website up to 8 pages + landing page', 'Fully branded style kit', 'Hosted on Netlify — optimized for mobile, SEO & speed', 'Monthly automation', '6 branded social posts/month', '2 short-form videos/month', 'Blog section setup + 1 post/month', 'Booking/calendar embed', 'Priority email support']
 }, {
-  name: 'Scale',
-  price: '$199/mo',
-  features: ['Unlimited pages', 'Custom integrations', 'Dedicated support']
+  name: 'Pro Launch',
+  price: '$499/mo',
+  tagline: 'The all-in-one system to scale your digital presence, content, and client funnels.',
+  features: ['Unlimited pages + multi-location ready', 'Dynamic content system on Netlify', 'AI-powered content calendar', '4 reels/month', '2 SEO blog posts/month', 'Lead magnet funnel + email automation', 'Email marketing flows', 'Full Maps listing management', 'Monthly 30-minute strategy call', 'Slack or direct message support']
 }];
 const PricingTable = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
   className: "bg-primary/10 py-20"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-  className: "text-3xl text-center mb-12"
-}, "Flexible plans for any project"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "text-3xl text-center mb-4"
+}, "GrowLab Business Launch Plans"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  className: "mx-auto mb-12 max-w-2xl text-center text-gray-300"
+}, "We build, host, and grow your business online \u2014 no tech skills needed. All websites are hosted on ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Netlify"), ", a fast, secure, always-on platform used by companies like Nike and Peloton."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
   className: "grid gap-8 md:grid-cols-3"
 }, plans.map(plan => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
   key: plan.name,
@@ -3763,9 +3783,37 @@ const PricingTable = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___defau
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Icon__WEBPACK_IMPORTED_MODULE_4__["default"], {
   name: "check",
   className: "text-accent h-4 w-4"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, f)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, f)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  className: "mt-4 text-sm italic text-gray-400"
+}, plan.tagline), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
   className: "mt-8 w-full"
-}, "Choose Plan"))))));
+}, "Choose Plan")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "mx-auto mt-16 max-w-2xl text-sm text-gray-300"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+  className: "mb-2 text-center text-base font-semibold"
+}, "Hosting & Tech Explained (for Non-Tech Folks)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+  className: "space-y-2"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  className: "flex items-start space-x-2"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Icon__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  name: "check",
+  className: "text-accent h-4 w-4"
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Every website is ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "hosted by GrowLab on Netlify"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  className: "flex items-start space-x-2"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Icon__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  name: "check",
+  className: "text-accent h-4 w-4"
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "This means it\u2019s super fast, always online, and safe from hackers")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  className: "flex items-start space-x-2"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Icon__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  name: "check",
+  className: "text-accent h-4 w-4"
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "You don\u2019t need to manage servers or pay extra for hosting")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  className: "flex items-start space-x-2"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Icon__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  name: "check",
+  className: "text-accent h-4 w-4"
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Whether basic or full of automation, your site just works \u2014 we handle it all"))))));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PricingTable);
 
 /***/ }),
@@ -3812,13 +3860,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const Logo = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+const Logo = ({
+  className = 'h-20 sm:h-28 lg:h-32'
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
   to: "/",
   className: "inline-block"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
   src: _images_growlabLogoTrans_png__WEBPACK_IMPORTED_MODULE_2__["default"],
   alt: "GrowLabs Logo",
-  className: "h-20 w-auto sm:h-28 lg:h-32"
+  className: `w-auto ${className}`
 }));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Logo);
 

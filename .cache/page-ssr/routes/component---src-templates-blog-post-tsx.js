@@ -3624,11 +3624,25 @@ const Header = () => {
     0: open,
     1: setOpen
   } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const {
+    0: scrolled,
+    1: setScrolled
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
     className: "bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "flex items-center justify-between py-4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Logo__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: `flex items-center justify-between transition-all ${scrolled ? 'py-2' : 'py-4'}`
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Logo__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: `transition-all ${scrolled ? 'h-12 sm:h-16 lg:h-20' : 'h-20 sm:h-28 lg:h-32'}`
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "hidden md:flex flex-1 justify-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "ml-4 hidden md:block"
@@ -3637,28 +3651,28 @@ const Header = () => {
     size: "large",
     as: "a",
     href: "/contact"
-  }, "Get Quote")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+  }, "Get a Free Consultation")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     className: "md:hidden text-gray-400 hover:text-white focus:outline-none",
     onClick: () => setOpen(!open),
     "aria-label": "Toggle menu"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Icon__WEBPACK_IMPORTED_MODULE_5__["default"], {
     name: open ? 'close' : 'menu'
   }))), open && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "md:hidden border-t border-gray-800"
+    className: "md:hidden fixed inset-0 z-40 bg-gray-900/90 backdrop-blur-sm"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "py-4"
+    className: "py-8"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], {
     vertical: true,
     onNavigate: () => setOpen(false)
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mt-4 flex justify-center"
+    className: "mt-8 flex justify-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
     variant: "primary",
     size: "normal",
     as: "a",
     href: "/contact",
     onClick: () => setOpen(false)
-  }, "Get Quote")))));
+  }, "Get a Free Consultation")))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
 
@@ -3702,6 +3716,7 @@ const Nav = ({
   key: link.to,
   to: link.to,
   className: "transition-colors hover:text-white",
+  activeClassName: "text-white",
   onClick: onNavigate
 }, link.label)));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Nav);
@@ -3750,13 +3765,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const Logo = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+const Logo = ({
+  className = 'h-20 sm:h-28 lg:h-32'
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
   to: "/",
   className: "inline-block"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
   src: _images_growlabLogoTrans_png__WEBPACK_IMPORTED_MODULE_2__["default"],
   alt: "GrowLabs Logo",
-  className: "h-20 w-auto sm:h-28 lg:h-32"
+  className: `w-auto ${className}`
 }));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Logo);
 
