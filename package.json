@@ -7,6 +7,7 @@
     "test": "echo \"No tests specified\""
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "gatsby": "^5.14.5",
     "gatsby-plugin-image": "^3.14.0",
     "gatsby-plugin-postcss": "^6.0.0",
