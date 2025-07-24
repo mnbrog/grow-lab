@@ -1729,6 +1729,88 @@ module.exports = _setPrototypeOf, module.exports.__esModule = true, module.expor
 
 /***/ }),
 
+/***/ "./node_modules/@heroicons/react/24/outline/esm/Bars3Icon.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@heroicons/react/24/outline/esm/Bars3Icon.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+
+function Bars3Icon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    fill: "none",
+    viewBox: "0 0 24 24",
+    strokeWidth: 1.5,
+    stroke: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    d: "M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(Bars3Icon);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ForwardRef);
+
+/***/ }),
+
+/***/ "./node_modules/@heroicons/react/24/outline/esm/XMarkIcon.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@heroicons/react/24/outline/esm/XMarkIcon.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+
+function XMarkIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    fill: "none",
+    viewBox: "0 0 24 24",
+    strokeWidth: 1.5,
+    stroke: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    d: "M6 18 18 6M6 6l12 12"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(XMarkIcon);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ForwardRef);
+
+/***/ }),
+
 /***/ "./node_modules/gatsby-core-utils/dist/create-content-digest.mjs":
 /*!***********************************************************************!*\
   !*** ./node_modules/gatsby-core-utils/dist/create-content-digest.mjs ***!
@@ -3612,7 +3694,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Nav */ "./src/components/layout/Nav.tsx");
 /* harmony import */ var _ui_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui/Button */ "./src/components/ui/Button.tsx");
 /* harmony import */ var _shared_Container__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../shared/Container */ "./src/components/shared/Container.tsx");
-/* harmony import */ var _ui_Icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui/Icon */ "./src/components/ui/Icon.tsx");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/XMarkIcon.js");
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/Bars3Icon.js");
 
 
 
@@ -3624,55 +3707,72 @@ const Header = () => {
     0: open,
     1: setOpen
   } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
-  const {
-    0: scrolled,
-    1: setScrolled
-  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  // The 'scrolled' state is no longer needed for styling but can be kept for other logic if necessary.
+  // For this component, we can simplify by removing it if it's not used elsewhere.
+  // For now, it's left in, but the styles that use it are removed.
+
+  // Effect to prevent scrolling when mobile menu is open
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    const onScroll = () => {
-      setScrolled(window.scrollY > 50);
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto'; // Cleanup on unmount
     };
-    onScroll();
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  }, [open]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
-    className: "bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50"
+    className: "sticky top-0 z-50 bg-gray-900/80 backdrop-blur-sm"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: `flex items-center justify-between transition-all ${scrolled ? 'py-2' : 'py-4'}`
+    className: "flex items-center justify-between transition-all duration-300 py-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "hidden flex-1 items-center justify-between md:flex"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex-shrink-0"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Logo__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    className: `transition-all ${scrolled ? 'h-12 sm:h-16 lg:h-20' : 'h-20 sm:h-28 lg:h-32'}`
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "hidden md:flex flex-1 justify-center"
+    className: "h-32"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex-1 flex justify-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "ml-4 hidden md:block"
+    className: "flex-shrink-0"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
     variant: "primary",
     size: "large",
     as: "a",
     href: "/contact"
-  }, "Book Your Free Strategy Session")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    className: "md:hidden text-gray-400 hover:text-white focus:outline-none",
+  }, "Book Now"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex w-full items-center justify-between md:hidden"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex-1"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex-1 flex justify-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Logo__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: "h-32"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex-1 flex justify-end"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     onClick: () => setOpen(!open),
+    className: "rounded-md p-2 text-gray-400 transition hover:bg-white/10 hover:text-white",
     "aria-label": "Toggle menu"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Icon__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    name: open ? 'close' : 'menu'
-  }))), open && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "md:hidden fixed inset-0 z-40 bg-gray-900/90 backdrop-blur-sm animate-fade-in"
+  }, open ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    className: "h-7 w-7"
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    className: "h-7 w-7"
+  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: `absolute left-0 w-full origin-top transform bg-gray-800 shadow-xl transition-transform duration-300 ease-in-out md:hidden ${open ? 'scale-y-100' : 'scale-y-0'}`
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "py-8 animate-slide-down"
+    className: "flex flex-col items-center gap-y-8 py-10"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], {
     vertical: true,
     onNavigate: () => setOpen(false)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mt-8 flex justify-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
     variant: "primary",
-    size: "normal",
+    size: "large",
     as: "a",
     href: "/contact",
     onClick: () => setOpen(false)
-  }, "Book Your Free Strategy Session")))));
+  }, "Book Now"))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
 
@@ -3866,11 +3966,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+// Default logo sizes have been increased.
+// Mobile: h-28 (112px)
+// Large screens (lg): h-36 (144px)
 const Logo = ({
-  className = 'h-20 sm:h-28 lg:h-32'
+  className = 'h-28 lg:h-36'
 }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
   to: "/",
-  className: "inline-block"
+  className: "inline-block",
+  "aria-label": "Go to homepage"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
   src: _images_growlabLogoTrans_png__WEBPACK_IMPORTED_MODULE_2__["default"],
   alt: "GrowLabs Logo",

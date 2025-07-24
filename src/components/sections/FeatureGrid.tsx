@@ -122,7 +122,7 @@ const FeatureGrid = () => (
                 {/* Text Content */}
                 <div className="flex flex-col flex-grow">
                   {/* The title is part of the Card component, this makes the description grow */}
-                  <p className="flex-grow text-gray-400 text-sm leading-relaxed">{description}</p>
+                  <p className="flex-grow text-white-400 text-sm leading-relaxed">{description}</p>
                 </div>
               </Card>
             </Link>
