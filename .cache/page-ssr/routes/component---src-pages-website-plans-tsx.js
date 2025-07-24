@@ -3667,7 +3667,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
-  className: "bg-gray-900 py-8 text-sm text-gray-500 border-t border-gray-800"
+  className: "bg-transparent py-8 text-sm text-gray-500 border-t border-gray-800"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_1__["default"], {
   className: "text-center"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Logo__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
@@ -3945,8 +3945,10 @@ const StyledSection = ({
   id
 }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
   id: id,
-  className: `relative w-full overflow-hidden bg-gray-900 text-white ${className}`
-}, children);
+  className: `relative w-full bg-transparent ${className}`
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "relative z-10"
+}, children));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (StyledSection);
 
 /***/ }),

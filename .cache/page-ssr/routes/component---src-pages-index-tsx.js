@@ -6125,7 +6125,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
-  className: "bg-gray-900 py-8 text-sm text-gray-500 border-t border-gray-800"
+  className: "bg-transparent py-8 text-sm text-gray-500 border-t border-gray-800"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_1__["default"], {
   className: "text-center"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Logo__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
@@ -6874,8 +6874,10 @@ const StyledSection = ({
   id
 }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
   id: id,
-  className: `relative w-full overflow-hidden bg-gray-900 text-white ${className}`
-}, children);
+  className: `relative w-full bg-transparent ${className}`
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "relative z-10"
+}, children));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (StyledSection);
 
 /***/ }),
@@ -7231,6 +7233,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_sections_Testimonials__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/sections/Testimonials */ "./src/components/sections/Testimonials.tsx");
 /* harmony import */ var _components_sections_CallToAction__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/sections/CallToAction */ "./src/components/sections/CallToAction.tsx");
 /* harmony import */ var _components_sections_Portfolio__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/sections/Portfolio */ "./src/components/sections/Portfolio.tsx");
+/* harmony import */ var _components_sections_StyledSection__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/sections/StyledSection */ "./src/components/sections/StyledSection.tsx");
+/* harmony import */ var _components_layout_BackgroundGlow__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/layout/BackgroundGlow */ "./src/components/layout/BackgroundGlow.tsx");
 
 
 
@@ -7240,6 +7244,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+ // ✅ Updated name
 
 const IndexPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_helmet__WEBPACK_IMPORTED_MODULE_1__.Helmet, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("title", null, "GrowLab - Build, Automate, Grow"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
   name: "description",
@@ -7250,7 +7257,19 @@ const IndexPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default(
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
   property: "og:description",
   content: "Digital products and automation templates for scaling modern businesses."
-})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_Hero__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_FeatureGrid__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_Portfolio__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_PricingTable__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_Testimonials__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_CallToAction__WEBPACK_IMPORTED_MODULE_8__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
+  className: "relative text-white"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_BackgroundGlow__WEBPACK_IMPORTED_MODULE_11__["default"], null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_Hero__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_StyledSection__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  id: "features"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_FeatureGrid__WEBPACK_IMPORTED_MODULE_5__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_StyledSection__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  id: "portfolio"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_Portfolio__WEBPACK_IMPORTED_MODULE_9__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_StyledSection__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  id: "pricing"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_PricingTable__WEBPACK_IMPORTED_MODULE_6__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_StyledSection__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  id: "testimonials"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_Testimonials__WEBPACK_IMPORTED_MODULE_7__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_StyledSection__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  id: "cta"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_sections_CallToAction__WEBPACK_IMPORTED_MODULE_8__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexPage);
 
 /***/ })
