@@ -7879,16 +7879,17 @@ const BackgroundGlow = () => {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "pointer-events-none fixed inset-0 -z-10 bg-[#0A2640]"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "absolute inset-x-0 h-[600px] bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e70,transparent)]"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "pointer-events-none fixed inset-0 -z-10 transition duration-300 mix-blend-screen",
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "pointer-events-none fixed inset-0 -z-10 transition duration-300",
     style: {
-      background: `radial-gradient(800px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.12), transparent 80%)`
+      background: `
+          radial-gradient(circle 500px at 50% 200px, rgba(62, 62, 112, 0.3), transparent 80%),
+          radial-gradient(800px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.12), transparent 80%),
+          #0A2640
+        `,
+      backgroundBlendMode: 'screen'
     }
-  }));
+  });
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BackgroundGlow);
 

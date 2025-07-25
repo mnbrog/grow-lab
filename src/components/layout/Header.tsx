@@ -61,9 +61,8 @@ const Header = () => {
           <div className="flex-1" />
 
           {/* Center: Logo */}
-          <div className="flex-1 flex justify-center">
-            {/* Logo size is now constant for mobile as well. */}
-            <Logo className="h-32" />
+          <div className="flex flex-col items-center gap-0">
+        <Logo />
           </div>
 
           {/* Right: Hamburger Menu Button */}
