@@ -83,20 +83,21 @@ const PricingTable = () => (
                 ))}
               </ul>
               <p className="mt-4 text-sm italic text-gray-400">{plan.tagline}</p>
-              <Button
-                className="mt-8 w-full"
-                as="a"
-                href={`/contact?plan=${plan.name}`}
-              >
-                Choose Plan
-              </Button>
+             <Button
+              className="mt-8 w-full"
+              as="a"
+              variant="primary"
+              href={`/contact?plan=${plan.name}`}
+            >
+              Choose Plan
+            </Button>
             </Card>
           </Reveal>
         ))}
       </div>
       <div className="mx-auto mt-16 max-w-2xl text-sm text-gray-300">
         <h3 className="mb-2 text-center text-base font-semibold">
-          Hosting &amp; Tech Explained (for Non-Tech Folks)
+          Hosting &amp; Tech Explained
         </h3>
         <ul className="space-y-2">
           <li className="flex items-start space-x-2">
