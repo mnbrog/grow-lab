@@ -3668,11 +3668,9 @@ __webpack_require__.r(__webpack_exports__);
 
 const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
   className: "bg-transparent py-8 text-sm text-gray-500 border-t border-gray-800"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  className: "text-center"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Logo__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-  className: "mt-4"
-}, "\xA9 ", new Date().getFullYear(), " GrowLab. All rights reserved.")));
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "flex flex-col items-center gap-0"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Logo__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "\xA9 ", new Date().getFullYear(), " GrowLab. All rights reserved."))));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
 
 /***/ }),
@@ -3978,7 +3976,7 @@ const ContactPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___defaul
   rows: 4,
   className: "w-full rounded-md border-gray-600 bg-gray-800 px-4 py-2 focus:border-accent focus:ring-accent"
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ui_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  type: "submit",
+  type: "primary",
   className: "w-full"
 }, "Send Message")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ContactPage);

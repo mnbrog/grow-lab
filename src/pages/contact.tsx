@@ -26,7 +26,7 @@ const ContactPage = () => (
             rows={4}
             className="w-full rounded-md border-gray-600 bg-gray-800 px-4 py-2 focus:border-accent focus:ring-accent"
           />
-          <Button type="submit" className="w-full">Send Message</Button>
+          <Button type="primary" className="w-full">Send Message</Button>
         </form>
       </Container>
     </main>
