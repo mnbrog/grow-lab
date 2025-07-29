@@ -31,9 +31,9 @@ const BlogPostTemplate = ({ data }: any) => {
          <Container className="max-w-3xl mx-auto">
           <article className="prose prose-invert prose-lg max-w-none">
             <header className="mb-10">
-              {frontmatter.featuredImage && (
+              {frontmatter.featuredImage?.publicURL && (
                 <img
-                  src={frontmatter.featuredImage}
+                  src={frontmatter.featuredImage.publicURL}
                   alt={frontmatter.title}
                   className="rounded-lg mb-6 w-full object-cover"
                 />
@@ -143,7 +143,9 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         author
-        featuredImage
+        featuredImage {
+          publicURL
+        }
         ctaText
         productId
         productName

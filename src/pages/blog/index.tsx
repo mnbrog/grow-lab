@@ -19,9 +19,10 @@ const BlogIndex = ({ data }: any) => (
               to={post.fields.slug}
               className="block rounded-xl border border-white/10 bg-gray-900/50 backdrop-blur-sm p-6 transition-shadow duration-300 hover:shadow-xl hover:shadow-accent/30"
             >
-              {post.frontmatter.featuredImage && (
+              {post.frontmatter.featuredImage?.publicURL && (
                 <img
-                  src={post.frontmatter.featuredImage}
+                  src={post.frontmatter.featuredImage.publicURL}
+
                   alt={post.frontmatter.title}
                   className="mb-4 h-40 w-full rounded-md object-cover"
                 />
@@ -47,6 +48,9 @@ export const pageQuery = graphql`
         frontmatter {
           title
           date(formatString: "MMMM DD, YYYY")
+          featuredImage {
+            publicURL
+          }
           featuredImage
         }
         excerpt(pruneLength: 100)
