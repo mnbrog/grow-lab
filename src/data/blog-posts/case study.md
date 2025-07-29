@@ -2,7 +2,7 @@
 title: "How Upright Medical Streamlined Their Digital Presence with GrowLab"
 date: "2025-07-20"
 author: "GrowLab Team"
-featuredImage: 'C:\Users\mnbro\grow-lab\src\components\shared\images\GrowlabLogo.png'
+featuredImage: '../../components/shared/images/GrowlabLogo.png'
 ctaText: "Transform your own site with the Founder Bundle."
 productId: "founder-bundle"
 productName: "Founder Bundle"

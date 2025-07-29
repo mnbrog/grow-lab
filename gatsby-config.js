@@ -19,5 +19,12 @@ module.exports = {
         path: `${__dirname}/src/data/blog-posts`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/components/shared/images`,
+      },
+    },
   ],
 };
