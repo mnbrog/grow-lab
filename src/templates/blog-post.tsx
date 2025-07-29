@@ -12,7 +12,7 @@ const BlogPostTemplate = ({ data }: any) => {
       <main className="py-16">
         <Container className="prose mx-auto">
           <h1>{post.frontmatter.title}</h1>
-          <p className="text-sm text-gray-500">{post.frontmatter.date}</p>
+          <p className="text-sm text-white">{post.frontmatter.date}</p>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </Container>
       </main>
