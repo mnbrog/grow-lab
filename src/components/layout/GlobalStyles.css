@@ -36,3 +36,8 @@ h1, h2, h3, h4, h5, h6 {
 .prose strong {
   @apply text-white;
 }
+
+/* Offset anchors for smooth scrolling */
+.prose h2[id], .prose h3[id], .prose h4[id] {
+  scroll-margin-top: 6rem;
+}
