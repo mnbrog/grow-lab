@@ -3956,19 +3956,22 @@ __webpack_require__.r(__webpack_exports__);
 const BlogIndex = ({
   data
 }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
-  className: "py-16 text-white"
+  className: "py-20 text-white bg-gradient-to-b from-[#0A2640] to-[#071B30]"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_shared_Container__WEBPACK_IMPORTED_MODULE_4__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-  className: "text-3xl mb-8 text-white"
-}, "Insights"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-  className: "space-y-6"
-}, data.allMarkdownRemark.nodes.map(post => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-  key: post.fields.slug
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  className: "text-4xl font-bold text-center mb-12"
+}, "Insights"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "grid gap-8 md:grid-cols-2 lg:grid-cols-3"
+}, data.allMarkdownRemark.nodes.map(post => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  key: post.fields.slug,
   to: post.fields.slug,
-  className: "text-white text-xl font-semibold hover:text-accent transition-colors"
+  className: "block rounded-xl border border-white/10 bg-gray-900/50 backdrop-blur-sm p-6 transition-shadow duration-300 hover:shadow-xl hover:shadow-accent/30"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+  className: "text-2xl font-semibold mb-2 text-white group-hover:text-accent transition-colors"
 }, post.frontmatter.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-  className: "text-sm text-white mt-1"
-}, post.frontmatter.date)))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+  className: "text-sm text-white/60 mb-4"
+}, post.frontmatter.date), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  className: "text-white/80 text-sm line-clamp-3"
+}, "Learn more about this topic and how it can help grow your business.")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 const pageQuery = "1925315801";
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BlogIndex);
 

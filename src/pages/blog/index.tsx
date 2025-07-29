@@ -3,12 +3,14 @@ import { Link, graphql } from 'gatsby';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import Container from '../../components/shared/Container';
+import BackgroundGlow from '../../components/layout/BackgroundGlow';
 
 const BlogIndex = ({ data }: any) => (
   <>
     <Header />
-    <main className="py-20 text-white bg-gradient-to-b from-[#0A2640] to-[#071B30]">
-      <Container>
+    <main className="relative py-20 text-white">
+      <BackgroundGlow />
+        <Container>
         <h1 className="text-4xl font-bold text-center mb-12">Insights</h1>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
