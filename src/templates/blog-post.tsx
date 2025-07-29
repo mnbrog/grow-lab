@@ -6,6 +6,7 @@ import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import Container from '../components/shared/Container';
 import Button from '../components/ui/Button';
+import BackgroundGlow from '../components/layout/BackgroundGlow';
 
 const BlogPostTemplate = ({ data }: any) => {
   const post = data.markdownRemark;
@@ -27,7 +28,8 @@ const BlogPostTemplate = ({ data }: any) => {
         <meta name="description" content={post.excerpt} />
       </Helmet>
       <Header />
-      <main className="bg-gradient-to-b from-[#0A2640] to-[#071B30] py-24 text-white min-h-screen">
+      <main className="relative py-24 text-white min-h-screen">
+        <BackgroundGlow />
         <Container className="max-w-3xl mx-auto">
           <article className="prose prose-invert prose-lg max-w-none">
             <header className="mb-10">
