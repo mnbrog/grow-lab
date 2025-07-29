@@ -6612,23 +6612,15 @@ const HeroSection = ({
     className: "mt-12 flex flex-col items-center space-y-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex items-center justify-center space-x-8 opacity-80"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "bg-white rounded-lg p-4 flex items-center justify-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "/creator-map-logo.svg",
-    alt: "Creator Map",
-    className: "h-8"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "/kerr-chief-logo.svg",
-    alt: "Kerr Chief",
-    className: "h-8"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "/upright-medical-logo.svg",
+    src: "https://michaelnbrogan.com/Upright%20Medical%20Solutions%20Logo.png",
     alt: "Upright Medical",
-    className: "h-8"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("blockquote", {
+    className: "h-9"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("blockquote", {
     className: "text-gray-300 italic text-center max-w-xl"
-  }, "\u201CGrowLab helped us automate tedious tasks and focus on real growth.\u201D \u2014 Jane Doe, Upright Medical Solutions")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mt-16"
-  })));
+  }, "\u201CGrowLab helped us automate tedious tasks and focus on real growth.\u201D \u2014 Jane Doe, Upright Medical Solutions"))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HeroSection);
 
@@ -7003,7 +6995,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((module) => {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('[{"name":"Creator Map","description":"Creator Platform · United States","logo":"https://assets.softr-files.com/applications/f337a486-9cbb-468b-b871-1a84332cea99/assets/d2cced6b-29b1-4201-9977-9173e7cc3790.png","url":"https://www.thecreatormap.com/"},{"name":"Kerr Chief","description":"Outdoor Apparel Brand","logo":"https://michaelnbrogan.com/Arrowhead_LGO.png","url":"https://www.kerr-chief.com/"},{"name":"Upright Medical Solutions","description":"Medical Software · Birmingham, AL","logo":"https://michaelnbrogan.com/Upright%20Medical%20Solutions%20Logo.png","url":"https://uprightmedicalsolutions.com/"}]');
+module.exports = /*#__PURE__*/JSON.parse('[{"name":"Creator Map","description":"Creator Platform","logo":"https://assets.softr-files.com/applications/f337a486-9cbb-468b-b871-1a84332cea99/assets/d2cced6b-29b1-4201-9977-9173e7cc3790.png","url":"https://www.thecreatormap.com/"},{"name":"Kerr Chief","description":"Outdoor Apparel Brand","logo":"https://michaelnbrogan.com/Arrowhead_LGO.png","url":"https://www.kerr-chief.com/"},{"name":"Upright Medical Solutions","description":"Medical Software","logo":"https://michaelnbrogan.com/Upright%20Medical%20Solutions%20Logo.png","url":"https://uprightmedicalsolutions.com/"}]');
 
 /***/ }),
 

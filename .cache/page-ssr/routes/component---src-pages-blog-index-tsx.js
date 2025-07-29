@@ -3967,7 +3967,7 @@ const BlogIndex = ({
   to: post.fields.slug,
   className: "text-white text-xl font-semibold hover:text-accent transition-colors"
 }, post.frontmatter.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-  className: "text-sm text-white-300 mt-1"
+  className: "text-sm text-white mt-1"
 }, post.frontmatter.date)))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 const pageQuery = "1925315801";
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BlogIndex);

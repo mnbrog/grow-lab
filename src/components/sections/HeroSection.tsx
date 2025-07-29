@@ -115,21 +115,20 @@ const HeroSection: React.FC<HeroSectionProps> = ({ variant = 'painAgitation' }) 
         </div>
 
         <div className="mt-12 flex flex-col items-center space-y-6">
-          <div className="flex items-center justify-center space-x-8 opacity-80">
-            {/* TODO: Replace with actual logo images */}
-            <img src="/creator-map-logo.svg" alt="Creator Map" className="h-8" />
-            <img src="/kerr-chief-logo.svg" alt="Kerr Chief" className="h-8" />
-            <img src="/upright-medical-logo.svg" alt="Upright Medical" className="h-8" />
-          </div>
+  <div className="flex items-center justify-center space-x-8 opacity-80">
+    <div className="bg-white rounded-lg p-4 flex items-center justify-center">
+      <img
+        src="https://michaelnbrogan.com/Upright%20Medical%20Solutions%20Logo.png"
+        alt="Upright Medical"
+        className="h-9"
+      />
+    </div>
+  </div>
 
-          <blockquote className="text-gray-300 italic text-center max-w-xl">
-            “GrowLab helped us automate tedious tasks and focus on real growth.” — Jane Doe, Upright Medical Solutions
-          </blockquote>
-        </div>
-
-        <div className="mt-16">
-          {/* TODO: Insert before/after transformation visual (image, SVG, or Lottie) */}
-        </div>
+  <blockquote className="text-gray-300 italic text-center max-w-xl">
+    “GrowLab helped us automate tedious tasks and focus on real growth.” — Jane Doe, Upright Medical Solutions
+  </blockquote>
+</div>
       </Container>
     </section>
   );

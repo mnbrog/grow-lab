@@ -3954,25 +3954,25 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const ContactPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
-  className: "py-16"
+  className: "py-16 text-white"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_shared_Container__WEBPACK_IMPORTED_MODULE_3__["default"], {
   className: "max-w-lg"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-  className: "text-3xl mb-8 text-center"
+  className: "text-3xl mb-8 text-center text-white"
 }, "Contact Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
   className: "space-y-4"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
   type: "text",
   placeholder: "Name",
-  className: "w-full rounded-md border-gray-600 bg-gray-800 px-4 py-2 focus:border-accent focus:ring-accent"
+  className: "w-full rounded-md border-gray-600 bg-gray-800 px-4 py-2 text-white placeholder-gray-400 focus:border-accent focus:ring-accent"
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
   type: "email",
   placeholder: "Email",
-  className: "w-full rounded-md border-gray-600 bg-gray-800 px-4 py-2 focus:border-accent focus:ring-accent"
+  className: "w-full rounded-md border-gray-600 bg-gray-800 px-4 py-2 text-white placeholder-gray-400 focus:border-accent focus:ring-accent"
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("textarea", {
   placeholder: "How can we help?",
   rows: 4,
-  className: "w-full rounded-md border-gray-600 bg-gray-800 px-4 py-2 focus:border-accent focus:ring-accent"
+  className: "w-full rounded-md border-gray-600 bg-gray-800 px-4 py-2 text-white placeholder-gray-400 focus:border-accent focus:ring-accent"
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ui_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
   type: "primary",
   className: "w-full"
