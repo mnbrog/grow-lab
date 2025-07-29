@@ -2,7 +2,7 @@
 title: "The Only Tech Stack You Need to Launch Your Business in a Weekend"
 date: "2025-07-19"
 author: "GrowLab Team"
-featuredImage: 'C:\Users\mnbro\grow-lab\src\components\shared\images\GrowlabLogo.png'
+featuredImage: '../../components/shared/images/GrowlabLogo.png'
 ctaText: "Grab the Founder Bundle and launch faster."
 productId: "founder-bundle"
 productName: "Founder Bundle"

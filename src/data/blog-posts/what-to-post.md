@@ -2,7 +2,7 @@
 title: "What to Post When You Don't Know What to Post"
 date: "2025-08-01"
 author: "GrowLab Team"
-featuredImage: 'C:\Users\mnbro\grow-lab\src\components\shared\images\GrowlabLogo.png'
+featuredImage: '../../components/shared/images/GrowlabLogo.png'
 ctaText: "Ready to stop staring at the blank screen? Grab the AI Writer for just $19."
 productId: "ai-writer"
 productName: "AI Writer"
