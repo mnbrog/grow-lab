@@ -19,14 +19,18 @@ const BlogIndex = ({ data }: any) => (
               to={post.fields.slug}
               className="block rounded-xl border border-white/10 bg-gray-900/50 backdrop-blur-sm p-6 transition-shadow duration-300 hover:shadow-xl hover:shadow-accent/30"
             >
+              {post.frontmatter.featuredImage?.publicURL && (
+                <img
+                  src={post.frontmatter.featuredImage.publicURL}
+                  alt={post.frontmatter.title}
+                  className="mb-4 h-40 w-full rounded-md object-cover"
+                />
+              )}
               <h2 className="text-2xl font-semibold mb-2 text-white group-hover:text-accent transition-colors">
                 {post.frontmatter.title}
               </h2>
               <p className="text-sm text-white/60 mb-4">{post.frontmatter.date}</p>
-              <p className="text-white/80 text-sm line-clamp-3">
-                {/* Optional: preview text (if you extract excerpt) */}
-                Learn more about this topic and how it can help grow your business.
-              </p>
+              <p className="text-white/80 text-sm line-clamp-3">{post.excerpt}</p>
             </Link>
           ))}
         </div>
@@ -43,7 +47,11 @@ export const pageQuery = graphql`
         frontmatter {
           title
           date(formatString: "MMMM DD, YYYY")
+          featuredImage {
+            publicURL
+          }
         }
+        excerpt(pruneLength: 100)
         fields {
           slug
         }
