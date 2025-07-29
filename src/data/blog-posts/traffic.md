@@ -2,7 +2,7 @@
 title: "5 Reasons Your Website Isn’t Getting Traffic (And How to Fix It)"
 date: "2025-07-15"
 author: "GrowLab Team"
-featuredImage: ../components/shared/images/growlabLogoTrans.png
+featuredImage: 'C:\Users\mnbro\grow-lab\src\components\shared\images\GrowlabLogo.png'
 ctaText: "Boost your rankings with the SEO Content Pack."
 productId: "seo-content-pack"
 productName: "SEO Content Pack"
