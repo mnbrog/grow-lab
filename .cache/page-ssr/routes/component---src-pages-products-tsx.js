@@ -3667,7 +3667,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
-  className: "bg-transparent py-8 text-sm text-gray-500 border-t border-gray-800"
+  className: "bg-transparent py-8 text-sm text-gray-500 border-t border-transparent"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Container__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
   className: "flex flex-col items-center gap-0"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_shared_Logo__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "\xA9 ", new Date().getFullYear(), " GrowLab. All rights reserved."))));
@@ -3998,21 +3998,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const ProductsPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
-  className: "py-16"
+  className: "py-16 text-white"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_shared_Container__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-  className: "text-4xl mb-12 text-center"
+  className: "text-4xl mb-12 text-center text-white"
 }, "Our Solutions"), Object.entries(_data_products_json__WEBPACK_IMPORTED_MODULE_6__).map(([category, items]) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
   key: category,
   className: "mb-16"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-  className: "text-2xl font-semibold mb-6 capitalize"
+  className: "text-2xl font-semibold mb-6 capitalize text-white"
 }, category.replace(/([A-Z])/g, ' $1')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
   className: "grid gap-8 md:grid-cols-3"
 }, items.map(p => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ui_Card__WEBPACK_IMPORTED_MODULE_4__["default"], {
   key: p.id,
-  title: p.name
+  title: p.name,
+  className: "text-white"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-  className: "mt-2 text-white-400"
+  className: "mt-2 text-white"
 }, p.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
   className: "mt-4 text-2xl font-semibold text-white"
 }, p.price), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ui_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
