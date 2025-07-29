@@ -19,7 +19,7 @@ const BlogIndex = ({ data }: any) => (
               >
                 {post.frontmatter.title}
               </Link>
-              <p className="text-sm text-white-300 mt-1">{post.frontmatter.date}</p>
+              <p className="text-sm text-white mt-1">{post.frontmatter.date}</p>
             </li>
           ))}
         </ul>
