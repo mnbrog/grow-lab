@@ -1,18 +1,18 @@
 var plugins = [{
       name: 'gatsby-plugin-image',
-      plugin: require('C:/Users/Michael Brogan/grow-lab/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
+      plugin: require('C:/Users/mnbro/grow-lab/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
       name: 'gatsby-plugin-react-helmet',
-      plugin: require('C:/Users/Michael Brogan/grow-lab/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
+      plugin: require('C:/Users/mnbro/grow-lab/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
       name: 'default-site-plugin',
-      plugin: require('C:/Users/Michael Brogan/grow-lab/gatsby-ssr.js'),
+      plugin: require('C:/Users/mnbro/grow-lab/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
       name: 'partytown',
-      plugin: require('C:/Users/Michael Brogan/grow-lab/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
+      plugin: require('C:/Users/mnbro/grow-lab/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
       options: {"plugins":[]},
     }]
 /* global plugins */

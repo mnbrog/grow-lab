@@ -3889,7 +3889,7 @@ const PricingTable = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___defau
 }, plan.tagline), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
   className: "mt-8 w-full",
   as: "a",
-  variant: plan.name === 'Growth' ? 'secondary' : 'primary',
+  variant: "primary",
   href: `/contact?plan=${plan.name}`
 }, "Choose Plan"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
   className: "mx-auto mt-16 max-w-2xl text-sm text-gray-300"

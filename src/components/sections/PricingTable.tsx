@@ -61,7 +61,7 @@ const plans = [
 ];
 
 const PricingTable = () => (
-  <StyledSection className="py-20">
+  <StyledSection className="py-20 text-white">
     <Container>
       <h2 className="text-3xl text-center mb-4">GrowLab Business Launch Plans</h2>
       <p className="mx-auto mb-12 max-w-2xl text-center text-gray-300">

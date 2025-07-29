@@ -3,7 +3,7 @@ import Container from '../shared/Container';
 import Logo from '../shared/Logo';
 
 const Footer = () => (
-  <footer className="bg-transparent py-8 text-sm text-gray-500 border-t border-gray-800">
+  <footer className="bg-transparent py-8 text-sm text-gray-500 border-t border-transparent">
     <Container>
       {/* Flex container to align and space the logo and text */}
       <div className="flex flex-col items-center gap-0">

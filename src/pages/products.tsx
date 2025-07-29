@@ -9,17 +9,19 @@ import products from '../data/products.json';
 const ProductsPage = () => (
   <>
     <Header />
-    <main className="py-16">
+    <main className="py-16 text-white">
       <Container>
-        <h1 className="text-4xl mb-12 text-center">Our Solutions</h1>
+        <h1 className="text-4xl mb-12 text-center text-white">Our Solutions</h1>
 
         {Object.entries(products).map(([category, items]) => (
           <div key={category} className="mb-16">
-            <h2 className="text-2xl font-semibold mb-6 capitalize">{category.replace(/([A-Z])/g, ' $1')}</h2>
+            <h2 className="text-2xl font-semibold mb-6 capitalize text-white">
+              {category.replace(/([A-Z])/g, ' $1')}
+            </h2>
             <div className="grid gap-8 md:grid-cols-3">
               {items.map((p) => (
-                <Card key={p.id} title={p.name}>
-                  <p className="mt-2 text-white-400">{p.description}</p>
+                <Card key={p.id} title={p.name} className="text-white">
+                  <p className="mt-2 text-white">{p.description}</p>
                   <p className="mt-4 text-2xl font-semibold text-white">{p.price}</p>
                   <Button className="mt-6 w-full">Buy Now</Button>
                 </Card>
