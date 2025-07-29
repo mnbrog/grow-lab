@@ -2,7 +2,7 @@
 title: "How to Create a Lead Magnet in 15 Minutes (That Doesn’t Look Like It)"
 date: "2025-07-22"
 author: "GrowLab Team"
-featuredImage: ../components/shared/images/growlabLogoTrans.png
+featuredImage: 'C:\Users\mnbro\grow-lab\src\components\shared\images\GrowlabLogo.png'
 ctaText: "Launch your first lead magnet with our Lead Magnet Maker."
 productId: "lead-magnet-maker"
 productName: "Lead Magnet Maker"
