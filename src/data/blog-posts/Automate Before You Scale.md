@@ -2,7 +2,7 @@
 title: "3 Workflows You Should Automate Before Hiring Your First Employee"
 date: "2025-07-24"
 author: "GrowLab Team"
-featuredImage: ../components/shared/images/growlabLogoTrans.png
+featuredImage: '../../components/shared/images/GrowlabLogo.png'
 ctaText: "Save hours each week with our Automation Kit."
 productId: "automation-kit"
 productName: "Automation Kit"

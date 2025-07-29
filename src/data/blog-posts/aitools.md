@@ -2,7 +2,7 @@
 title: "The Best Power Automate Templates for Small Business Owners"
 date: "2025-07-10"
 author: "GrowLab Team"
-featuredImage: ../components/shared/images/growlabLogoTrans.png
+featuredImage: '../../components/shared/images/GrowlabLogo.png'
 ctaText: "Unlock every automation with Template Vault Access."
 productId: "template-market-access"
 productName: "Template Vault Access"
