@@ -7,22 +7,28 @@ import Container from '../../components/shared/Container';
 const BlogIndex = ({ data }: any) => (
   <>
     <Header />
-    <main className="py-16 text-white">
+    <main className="py-20 text-white bg-gradient-to-b from-[#0A2640] to-[#071B30]">
       <Container>
-        <h1 className="text-3xl mb-8 text-white">Insights</h1>
-        <ul className="space-y-6">
+        <h1 className="text-4xl font-bold text-center mb-12">Insights</h1>
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {data.allMarkdownRemark.nodes.map((post: any) => (
-            <li key={post.fields.slug}>
-              <Link
-                to={post.fields.slug}
-                className="text-white text-xl font-semibold hover:text-accent transition-colors"
-              >
+            <Link
+              key={post.fields.slug}
+              to={post.fields.slug}
+              className="block rounded-xl border border-white/10 bg-gray-900/50 backdrop-blur-sm p-6 transition-shadow duration-300 hover:shadow-xl hover:shadow-accent/30"
+            >
+              <h2 className="text-2xl font-semibold mb-2 text-white group-hover:text-accent transition-colors">
                 {post.frontmatter.title}
-              </Link>
-              <p className="text-sm text-white mt-1">{post.frontmatter.date}</p>
-            </li>
+              </h2>
+              <p className="text-sm text-white/60 mb-4">{post.frontmatter.date}</p>
+              <p className="text-white/80 text-sm line-clamp-3">
+                {/* Optional: preview text (if you extract excerpt) */}
+                Learn more about this topic and how it can help grow your business.
+              </p>
+            </Link>
           ))}
-        </ul>
+        </div>
       </Container>
     </main>
     <Footer />
@@ -31,7 +37,7 @@ const BlogIndex = ({ data }: any) => (
 
 export const pageQuery = graphql`
   query BlogIndexQuery {
-    allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       nodes {
         frontmatter {
           title

@@ -19,81 +19,82 @@ import Container from '../shared/Container';
 import Reveal from '../ui/Reveal';
 import StyledSection from './StyledSection';
 
-// No changes needed to the features array
 const features = [
   {
     title: 'AI Tools',
     description: 'Streamline everyday tasks with simple AI-powered helpers.',
-    href: '/products/ai-tools',
+    href: '/products#ai-tools',
     icon: CpuChipIcon,
   },
   {
     title: 'WaaS Plans',
     description: 'Launch a stunning, high-performance website without lifting a finger.',
-    href: '/products/waas',
+    href: '/products#waas',
     icon: GlobeAltIcon,
   },
   {
     title: 'Automation',
     description: 'Speed up workflows using ready-made Power Automate templates.',
-    href: '/products/automation',
+    href: '/products#automation',
     icon: ArrowPathIcon,
   },
   {
     title: 'SEO & Monetization',
     description: 'Grow traffic and generate passive income with optimized content.',
-    href: '/products/seo-monetization',
+    href: '/products#seo-monetization',
     icon: ChartBarIcon,
   },
   {
     title: 'Graphic Design',
     description: 'Get custom logos and cohesive branding designed for your business.',
-    href: '/products/graphic-design',
+    href: '/products#graphic-design',
     icon: PaintBrushIcon,
   },
   {
     title: 'Social Media Management',
     description: 'Boost engagement and grow your presence with scheduled content.',
-    href: '/products/social-media',
+    href: '/products#social-media',
     icon: AtSymbolIcon,
   },
   {
     title: 'Custom Integrations',
     description: 'Connect tools like CRMs, email, and databases with tailored solutions.',
-    href: '/products/integrations',
+    href: '/products#integrations',
     icon: PuzzlePieceIcon,
   },
   {
     title: 'Maintenance & Support',
     description: 'Keep your digital assets running smoothly with proactive updates.',
-    href: '/products/support',
+    href: '/products#support',
     icon: LifebuoyIcon,
   },
   {
     title: 'Content Packages',
     description: 'Fill your site with blog posts, lead magnets, and visuals—all done for you.',
-    href: '/products/content',
+    href: '/products#content',
     icon: DocumentTextIcon,
   },
   {
     title: 'Email Marketing',
     description: 'Build your list and send newsletters or drip campaigns automatically.',
-    href: '/products/email-marketing',
+    href: '/products#email-marketing',
     icon: EnvelopeOpenIcon,
   },
   {
     title: 'Analytics & Reporting',
     description: 'Track what’s working with simple dashboards and weekly insights.',
-    href: '/products/analytics',
+    href: '/products#analytics',
     icon: ChartPieIcon,
   },
   {
     title: 'Templates & Downloads',
     description: 'Access plug-and-play assets like checklists, flows, and branded docs.',
-    href: '/products/templates',
+    href: '/products#templates',
     icon: ArrowDownTrayIcon,
   },
 ];
+
+
 
 const FeatureGrid = () => (
   <StyledSection id="features" className="py-32">

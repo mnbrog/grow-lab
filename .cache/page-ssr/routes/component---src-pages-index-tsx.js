@@ -6353,67 +6353,65 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-// No changes needed to the features array
 const features = [{
   title: 'AI Tools',
   description: 'Streamline everyday tasks with simple AI-powered helpers.',
-  href: '/products/ai-tools',
+  href: '/products#ai-tools',
   icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_6__["default"]
 }, {
   title: 'WaaS Plans',
   description: 'Launch a stunning, high-performance website without lifting a finger.',
-  href: '/products/waas',
+  href: '/products#waas',
   icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_7__["default"]
 }, {
   title: 'Automation',
   description: 'Speed up workflows using ready-made Power Automate templates.',
-  href: '/products/automation',
+  href: '/products#automation',
   icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_8__["default"]
 }, {
   title: 'SEO & Monetization',
   description: 'Grow traffic and generate passive income with optimized content.',
-  href: '/products/seo-monetization',
+  href: '/products#seo-monetization',
   icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_9__["default"]
 }, {
   title: 'Graphic Design',
   description: 'Get custom logos and cohesive branding designed for your business.',
-  href: '/products/graphic-design',
+  href: '/products#graphic-design',
   icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_10__["default"]
 }, {
   title: 'Social Media Management',
   description: 'Boost engagement and grow your presence with scheduled content.',
-  href: '/products/social-media',
+  href: '/products#social-media',
   icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_11__["default"]
 }, {
   title: 'Custom Integrations',
   description: 'Connect tools like CRMs, email, and databases with tailored solutions.',
-  href: '/products/integrations',
+  href: '/products#integrations',
   icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_12__["default"]
 }, {
   title: 'Maintenance & Support',
   description: 'Keep your digital assets running smoothly with proactive updates.',
-  href: '/products/support',
+  href: '/products#support',
   icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_13__["default"]
 }, {
   title: 'Content Packages',
   description: 'Fill your site with blog posts, lead magnets, and visuals—all done for you.',
-  href: '/products/content',
+  href: '/products#content',
   icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_14__["default"]
 }, {
   title: 'Email Marketing',
   description: 'Build your list and send newsletters or drip campaigns automatically.',
-  href: '/products/email-marketing',
+  href: '/products#email-marketing',
   icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_15__["default"]
 }, {
   title: 'Analytics & Reporting',
   description: 'Track what’s working with simple dashboards and weekly insights.',
-  href: '/products/analytics',
+  href: '/products#analytics',
   icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_16__["default"]
 }, {
   title: 'Templates & Downloads',
   description: 'Access plug-and-play assets like checklists, flows, and branded docs.',
-  href: '/products/templates',
+  href: '/products#templates',
   icon: _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_17__["default"]
 }];
 const FeatureGrid = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_StyledSection__WEBPACK_IMPORTED_MODULE_5__["default"], {
