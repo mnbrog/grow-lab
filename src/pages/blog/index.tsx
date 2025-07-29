@@ -22,6 +22,7 @@ const BlogIndex = ({ data }: any) => (
               {post.frontmatter.featuredImage?.publicURL && (
                 <img
                   src={post.frontmatter.featuredImage.publicURL}
+
                   alt={post.frontmatter.title}
                   className="mb-4 h-40 w-full rounded-md object-cover"
                 />
@@ -50,6 +51,7 @@ export const pageQuery = graphql`
           featuredImage {
             publicURL
           }
+          featuredImage
         }
         excerpt(pruneLength: 100)
         fields {
