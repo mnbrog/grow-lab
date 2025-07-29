@@ -3949,6 +3949,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_layout_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layout/Footer */ "./src/components/layout/Footer.tsx");
 /* harmony import */ var _components_shared_Container__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/shared/Container */ "./src/components/shared/Container.tsx");
 /* harmony import */ var _components_ui_Button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/ui/Button */ "./src/components/ui/Button.tsx");
+/* harmony import */ var _components_layout_BackgroundGlow__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/layout/BackgroundGlow */ "./src/components/layout/BackgroundGlow.tsx");
+
 
 
 
@@ -3973,15 +3975,15 @@ const BlogPostTemplate = ({
     name: "description",
     content: post.excerpt
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
-    className: "py-24 text-white min-h-screen bg-gradient-to-b from-[#0A2640] to-[#071B30]"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_shared_Container__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "relative py-24 text-white min-h-screen"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_BackgroundGlow__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_shared_Container__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: "max-w-3xl mx-auto"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
     className: "prose prose-invert prose-lg max-w-none"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
     className: "mb-10"
   }, frontmatter.featuredImage && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: frontmatter.featuredImage,
+    src: frontmatter.featuredImage.publicURL,
     alt: frontmatter.title,
     className: "rounded-lg mb-6 w-full object-cover"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
@@ -4028,7 +4030,7 @@ const BlogPostTemplate = ({
     viewBox: "0 0 24 24",
     className: "h-5 w-5 fill-current"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
-    d: "M19.633 7.997c...z"
+    d: "M19.633 7.997c.013.278.013.557.013.836 0 8.5-6.473 18.303-18.303 18.303A18.223 18.223 0 010 24.385c.5.057.995.086 1.5.086 3.02 0 5.8-1.023 8.05-2.774-2.8-.057-5.173-1.9-6-4.423.4.07.8.1 1.2.1.58 0 1.14-.086 1.68-.22-2.9-.58-5.08-3.1-5.08-6.08v-.07c.85.47 1.8.75 2.8.78-1.67-1.12-2.78-3-2.78-5.15 0-1.14.3-2.18.8-3.1 3.13 3.85 7.75 6.38 12.97 6.58-.1-.47-.15-1-.15-1.5 0-3.6 2.9-6.5 6.5-6.5 1.85 0 3.5.78 4.7 2.04.5-.1.9-.3 1.3-.5-.2.5-.5.9-.9 1.2.4-.05.8-.16 1.2-.33-.3.46-.7.86-1.1 1.2z"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}&title=${encodeURIComponent(frontmatter.title)}`,
     target: "_blank",
@@ -4040,7 +4042,7 @@ const BlogPostTemplate = ({
     viewBox: "0 0 24 24",
     className: "h-5 w-5 fill-current"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
-    d: "M4.98 3.5...z"
+    d: "M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5C0 2.12 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM5 8H0v16h5V8zm19 0h-4.47v2.32h.06c.68-1.3 2.33-2.67 4.7-2.67 5.03 0 5.95 3.3 5.95 7.62V24h-5v-8.38c0-2 0-4.57-2.78-4.57-2.8 0-3.22 2.18-3.22 4.43V24h-5V8h4.77v2.05c.6-.98 1.9-2.05 3.8-2.05 4.1 0 4.92 2.7 4.92 6.22V24h.02z"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     onClick: handleCopy,
     "aria-label": "Copy link",
@@ -4048,20 +4050,32 @@ const BlogPostTemplate = ({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 24 24",
-    className: "h-5 w-5 stroke-current"
+    className: "h-5 w-5 stroke-current",
+    fill: "none",
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
-    d: "M8 17v1...z"
+    d: "M8 17v1a2 2 0 002 2h5a2 2 0 002-2v-1"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("rect", {
+    x: "7",
+    y: "3",
+    width: "12",
+    height: "15",
+    rx: "2"
   }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "mt-16 text-center bg-gray-800/60 rounded-lg p-8"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-3xl font-bold mb-4"
-  }, "Get the ", frontmatter.productName || 'AI Writer', " for ", frontmatter.productPrice || '$19'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ui_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, "Get the ", frontmatter.productName || 'AI Writer', " for", ' ', frontmatter.productPrice || '$19'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ui_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
     as: "a",
     href: productLink,
     size: "large"
   }, "Get This Tool")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 };
-const pageQuery = "3192243055";
+
+// This query is now updated to select the 'publicURL' of the featured image
+const pageQuery = "3076501980";
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BlogPostTemplate);
 
 /***/ })
