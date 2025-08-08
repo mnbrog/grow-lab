@@ -6993,7 +6993,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((module) => {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('[{"name":"Creator Map","description":"Creator Platform","logo":"https://assets.softr-files.com/applications/f337a486-9cbb-468b-b871-1a84332cea99/assets/d2cced6b-29b1-4201-9977-9173e7cc3790.png","url":"https://www.thecreatormap.com/"},{"name":"Kerr Chief","description":"Outdoor Apparel Brand","logo":"https://michaelnbrogan.com/Arrowhead_LGO.png","url":"https://www.kerr-chief.com/"},{"name":"Upright Medical Solutions","description":"Medical Software","logo":"https://michaelnbrogan.com/Upright%20Medical%20Solutions%20Logo.png","url":"https://uprightmedicalsolutions.com/"}]');
+module.exports = /*#__PURE__*/JSON.parse('[{"name":"Kerr Chief","description":"Outdoor Apparel Brand","logo":"https://michaelnbrogan.com/Arrowhead_LGO.png","url":"https://www.kerr-chief.com/"},{"name":"Upright Medical Solutions","description":"Medical Software","logo":"https://michaelnbrogan.com/Upright%20Medical%20Solutions%20Logo.png","url":"https://uprightmedicalsolutions.com/"},{"name":"Sheffield\'s Collision Center","description":"Auto Repair","logo":"https://sheffieldscollisioncenter.com/static/f5ceb776875491195bfadd6e02cab2bf/ff3fb/NEW%20SCC%20LOGO%20(2).webp","url":"https://sheffieldscollisioncenter.com/"},{"name":"Creator Map","description":"Creator Platform","logo":"https://assets.softr-files.com/applications/f337a486-9cbb-468b-b871-1a84332cea99/assets/d2cced6b-29b1-4201-9977-9173e7cc3790.png","url":"https://www.thecreatormap.com/"}]');
 
 /***/ }),
 
