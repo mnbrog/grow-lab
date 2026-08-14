@@ -2,7 +2,8 @@
 title: "How to Build a Pro Brand Without a Design Degree"
 date: "2025-07-17"
 author: "GrowLab Team"
-featuredImage: '../../components/shared/images/GrowlabLogo.png'
+featuredImage: "../../components/shared/images/blog/brand-design.png"
+featuredImageAlt: "A brand board showing a logo mark, typeface specimen, colour palette and business card mockup, illustrating building a pro brand without a design degree."
 ctaText: "Look pro with our Graphic Design Bundle."
 productId: "graphic-design-bundle"
 productName: "Graphic Design Bundle"

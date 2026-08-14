@@ -2,7 +2,8 @@
 title: "How Upright Medical Streamlined Their Digital Presence with GrowLab"
 date: "2025-07-20"
 author: "GrowLab Team"
-featuredImage: '../../components/shared/images/GrowlabLogo.png'
+featuredImage: "../../components/shared/images/blog/case-study-upright-medical.png"
+featuredImageAlt: "An analytics dashboard with metric tiles, a rising bar chart and a trend line climbing, illustrating results from the Upright Medical website project."
 ctaText: "Transform your own site with the Founder Bundle."
 productId: "founder-bundle"
 productName: "Founder Bundle"
