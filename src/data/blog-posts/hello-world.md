@@ -2,7 +2,8 @@
 title: "Hello World"
 date: "2023-01-01"
 author: "GrowLab Team"
-featuredImage: '../../components/shared/images/GrowlabLogo.png'
+featuredImage: "../../components/shared/images/blog/hello-world.png"
+featuredImageAlt: "Illustration of a terminal window displaying the words hello world, marking the first post on the GrowLab blog."
 ctaText: "Kick-start your content with the Content Growth Bundle."
 productId: "content-growth-bundle"
 productName: "Content Growth Bundle"

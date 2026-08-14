@@ -2,7 +2,8 @@
 title: "What to Post When You Don’t Know What to Post"
 date: "2025-07-12"
 author: "GrowLab Team"
-featuredImage: '../../components/shared/images/GrowlabLogo.png'
+featuredImage: "../../components/shared/images/blog/content-calendar.png"
+featuredImageAlt: "Illustration of a monthly calendar grid with publishing days highlighted, representing a planned social media content schedule."
 ctaText: "Ready to stop staring at the blank screen? Grab the AI Writer for just $19."
 productId: "ai-writer"
 productName: "AI Writer"

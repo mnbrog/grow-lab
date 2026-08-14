@@ -9,12 +9,27 @@ import BackgroundGlow from '../../components/layout/BackgroundGlow';
 
 const BlogIndex = ({ data }: any) => {
   const posts = data.allMarkdownRemark.nodes;
+  const siteUrl = data.site.siteMetadata.siteUrl;
+  const url = `${siteUrl}/blog/`;
+  const description =
+    'Practical notes on websites, automation, SEO and content for small businesses — from the GrowLab team.';
 
   return (
     <>
       <Helmet>
         <title>Insights | GrowLab</title>
-        <meta name="description" content="Latest articles and insights from the GrowLab team." />
+        <meta name="description" content={description} />
+        <link rel="canonical" href={url} />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Insights | GrowLab" />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={url} />
+        <meta property="og:site_name" content="GrowLab" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Insights | GrowLab" />
+        <meta name="twitter:description" content={description} />
       </Helmet>
       <Header />
       <main id="main-content" className="relative text-white">
@@ -41,7 +56,7 @@ const BlogIndex = ({ data }: any) => {
                   {image && (
                     <GatsbyImage
                       image={image}
-                      alt={post.frontmatter.title}
+                      alt={post.frontmatter.featuredImageAlt || post.frontmatter.title}
                       className="mb-5 h-40 w-full rounded-lg object-cover"
                     />
                   )}
@@ -64,6 +79,11 @@ const BlogIndex = ({ data }: any) => {
 // I've added the 'excerpt' to your query so it can be displayed in the card.
 export const pageQuery = graphql`
   query {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       nodes {
         excerpt(pruneLength: 120)
@@ -74,6 +94,7 @@ export const pageQuery = graphql`
           title
           date(formatString: "MMMM DD, YYYY")
           author
+          featuredImageAlt
           featuredImage {
             childImageSharp {
               gatsbyImageData(

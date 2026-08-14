@@ -3,7 +3,8 @@ title: "Why WaaS Is the Smarter Way to Build Your Website in 2025"
 date: "2025-07-27"
 author: "GrowLab Team"
 
-featuredImage: '../../components/shared/images/GrowlabLogo.png'
+featuredImage: "../../components/shared/images/blog/waas-website.png"
+featuredImageAlt: "Illustration of a browser window paired with a recurring cycle arrow, representing Website as a Service with ongoing updates and hosting."
 ctaText: "Launch your site fast with our WaaS Starter plan."
 productId: "waas-starter"
 productName: "WaaS Starter"

@@ -10,7 +10,40 @@ import BackgroundGlow from '../components/layout/BackgroundGlow';
 const BlogPostTemplate = ({ data }: any) => {
   const post = data.markdownRemark;
   const { frontmatter } = post;
-  const url = `${data.site.siteMetadata.siteUrl}${post.fields.slug}`;
+  const siteUrl = data.site.siteMetadata.siteUrl;
+  const url = `${siteUrl}${post.fields.slug}`;
+
+  // Social cards need an absolute URL; publicURL is site-root relative.
+  const image = frontmatter.featuredImage?.publicURL
+    ? `${siteUrl}${frontmatter.featuredImage.publicURL}`
+    : null;
+  const imageAlt = frontmatter.featuredImageAlt || frontmatter.title;
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: frontmatter.title,
+    description: post.excerpt,
+    datePublished: frontmatter.isoDate,
+    dateModified: frontmatter.isoDate,
+    author: { '@type': 'Organization', name: frontmatter.author || 'GrowLab' },
+    publisher: { '@type': 'Organization', name: 'GrowLab' },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+    ...(image && { image: [image] }),
+  };
+
+  // The FAQs already in frontmatter, exposed to search engines as rich results.
+  const faqSchema = frontmatter.faqs?.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: frontmatter.faqs.map((faq: any) => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+        })),
+      }
+    : null;
 
   const handleCopy = () => {
     if (typeof navigator !== 'undefined') {
@@ -23,6 +56,29 @@ const BlogPostTemplate = ({ data }: any) => {
       <Helmet>
         <title>{frontmatter.title} | GrowLab</title>
         <meta name="description" content={post.excerpt} />
+        <link rel="canonical" href={url} />
+
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={frontmatter.title} />
+        <meta property="og:description" content={post.excerpt} />
+        <meta property="og:url" content={url} />
+        <meta property="og:site_name" content="GrowLab" />
+        <meta property="article:published_time" content={frontmatter.isoDate} />
+        {image && <meta property="og:image" content={image} />}
+        {image && <meta property="og:image:width" content="1200" />}
+        {image && <meta property="og:image:height" content="630" />}
+        {image && <meta property="og:image:alt" content={imageAlt} />}
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={frontmatter.title} />
+        <meta name="twitter:description" content={post.excerpt} />
+        {image && <meta name="twitter:image" content={image} />}
+        {image && <meta name="twitter:image:alt" content={imageAlt} />}
+
+        <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
+        {faqSchema && (
+          <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        )}
       </Helmet>
       <Header />
       <main id="main-content" className="relative py-28 text-white min-h-screen sm:py-36">
@@ -34,7 +90,10 @@ const BlogPostTemplate = ({ data }: any) => {
               {frontmatter.featuredImage && (
                 <img
                   src={frontmatter.featuredImage.publicURL}
-                  alt={frontmatter.title}
+                  alt={imageAlt}
+                  width={1200}
+                  height={630}
+                  loading="eager"
                   className="rounded-xl mb-6 w-full object-cover"
                 />
               )}
@@ -169,7 +228,9 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        isoDate: date
         author
+        featuredImageAlt
         featuredImage {
           publicURL
         }

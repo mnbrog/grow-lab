@@ -2,7 +2,8 @@
 title: "How Startups Can Save Hours Using AI-Powered Content Tools"
 date: "2025-07-29"
 author: "GrowLab Team"
-featuredImage: '../../components/shared/images/GrowlabLogo.png'
+featuredImage: "../../components/shared/images/blog/ai-content-tools.png"
+featuredImageAlt: "Illustration of a document being drafted with AI sparkles beside the text, representing AI-powered content tools for startups."
 ctaText: "Ready to automate your writing? Grab the AI Writer today."
 productId: "ai-writer"
 productName: "AI Writer"

@@ -2,7 +2,8 @@
 title: "How to Create a Lead Magnet in 15 Minutes (That Doesn’t Look Like It)"
 date: "2025-07-22"
 author: "GrowLab Team"
-featuredImage: '../../components/shared/images/GrowlabLogo.png'
+featuredImage: "../../components/shared/images/blog/lead-magnet.png"
+featuredImageAlt: "Illustration of contacts dropping through a funnel into a captured list, representing a lead magnet collecting email subscribers."
 ctaText: "Launch your first lead magnet with our Lead Magnet Maker."
 productId: "lead-magnet-maker"
 productName: "Lead Magnet Maker"
