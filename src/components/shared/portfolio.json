@@ -1,26 +1,83 @@
 [
   {
     "name": "Kerr Chief",
-    "description": "Outdoor Apparel Brand",
+    "description": "Outdoor Clothing",
+    "industry": "Outdoor Apparel",
+    "focus": "A brand-forward storefront built to match the gear.",
+    "services": ["Website Design", "Brand Identity", "Hosting"],
     "logo": "https://michaelnbrogan.com/Arrowhead_LGO.png",
     "url": "https://www.kerr-chief.com/"
   },
   {
     "name": "Upright Medical Solutions",
     "description": "Medical Software",
+    "industry": "Medical Software",
+    "focus": "Automated intake so the team spends less time on paperwork.",
+    "services": ["Website Design", "Workflow Automation", "SEO"],
     "logo": "https://michaelnbrogan.com/Upright%20Medical%20Solutions%20Logo.png",
     "url": "https://uprightmedicalsolutions.com/"
   },
   {
-    "name": "Sheffield's Collision Center",
-    "description": "Auto Repair",
-    "logo": "https://sheffieldscollisioncenter.com/static/f5ceb776875491195bfadd6e02cab2bf/ff3fb/NEW%20SCC%20LOGO%20(2).webp",
-    "url": "https://sheffieldscollisioncenter.com/"
+    "name": "VinylSwipe",
+    "description": "3D Vinyl Record Player",
+    "industry": "Interactive Product",
+    "focus": "A playful, interactive 3D record player built to be experienced, not just viewed.",
+    "services": ["Web Design", "Interactive 3D", "Hosting"],
+    "logo": "https://michaelnbrogan.com/vinylswipe-logosm.png",
+    "url": "https://vinylswipe.netlify.app/"
   },
   {
-    "name": "Creator Map",
-    "description": "Creator Platform",
-    "logo": "https://assets.softr-files.com/applications/f337a486-9cbb-468b-b871-1a84332cea99/assets/d2cced6b-29b1-4201-9977-9173e7cc3790.png",
-    "url": "https://www.thecreatormap.com/"
+    "name": "Mckenzie Strategies",
+    "description": "Therapist",
+    "industry": "Therapy Practice",
+    "focus": "A calm, welcoming site that makes it easy to take the first step.",
+    "services": ["Website Design", "Branding", "Hosting"],
+    "logo": "https://assets.softr-files.com/applications/df0789aa-54b4-4d20-b138-f8c96e79952b/assets/dde35ac7-42f8-4667-8179-ed4fe3b099e2.jpeg",
+    "url": "https://www.mckenziestrategies.com/"
+  },
+  {
+    "name": "Steiner Shipyard",
+    "description": "Ship Builders",
+    "industry": "Shipbuilding",
+    "focus": "An industrial-grade site as solid as what they build.",
+    "services": ["Website Design", "Hosting"],
+    "logo": "https://steinershipyard.com/wp-content/uploads/2019/04/cropped-steiner-shipyard-logo-2019.png",
+    "url": "https://steinershipyard.com/"
+  },
+  {
+    "name": "Alta Vida Tezcal",
+    "description": "Tequila",
+    "industry": "Spirits Brand",
+    "focus": "A bold, premium storefront built to match the bottle.",
+    "services": ["Website Design", "Brand Identity", "Hosting"],
+    "logo": "https://michaelnbrogan.com/all%20veda%20logo.png",
+    "url": "https://www.altavidatezcal.com/"
+  },
+  {
+    "name": "Timucua Outdoors",
+    "description": "Fly Fishing",
+    "industry": "Outdoor Recreation",
+    "focus": "A rugged, story-driven site for a fly fishing outfit.",
+    "services": ["Website Design", "Hosting"],
+    "logo": "https://michaelnbrogan.com/wise+timucuan+logo.png",
+    "url": ""
+  },
+  {
+    "name": "Trapezi Foods",
+    "description": "Greek Food",
+    "industry": "Food & Beverage",
+    "focus": "A fresh, appetite-driven storefront for a Greek food brand.",
+    "services": ["Website Design", "Branding", "Hosting"],
+    "logo": "https://michaelnbrogan.com/trapezifoods.jpeg",
+    "url": "https://trapezifoods.com/"
+  },
+  {
+    "name": "Wax Monkey",
+    "description": "Jam Band",
+    "industry": "Music",
+    "focus": "A high-energy site built to match the live show.",
+    "services": ["Website Design", "Hosting"],
+    "logo": "https://michaelnbrogan.com/wax-monkey-logo.jpg",
+    "url": "https://www.waxmonkeyband.com/"
   }
 ]

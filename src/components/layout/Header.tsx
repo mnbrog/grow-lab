@@ -25,7 +25,11 @@ const Header = () => {
 
 
   return (
-    <header className="sticky top-0 z-50 bg-gray-900/80 backdrop-blur-sm">
+    <>
+    <a href="#main-content" className="skip-link">
+      Skip to content
+    </a>
+    <header className="sticky top-0 z-50 border-b border-white/5 bg-ink-900/80 backdrop-blur-md">
       {/*
         CHANGE 1:
         The vertical padding is now fixed to 'py-4' to prevent the header
@@ -84,7 +88,7 @@ const Header = () => {
 
       {/* --- Mobile Dropdown Menu --- */}
       <div
-        className={`absolute left-0 w-full origin-top transform bg-gray-800 shadow-xl transition-transform duration-300 ease-in-out md:hidden ${
+        className={`absolute left-0 w-full origin-top transform border-b border-white/5 bg-ink-800 shadow-xl transition-transform duration-300 ease-in-out md:hidden ${
           open ? 'scale-y-100' : 'scale-y-0'
         }`}
       >
@@ -102,6 +106,7 @@ const Header = () => {
         </Container>
       </div>
     </header>
+    </>
   );
 };
 

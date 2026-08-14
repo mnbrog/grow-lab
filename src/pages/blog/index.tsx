@@ -17,11 +17,17 @@ const BlogIndex = ({ data }: any) => {
         <meta name="description" content="Latest articles and insights from the GrowLab team." />
       </Helmet>
       <Header />
-      <main className="py-20 text-white bg-gradient-to-b from-[#0A2640] to-[#071B30]">
-        <Container>
-          <h1 className="text-4xl font-bold text-center mb-12">Insights</h1>
+      <main id="main-content" className="relative text-white">
+        <BackgroundGlow />
+        <Container className="py-28 sm:py-36">
+          <div className="mb-16 max-w-2xl">
+            <p className="eyebrow mb-4">Insights</p>
+            <h1 className="font-heading text-display-sm font-black text-white">
+              Notes on building &amp; growing online.
+            </h1>
+          </div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {posts.map((post: any) => {
               // Use the getImage helper to prepare the image data
               const image = getImage(post.frontmatter.featuredImage);
@@ -30,21 +36,20 @@ const BlogIndex = ({ data }: any) => {
                 <Link
                   key={post.fields.slug}
                   to={post.fields.slug}
-                  className="block rounded-xl border border-white/10 bg-gray-900/50 p-6 transition-shadow duration-300 hover:shadow-xl hover:shadow-accent/30"
+                  className="group block h-full rounded-2xl border border-white/10 bg-ink-800 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent-400/50"
                 >
-                  {/* Use the GatsbyImage component to display the image */}
                   {image && (
                     <GatsbyImage
                       image={image}
                       alt={post.frontmatter.title}
-                      className="mb-4 h-40 w-full rounded-md object-cover"
+                      className="mb-5 h-40 w-full rounded-lg object-cover"
                     />
                   )}
-                  <h2 className="text-2xl font-semibold mb-2 text-white group-hover:text-accent transition-colors">
+                  <p className="mb-2 text-xs text-gray-500">{post.frontmatter.date}</p>
+                  <h2 className="mb-2 text-xl font-semibold text-white transition-colors group-hover:text-accent-300">
                     {post.frontmatter.title}
                   </h2>
-                  <p className="text-sm text-white/60 mb-4">{post.frontmatter.date}</p>
-                  <p className="text-white/80 text-sm line-clamp-3">{post.excerpt}</p>
+                  <p className="line-clamp-3 text-sm text-gray-400">{post.excerpt}</p>
                 </Link>
               );
             })}

@@ -1,115 +1,111 @@
-import React, { useCallback, useEffect, useState } from 'react';
-import useEmblaCarousel from 'embla-carousel-react';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
-
+import React from 'react';
+import { ArrowUpRightIcon } from '@heroicons/react/24/outline';
 import Container from '../shared/Container';
+import Button from '../ui/Button';
+import Reveal from '../ui/Reveal';
 import StyledSection from './StyledSection';
-import projectsData from '../shared/portfolio.json';
+import caseStudiesData from '../shared/portfolio.json';
 
-// Project type remains the same
-interface Project {
+interface CaseStudy {
   name: string;
-  description: string;
+  industry: string;
+  focus: string;
+  services: string[];
   logo: string;
   url: string;
 }
 
-const projects: Project[] = projectsData;
+const caseStudies: CaseStudy[] = caseStudiesData;
 
-// Reusable Arrow Button Component
-interface ArrowButtonProps {
-  enabled: boolean;
-  onClick: () => void;
-  children: React.ReactNode;
-}
-
-const ArrowButton: React.FC<ArrowButtonProps> = ({ enabled, onClick, children }) => (
-  <button
-    className="h-12 w-12 rounded-full bg-gray-800/60 p-2 text-white transition hover:bg-accent disabled:opacity-30 disabled:cursor-not-allowed"
-    onClick={onClick}
-    disabled={!enabled}
-  >
-    {children}
-  </button>
-);
-
-const Portfolio: React.FC = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: true,
-    align: 'start',
-  });
-
-  const [prevBtnDisabled, setPrevBtnDisabled] = useState(true);
-  const [nextBtnDisabled, setNextBtnDisabled] = useState(true);
-
-  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
-  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
-
-  const onSelect = useCallback(() => {
-    if (!emblaApi) return;
-    setPrevBtnDisabled(!emblaApi.canScrollPrev());
-    setNextBtnDisabled(!emblaApi.canScrollNext());
-  }, [emblaApi]);
-
-  useEffect(() => {
-    if (!emblaApi) return;
-    onSelect();
-    emblaApi.on('select', onSelect);
-    emblaApi.on('reInit', onSelect);
-  }, [emblaApi, onSelect]);
-
-  return (
-    <StyledSection className="py-20">
-      <Container>
-        <div className="flex flex-col items-center justify-between gap-8 md:flex-row md:gap-16">
-          <div className="text-center">
-            <h2 className="text-4xl font-bold mb-4">See Our Work</h2>
-            <p className="text-lg text-gray-400 max-w-lg">
-              We partner with businesses to create digital experiences that look great and deliver results.
-            </p>
-          </div>
-          {/* Arrow navigation for larger screens */}
-          <div className="hidden shrink-0 gap-4 md:flex">
-            <ArrowButton onClick={scrollPrev} enabled={!prevBtnDisabled}>
-              <ChevronLeftIcon />
-            </ArrowButton>
-            <ArrowButton onClick={scrollNext} enabled={!nextBtnDisabled}>
-              <ChevronRightIcon />
-            </ArrowButton>
-          </div>
+const Portfolio: React.FC = () => (
+  <StyledSection id="work" className="py-28 sm:py-32">
+    <Container>
+      <div className="mb-16 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
+        <div className="max-w-2xl">
+          <p className="eyebrow mb-4">Selected Work</p>
+          <h2 className="text-display-sm font-heading font-black text-white">
+            Real businesses. Real launches.
+          </h2>
         </div>
+        <p className="max-w-sm text-sm text-gray-400">
+          A look at what we've built and the systems running behind the scenes for
+          each one.
+        </p>
+      </div>
 
-        {/* The Embla Carousel viewport */}
-        <div className="mt-16 overflow-hidden" ref={emblaRef}>
-          {/* The container for the slides */}
-          <div className="flex">
-            {projects.map((project) => (
-              // Each slide
-              <div
-                key={project.name}
-                className="relative min-w-0 flex-shrink-0 flex-grow-0 basis-full p-4 md:basis-1/2 lg:basis-1/3"
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {caseStudies.map((project, i) => {
+          const hasLink = Boolean(project.url);
+          const Wrapper = hasLink ? 'a' : 'div';
+          const linkProps = hasLink
+            ? { href: project.url, target: '_blank', rel: 'noopener noreferrer' }
+            : {};
+
+          return (
+            <Reveal key={project.name}>
+              <Wrapper
+                {...linkProps}
+                className={`group flex h-full flex-col rounded-2xl border border-white/10 bg-ink-800 p-8 transition-all duration-300 sm:p-10 ${
+                  hasLink
+                    ? 'hover:-translate-y-1 hover:border-accent-400/60 hover:bg-ink-700'
+                    : ''
+                }`}
               >
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-center group block h-full rounded-xl bg-gray-800/50 p-6 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/10 border border-gray-700 hover:border-accent"
-                >
+                <div className="mb-8 flex items-start justify-between">
+                  <span className="font-heading text-sm font-semibold text-gray-600">
+                    0{i + 1}
+                  </span>
+                  {hasLink ? (
+                    <ArrowUpRightIcon
+                      className="h-5 w-5 text-gray-500 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent-400"
+                      aria-hidden="true"
+                    />
+                  ) : (
+                    <span className="text-xs text-gray-600">Site offline</span>
+                  )}
+                </div>
+
+                <div className="mb-6 flex h-14 items-center">
                   <img
                     src={project.logo}
                     alt={`${project.name} logo`}
-                    className="mb-6 h-48 w-full rounded-md object-contain bg-white p-4"
+                    loading="lazy"
+                    className="h-10 w-auto max-w-[10rem] rounded bg-white/90 object-contain p-1.5"
                   />
-                  <h3 className="text-xl font-semibold text-white">{project.name}</h3>
-                  <p className="mt-2 text-sm text-gray-300">{project.description}</p>
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </Container>
-    </StyledSection>
-  );
-};
+                </div>
+
+                <p className="eyebrow mb-2 text-gray-500">{project.industry}</p>
+                <h3 className="mb-3 text-2xl font-semibold text-white">
+                  {project.name}
+                </h3>
+                <p className="mb-6 flex-grow text-base leading-relaxed text-gray-300">
+                  {project.focus}
+                </p>
+
+                <ul className="flex flex-wrap gap-2">
+                  {project.services.map((service) => (
+                    <li
+                      key={service}
+                      className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-gray-300"
+                    >
+                      {service}
+                    </li>
+                  ))}
+                </ul>
+              </Wrapper>
+            </Reveal>
+          );
+        })}
+      </div>
+
+      <div className="mt-16 text-center">
+        <p className="mb-6 text-gray-400">Want to be our next launch?</p>
+        <Button as="a" href="/contact" variant="secondary" size="large">
+          Start Your Project
+        </Button>
+      </div>
+    </Container>
+  </StyledSection>
+);
 
 export default Portfolio;

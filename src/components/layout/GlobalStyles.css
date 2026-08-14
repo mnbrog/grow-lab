@@ -1,7 +1,7 @@
 /* Import fonts */
-@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,700,800&display=swap');
-@import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=DM+Sans:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,800,900&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=DM+Sans:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap');
 
 /* Include Tailwind styles */
 @tailwind base;
@@ -12,15 +12,114 @@
 html {
   font-family: 'Inter', 'DM Sans', sans-serif;
   scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
-  @apply bg-gray-900 text-gray-300 antialiased;
+  @apply bg-ink-900 text-gray-300 antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Satoshi', 'General Sans', sans-serif;
   @apply font-bold text-white;
+}
+
+/* Selection + focus states */
+::selection {
+  background: theme('colors.accent.400');
+  color: theme('colors.ink.900');
+}
+
+a, button, [tabindex] {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid theme('colors.accent.400');
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Skip link for keyboard/screen-reader users */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3.5rem;
+  z-index: 100;
+  background: theme('colors.accent.400');
+  color: theme('colors.ink.900');
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: top 0.2s ease-out;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* Small tracked-out eyebrow label used above section headings */
+.eyebrow {
+  @apply text-accent-300 text-xs sm:text-sm font-semibold uppercase;
+  letter-spacing: 0.18em;
+}
+
+/* Kinetic headline: each word animates in on load, staggered by --i.
+   Keyframes are declared as raw CSS (not via Tailwind's theme.extend)
+   because Tailwind only emits keyframes for animation utilities it sees
+   used as classes. This is referenced directly by name, so it would
+   otherwise get tree-shaken out of the build. */
+@keyframes word-in {
+  0% {
+    opacity: 0;
+    transform: translateY(0.4em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.kinetic-word {
+  display: inline-block;
+  opacity: 0;
+  animation: word-in 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: calc(var(--i, 0) * 70ms + 120ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kinetic-word {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* Scroll-linked hero fade, progressively enhanced; no-ops without support */
+@supports (animation-timeline: view()) {
+  .scroll-fade {
+    animation: hero-scroll-fade linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 55%;
+  }
+  @keyframes hero-scroll-fade {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0.25; transform: translateY(-1.5rem); }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scroll-fade {
+    animation: none !important;
+  }
 }
 
 /* Prose styles on dark background */
@@ -31,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
   @apply text-white;
 }
 .prose a {
-  @apply text-accent hover:text-white;
+  @apply text-accent-300 hover:text-white;
 }
 .prose strong {
   @apply text-white;

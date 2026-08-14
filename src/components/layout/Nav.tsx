@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 const links = [
-  { to: '/products', label: 'Products' },
-  { to: '/website-plans', label: 'Website Plans' },
+  { to: '/services', label: 'Services' },
+  { to: '/website-plans', label: 'Plans' },
+  { to: '/#work', label: 'Work' },
   { to: '/blog', label: 'Insights' },
   { to: '/contact', label: 'Contact' },
 ];

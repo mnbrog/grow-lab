@@ -1,7 +1,7 @@
 import React, { ElementType } from 'react';
 
 interface ButtonProps {
-  variant?: 'primary' | 'secondary';
+  variant?: 'primary' | 'secondary' | 'ghost';
   size?: 'normal' | 'large' | 'xl';
   as?: ElementType;
   children: React.ReactNode;
@@ -9,11 +9,12 @@ interface ButtonProps {
 }
 
 const base =
-  'inline-flex items-center justify-center font-semibold font-accent rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 transition-transform duration-200 ease-in-out transform hover:scale-105';
+  'inline-flex items-center justify-center font-semibold font-accent rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-900 transition-transform duration-200 ease-in-out transform hover:scale-105';
 
 const variants = {
-  primary: 'bg-accent text-primary hover:brightness-110 focus:ring-accent',
-  secondary: 'bg-transparent text-black border border-gray-600 hover:text-white hover:bg-gray-800 focus:ring-gray-500',
+  primary: 'bg-accent-400 text-ink-900 hover:brightness-110 focus-visible:ring-accent-400',
+  secondary: 'bg-transparent text-white border border-gray-600 hover:text-ink-900 hover:bg-white focus-visible:ring-gray-400',
+  ghost: 'bg-transparent text-white border border-white/20 hover:border-accent-400 hover:text-accent-300 focus-visible:ring-accent-400',
 };
 
 const sizes = {

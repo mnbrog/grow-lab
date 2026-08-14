@@ -11,7 +11,6 @@ const BlogPostTemplate = ({ data }: any) => {
   const post = data.markdownRemark;
   const { frontmatter } = post;
   const url = `${data.site.siteMetadata.siteUrl}${post.fields.slug}`;
-  const productLink = `/products#${frontmatter.productId || ''}`;
 
   const handleCopy = () => {
     if (typeof navigator !== 'undefined') {
@@ -26,7 +25,7 @@ const BlogPostTemplate = ({ data }: any) => {
         <meta name="description" content={post.excerpt} />
       </Helmet>
       <Header />
-      <main className="relative py-24 text-white min-h-screen">
+      <main id="main-content" className="relative py-28 text-white min-h-screen sm:py-36">
         <BackgroundGlow />
         <Container className="max-w-3xl mx-auto">
           <article className="prose prose-invert prose-lg max-w-none">
@@ -36,7 +35,7 @@ const BlogPostTemplate = ({ data }: any) => {
                 <img
                   src={frontmatter.featuredImage.publicURL}
                   alt={frontmatter.title}
-                  className="rounded-lg mb-6 w-full object-cover"
+                  className="rounded-xl mb-6 w-full object-cover"
                 />
               )}
               <h1 className="mb-2">{frontmatter.title}</h1>
@@ -49,13 +48,12 @@ const BlogPostTemplate = ({ data }: any) => {
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </article>
 
-          <div className="my-12 rounded-lg border border-white/10 bg-gray-800/60 p-8 text-center">
+          <div className="my-12 rounded-2xl border border-white/10 bg-ink-800 p-8 text-center">
             <p className="mb-4 font-semibold">
-              {frontmatter.ctaText ||
-                'Like this post? Get the AI Writer for just $19.'}
+              Ready to put this into practice on your own site?
             </p>
-            <Button as="a" href={productLink} size="large">
-              Get the Tool
+            <Button as="a" href="/website-plans" variant="primary" size="large">
+              See Website Plans
             </Button>
           </div>
 
@@ -66,7 +64,7 @@ const BlogPostTemplate = ({ data }: any) => {
                 {frontmatter.faqs.map((faq: any, idx: number) => (
                   <details
                     key={idx}
-                    className="rounded-md border border-white/10 p-4"
+                    className="rounded-xl border border-white/10 bg-ink-800 p-4"
                   >
                     <summary className="cursor-pointer font-semibold">
                       {faq.question}
@@ -87,7 +85,7 @@ const BlogPostTemplate = ({ data }: any) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Share on Twitter"
-                className="rounded-md bg-gray-800/60 p-3 transition hover:bg-gray-700"
+                className="rounded-full bg-ink-800 p-3 transition hover:bg-ink-700"
               >
                 {/* Twitter icon */}
                 <svg
@@ -105,7 +103,7 @@ const BlogPostTemplate = ({ data }: any) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Share on LinkedIn"
-                className="rounded-md bg-gray-800/60 p-3 transition hover:bg-gray-700"
+                className="rounded-full bg-ink-800 p-3 transition hover:bg-ink-700"
               >
                 {/* LinkedIn icon */}
                 <svg
@@ -113,13 +111,13 @@ const BlogPostTemplate = ({ data }: any) => {
                   viewBox="0 0 24 24"
                   className="h-5 w-5 fill-current"
                 >
-                  <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5C0 2.12 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM5 8H0v16h5V8zm19 0h-4.47v2.32h.06c.68-1.3 2.33-2.67 4.7-2.67 5.03 0 5.95 3.3 5.95 7.62V24h-5v-8.38c0-2 0-4.57-2.78-4.57-2.8 0-3.22 2.18-3.22 4.43V24h-5V8h4.77v2.05c.6-.98 1.9-2.05 3.8-2.05 4.1 0 4.92 2.7 4.92 6.22V24h.02z" />
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.446-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                 </svg>
               </a>
               <button
                 onClick={handleCopy}
                 aria-label="Copy link"
-                className="rounded-md bg-gray-800/60 p-3 transition hover:bg-gray-700"
+                className="rounded-full bg-ink-800 p-3 transition hover:bg-ink-700"
               >
                 {/* Copy icon */}
                 <svg
@@ -138,13 +136,12 @@ const BlogPostTemplate = ({ data }: any) => {
             </div>
           </div>
 
-          <div className="mt-16 text-center bg-gray-800/60 rounded-lg p-8">
-            <h2 className="text-3xl font-bold mb-4">
-              Get the {frontmatter.productName || 'AI Writer'} for{' '}
-              {frontmatter.productPrice || '$19'}
+          <div className="mt-16 rounded-2xl bg-ink-800 p-8 text-center">
+            <h2 className="mb-4 text-3xl font-bold">
+              Ready for a website that grows with you?
             </h2>
-            <Button as="a" href={productLink} size="large">
-              Get This Tool
+            <Button as="a" href="/contact" variant="primary" size="large">
+              Book a Free Strategy Call
             </Button>
           </div>
         </Container>
@@ -176,10 +173,6 @@ export const pageQuery = graphql`
         featuredImage {
           publicURL
         }
-        ctaText
-        productId
-        productName
-        productPrice
         faqs {
           question
           answer

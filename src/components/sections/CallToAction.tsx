@@ -5,20 +5,31 @@ import Reveal from '../ui/Reveal';
 import StyledSection from './StyledSection';
 
 const CallToAction = () => (
-  <StyledSection className="py-24 text-center">
-    <Container className="text-white">
+  <StyledSection id="cta" className="border-t border-white/5 py-28 text-center sm:py-32">
+    <Container>
       <Reveal>
-        <h2 className="text-4xl">Ready to grow your business?</h2>
+        <p className="eyebrow mb-6">Let's Talk</p>
       </Reveal>
       <Reveal>
-        <p className="mt-4 mb-6 text-gray-300 max-w-2xl mx-auto">
-          Let's build something great together. Get in touch to discuss your project.
+        <h2 className="mx-auto max-w-3xl font-heading text-display-sm font-black text-white">
+          Ready for a website that grows with you?
+        </h2>
+      </Reveal>
+      <Reveal>
+        <p className="mx-auto mt-6 mb-10 max-w-xl text-lg text-gray-300">
+          Book a free strategy call. We'll map out the right plan for where
+          your business is today and where it's headed next.
         </p>
       </Reveal>
       <Reveal>
-        <Button as="a" href="/contact" size="large">
-          Get a Free Consultation
-        </Button>
+        <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <Button as="a" href="/contact" variant="primary" size="xl">
+            Book a Free Strategy Call
+          </Button>
+          <Button as="a" href="/website-plans" variant="ghost" size="large">
+            Compare plans
+          </Button>
+        </div>
       </Reveal>
     </Container>
   </StyledSection>

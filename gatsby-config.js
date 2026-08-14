@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "GrowLab",
-    description: "Digital products and automation templates for scaling modern businesses.",
+    description: "Web design, hosting, and automation for growing businesses — one monthly plan.",
     siteUrl: "https://growlab.com",
   },
   plugins: [
