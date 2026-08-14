@@ -4,7 +4,7 @@ date: "2025-07-27"
 author: "GrowLab Team"
 
 featuredImage: "../../components/shared/images/blog/waas-website.png"
-featuredImageAlt: "Illustration of a browser window paired with a recurring cycle arrow, representing Website as a Service with ongoing updates and hosting."
+featuredImageAlt: "A website shown on desktop and mobile with a recurring update badge, illustrating Website as a Service where hosting and upkeep are handled on a plan."
 ctaText: "Launch your site fast with our WaaS Starter plan."
 productId: "waas-starter"
 productName: "WaaS Starter"

@@ -4,7 +4,7 @@ date: "2025-07-19"
 author: "GrowLab Team"
 
 featuredImage: "../../components/shared/images/blog/weekend-tech-stack.png"
-featuredImageAlt: "Illustration of stacked platform layers beneath a launching rocket, representing a complete tech stack for launching a business in a weekend."
+featuredImageAlt: "A layered tech stack beside a launch checklist with most items ticked off, illustrating the tools needed to launch a business in a single weekend."
 ctaText: "Grab the Founder Bundle and launch faster."
 productId: "founder-bundle"
 productName: "Founder Bundle"
