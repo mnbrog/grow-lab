@@ -411,7 +411,8 @@ const scenes = {
     ${sparkle(430, -230, 36, 0.7)}
     ${sparkle(500, -160, 20, 0.45)}`,
 
-  /** A month of posts, scheduled and queued. */
+  /** A month of posts, scheduled and queued. Unused since /blog/post/ was
+   *  retired -- kept for a future content-scheduling post. */
   calendar: `
     ${win(-510, -250, 700, 455)}
     ${bar(-470, -218, 160, 13, ACCENT_200, 0.8)}
@@ -477,6 +478,32 @@ const scenes = {
       <path d="M 76 76 L 150 150" stroke="${ACCENT_200}" stroke-width="24" stroke-linecap="round"/>
       <path d="M -56 24 l 38 -42 l 34 28 l 46 -58" stroke="${ACCENT_200}" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
     </g>`,
+
+  /** Three plans side by side, the middle one recommended. */
+  pricing: `
+    ${[0, 1, 2]
+      .map((i) => {
+        const hot = i === 1;
+        const x = -490 + i * 330;
+        const h = hot ? 460 : 400;
+        const y = hot ? -250 : -220;
+        const rows = hot ? 6 : 5;
+        return `
+          ${card(x, y, 290, h, { fill: hot ? INK_600 : INK_700, stroke: hot ? ACCENT_200 : ACCENT_400, so: hot ? 0.9 : 0.4, sw: hot ? 4 : 3, r: 22 })}
+          ${hot ? card(x + 78, y - 19, 134, 38, { fill: ACCENT_400, fo: 0.95, stroke: null, r: 19 }) : ''}
+          ${hot ? bar(x + 100, y - 6, 90, 12, INK_900, 0.6) : ''}
+          ${bar(x + 30, y + 40, 96, 13, ACCENT_300, 0.55)}
+          ${bar(x + 30, y + 70, hot ? 150 : 128, 32, ACCENT_200, hot ? 0.95 : 0.75)}
+          ${bar(x + 30, y + 118, 190, 10, ACCENT_300, 0.3)}
+          ${bar(x + 30, y + 138, 150, 10, ACCENT_300, 0.3)}
+          <path d="M ${x + 24} ${y + 168} H ${x + 266}" stroke="${ACCENT_400}" stroke-opacity="0.25" stroke-width="2"/>
+          ${Array.from({ length: rows })
+            .map((_, k) => `${check(x + 46, y + 192 + k * 32, 11)}
+                            ${bar(x + 68, y + 187 + k * 32, 128 + ((k * 37) % 56), 10, ACCENT_300, 0.45)}`)
+            .join('')}
+          ${hot ? btn(x + 30, y + h - 64, 230, 44) : card(x + 30, y + h - 64, 230, 44, { fill: 'none', fo: 0, stroke: ACCENT_400, so: 0.5, r: 22 })}`;
+      })
+      .join('')}`,
 
   /** An idea board for when the page is blank. */
   ideas: `
@@ -579,10 +606,10 @@ const covers = [
     alt: 'A terminal publishing a first post with the finished site behind it, marking the launch of the GrowLab blog.',
   },
   {
-    file: 'content-calendar.png',
-    scene: scenes.calendar,
-    tag: 'CONTENT',
-    alt: 'A content calendar with posts scheduled across the month beside a queue of drafts ready to publish, illustrating a planned posting schedule.',
+    file: 'website-cost.png',
+    scene: scenes.pricing,
+    tag: 'PRICING',
+    alt: 'Three website plan cards side by side with the middle one highlighted and its features ticked off, illustrating what a small business website costs each month.',
   },
   {
     file: 'website-traffic.png',
