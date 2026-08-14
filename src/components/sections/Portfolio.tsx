@@ -66,12 +66,19 @@ const Portfolio: React.FC = () => (
                 </div>
 
                 <div className="mb-6 flex h-14 items-center">
-                  <img
-                    src={project.logo}
-                    alt={`${project.name} logo`}
-                    loading="lazy"
-                    className="h-10 w-auto max-w-[10rem] rounded bg-white/90 object-contain p-1.5"
-                  />
+                  {/* Falls back to a wordmark until a logo file is supplied. */}
+                  {project.logo ? (
+                    <img
+                      src={project.logo}
+                      alt={`${project.name} logo`}
+                      loading="lazy"
+                      className="h-10 w-auto max-w-[10rem] rounded bg-white/90 object-contain p-1.5"
+                    />
+                  ) : (
+                    <span className="font-heading text-lg font-bold uppercase tracking-wide text-white/70">
+                      {project.name}
+                    </span>
+                  )}
                 </div>
 
                 <p className="eyebrow mb-2 text-gray-500">{project.industry}</p>
